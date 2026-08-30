@@ -1,0 +1,27 @@
+# The Fusion Energy Equations — open for search + AI ingestion
+User-agent: *
+Allow: /
+
+# Explicitly welcome AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+Sitemap: https://www.kronosfusionenergy.com/sitemap.xml
