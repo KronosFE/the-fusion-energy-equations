@@ -1,0 +1,276 @@
+{
+ "title": "The Fusion Energy Equations",
+ "edition": "2nd",
+ "author": "P. I. Ford",
+ "publisher": "Kronos Fusion Energy",
+ "doi": "10.5281/zenodo.22179328",
+ "license": "CC BY 4.0",
+ "canon_freeze": "2026-08-27",
+ "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/",
+ "chapters": [
+  {
+   "id": "sec-0",
+   "title": "A Century's Work, Still Underway",
+   "position": 1,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-0"
+  },
+  {
+   "id": "sec-1",
+   "title": "Preface",
+   "position": 2,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-1"
+  },
+  {
+   "id": "sec-2",
+   "title": "The Three Forties",
+   "position": 3,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-2"
+  },
+  {
+   "id": "sec-3",
+   "title": "The Fire",
+   "position": 4,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-3"
+  },
+  {
+   "id": "sec-4",
+   "title": "The Long Night",
+   "position": 5,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-4"
+  },
+  {
+   "id": "sec-5",
+   "title": "The Inheritors",
+   "position": 6,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-5"
+  },
+  {
+   "id": "sec-6",
+   "title": "Energy Is Freedom",
+   "position": 7,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-6"
+  },
+  {
+   "id": "sec-7",
+   "title": "Gain, Solved and Published",
+   "position": 8,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-7"
+  },
+  {
+   "id": "sec-8",
+   "title": "A Short History of a Long Dream",
+   "position": 9,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-8"
+  },
+  {
+   "id": "sec-9",
+   "title": "The Staged Road to Q40",
+   "position": 10,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-9"
+  },
+  {
+   "id": "sec-10",
+   "title": "The Next Forty Years",
+   "position": 11,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-10"
+  },
+  {
+   "id": "sec-11",
+   "title": "Wealth of the World: How Fusion Energy Could Reshape Economies",
+   "position": 12,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-11"
+  },
+  {
+   "id": "sec-12",
+   "title": "Energy, Sovereignty, and the End of Resource War",
+   "position": 13,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-12"
+  },
+  {
+   "id": "sec-13",
+   "title": "Aegis: Firm Power Where It Cannot Fail",
+   "position": 14,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-13"
+  },
+  {
+   "id": "sec-14",
+   "title": "Building the Machine: Regulation, Supply Chain, and Sovereignty",
+   "position": 15,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-14"
+  },
+  {
+   "id": "sec-15",
+   "title": "The Machine That Controls the Machine",
+   "position": 16,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-15"
+  },
+  {
+   "id": "sec-16",
+   "title": "Quantum, Honestly",
+   "position": 17,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-16"
+  },
+  {
+   "id": "sec-17",
+   "title": "The Twin: Simulating a Machine Before We Build It",
+   "position": 18,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-17"
+  },
+  {
+   "id": "sec-18",
+   "title": "Igniting the Markets: The Unbound Commercial Promise of Fusion Energy",
+   "position": 19,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-18"
+  },
+  {
+   "id": "sec-19",
+   "title": "The Long Road to Two Machines",
+   "position": 20,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-19"
+  },
+  {
+   "id": "sec-20",
+   "title": "Hyperion — the Foundry That Makes the Fuel",
+   "position": 21,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-20"
+  },
+  {
+   "id": "sec-21",
+   "title": "The Burner — Firm Power, Low Neutrons",
+   "position": 22,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-21"
+  },
+  {
+   "id": "sec-22",
+   "title": "The Magnets: The High-Field Path",
+   "position": 23,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-22"
+  },
+  {
+   "id": "sec-23",
+   "title": "Catching Lightning: Direct Energy Conversion",
+   "position": 24,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-23"
+  },
+  {
+   "id": "sec-24",
+   "title": "Energy Is Water",
+   "position": 25,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-24"
+  },
+  {
+   "id": "sec-25",
+   "title": "To the Moon for Fuel",
+   "position": 26,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-25"
+  },
+  {
+   "id": "sec-26",
+   "title": "The Road to $40 a Megawatt-Hour, Worked",
+   "position": 27,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-26"
+  },
+  {
+   "id": "sec-27",
+   "title": "Safe by Design: Waste, Risk, and the Environmental Case",
+   "position": 28,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-27"
+  },
+  {
+   "id": "sec-28",
+   "title": "The Field, Honestly: Where This Approach Fits",
+   "position": 29,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-28"
+  },
+  {
+   "id": "sec-29",
+   "title": "A Brighter Tomorrow",
+   "position": 30,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-29"
+  },
+  {
+   "id": "sec-30",
+   "title": "How This Was Built",
+   "position": 31,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-30"
+  },
+  {
+   "id": "sec-31",
+   "title": "Charting the Course to Fusion's Bright Future",
+   "position": 32,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-31"
+  },
+  {
+   "id": "sec-32",
+   "title": "The Machines, by the Numbers",
+   "position": 33,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-32"
+  },
+  {
+   "id": "sec-33",
+   "title": "The Simulation Register & Proofs",
+   "position": 34,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-33"
+  },
+  {
+   "id": "sec-34",
+   "title": "The Record: Deposits & DOIs",
+   "position": 35,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-34"
+  },
+  {
+   "id": "sec-35",
+   "title": "The Intellectual-Property Record",
+   "position": 36,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-35"
+  },
+  {
+   "id": "sec-36",
+   "title": "Show Your Work",
+   "position": 37,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-36"
+  },
+  {
+   "id": "sec-37",
+   "title": "Where Every Number Lives",
+   "position": 38,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-37"
+  },
+  {
+   "id": "sec-38",
+   "title": "A Skeptic's Questions",
+   "position": 39,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-38"
+  },
+  {
+   "id": "sec-39",
+   "title": "The Hardest Objections, Answered",
+   "position": 40,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-39"
+  },
+  {
+   "id": "sec-40",
+   "title": "Nomenclature & Glossary",
+   "position": 41,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-40"
+  },
+  {
+   "id": "sec-41",
+   "title": "The People Behind the Work",
+   "position": 42,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-41"
+  },
+  {
+   "id": "sec-42",
+   "title": "Priyanca Iyengar Ford",
+   "position": 43,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-42"
+  },
+  {
+   "id": "sec-43",
+   "title": "Follow the Work",
+   "position": 44,
+   "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/#sec-43"
+  }
+ ]
+}

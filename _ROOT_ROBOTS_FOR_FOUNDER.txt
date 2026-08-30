@@ -1,0 +1,28 @@
+# HAND TO FOUNDER — merge these lines into the DOMAIN-ROOT robots.txt (kronosfusionenergy.com/robots.txt)
+# The root robots.txt is served by the Lovable SPA, so it must be edited there (one-time).
+# This makes the whole site (incl. the book) openly ingestible by AI + search crawlers.
+
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://kronosfusionenergy.com/Physics-Validation-Live_Simulation/sitemap-index.xml
+Sitemap: https://kronosfusionenergy.com/the-fusion-energy-equations/sitemap.xml
