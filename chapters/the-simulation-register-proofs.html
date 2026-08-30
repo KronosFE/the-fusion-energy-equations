@@ -1,0 +1,698 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Simulation Register &amp; Proofs · The Fusion Energy Equations</title><meta name="description" content="A book that asks you to believe in a machine before it is built has one honest option: it must show its work. Not gesture at it, not summarize it, not ask you to trust that the wor"><meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large"><meta name="author" content="P. I. Ford"><link rel="canonical" href="https://kronosfusionenergy.com/the-fusion-energy-equations/chapters/the-simulation-register-proofs.html"><link rel="icon" href="https://kronosfusionenergy.com/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet"><style>body{margin:0;background:#fbfaf7;color:#14181f;font:18px/1.75 "Iowan Old Style",Palatino,Georgia,serif}main.chap{max-width:820px;margin:0 auto;padding:36px 22px 30px}.chap .kk{font:12px/1 "Space Mono",monospace;letter-spacing:.18em;text-transform:uppercase;color:#9a6a1a}.chapnav{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;margin:6px 0 18px;font:14px "Space Grotesk",system-ui,sans-serif}.chapnav a{color:#7a1420;text-decoration:none} .chapnav a:hover{text-decoration:underline}.chapnav .mid{display:flex;gap:14px}main.chap img{max-width:100%;height:auto}</style><style id="book-nav-fix">body .kfe-embed .kfe-header{background:#0a0e17 !important;border-bottom:1px solid rgba(212,173,92,.22)!important;backdrop-filter:none!important}body .kfe-embed .kfe-header .kfe-nav-link,body .kfe-embed .kfe-header .kfe-nav-trigger{color:rgba(226,231,239,.88)!important}body .kfe-embed .kfe-header .kfe-nav-link:hover,body .kfe-embed .kfe-header .kfe-nav-trigger:hover{color:#fff!important}body .kfe-embed .kfe-header .kfe-cta{color:#D4AD5C!important;border-color:rgba(212,173,92,.5)!important}</style><style id="tfe-enhance">
+:root{--tfe-gold:#9a6a1a;--tfe-accent:#7a1420}
+.tfe-skip{position:absolute;left:-999px;top:0;background:#0a0e17;color:#fff;padding:10px 16px;z-index:99999;border-radius:0 0 6px 0}
+.tfe-skip:focus{left:0}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #d4ad5c;outline-offset:2px}
+#tfe-prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#5ea0c0,#e94f9c);z-index:99998;transition:width .1s}
+.tfe-toolbar{position:fixed;right:16px;bottom:16px;display:flex;gap:8px;z-index:9000}
+.tfe-toolbar button{background:#0a0e17;color:#e2e8ef;border:1px solid #2a333d;border-radius:8px;padding:8px 10px;font:13px/1 'Space Grotesk',system-ui,sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.tfe-toolbar button:hover{border-color:#d4ad5c;color:#d4ad5c}
+.hlink{margin-left:.4em;color:#c9b489;text-decoration:none;opacity:0;font-weight:400}
+h2:hover .hlink,h3:hover .hlink{opacity:.8}
+.tfe-rt{display:block;font:12px/1 'Space Mono',ui-monospace,monospace;color:#8a7a52;margin:.2em 0 .6em;letter-spacing:.04em;text-transform:none}
+.tfe-navlinks{display:flex;justify-content:space-between;gap:12px;margin:26px 0 8px;padding-top:14px;border-top:1px solid #e2ded4;font:13px 'Space Grotesk',system-ui,sans-serif}
+.tfe-navlinks a{color:#7a1420;text-decoration:none} .tfe-navlinks a:hover{text-decoration:underline}
+.tfe-top{font:13px 'Space Grotesk',system-ui,sans-serif}
+nav.toc details{margin:2px 0} nav.toc details>summary{cursor:pointer;list-style:none} nav.toc details ul{margin:4px 0 8px 14px}
+nav.toc a.tfe-cur{color:#7a1420;font-weight:700}
+.tfe-extras{background:#f3efe6;border-top:2px solid #e2ded4;margin-top:40px;padding:40px 22px}
+.tfe-extras .tfe-in{max-width:820px;margin:0 auto}
+.tfe-extras h2{font-family:Georgia,'Iowan Old Style',serif;font-size:22px;margin:26px 0 10px}
+.tfe-dl{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 8px}
+.tfe-btn{display:inline-block;text-decoration:none;font:600 14px 'Space Grotesk',system-ui,sans-serif;padding:11px 16px;border-radius:8px;border:1px solid #c9c1b0;color:#7a1420;background:#fff}
+.tfe-btn.pri{background:#7a1420;color:#fff;border-color:#7a1420} .tfe-btn:hover{border-color:#7a1420}
+.tfe-cite pre{background:#fff;border:1px solid #e2ded4;border-radius:8px;padding:12px;overflow:auto;font-size:12.5px}
+.tfe-gloss dt{font-weight:700;margin-top:10px} .tfe-gloss dd{margin:2px 0 0 0;color:#3a3a38}
+.tfe-doi a{color:#7a1420}
+#tfe-lb{position:fixed;inset:0;background:rgba(8,10,14,.92);display:none;align-items:center;justify-content:center;z-index:99990;padding:24px}
+#tfe-lb.on{display:flex} #tfe-lb img{max-width:95%;max-height:92%;border-radius:8px}
+figure img,img[src^="figures/"]{cursor:zoom-in}
+/* dark reading theme */
+html.tfe-dark body{background:#0e1116 !important;color:#d7dde6 !important}
+html.tfe-dark .tfe-extras{background:#12161c !important;border-color:#242b34 !important}
+html.tfe-dark .tfe-extras h2,html.tfe-dark h1,html.tfe-dark h2,html.tfe-dark h3{color:#eef2f7 !important}
+html.tfe-dark a{color:#d4ad5c !important}
+html.tfe-dark .tfe-btn{background:#161b22 !important;color:#d4ad5c !important;border-color:#2a333d !important}
+html.tfe-dark .tfe-btn.pri{background:#7a1420 !important;color:#fff !important}
+html.tfe-dark .tfe-cite pre,html.tfe-dark table,html.tfe-dark td,html.tfe-dark th{background:#12161c !important;color:#cfd6df !important;border-color:#242b34 !important}
+html.tfe-dark nav.toc a{color:#c7d0dc !important}html.tfe-dark nav.toc{background:#12161c !important;border-color:#242b34 !important}html.tfe-dark nav.toc h2,html.tfe-dark nav.toc summary,html.tfe-dark nav.toc strong{color:#e6ebf2 !important}html.tfe-dark .tfe-navlinks{border-color:#242b34 !important}html.tfe-dark .tfe-rt{color:#9aa88f !important}
+@media print{.tfe-toolbar,#tfe-prog,.kfe-header{display:none !important}}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": ["Chapter", "Article"], "name": "The Simulation Register & Proofs", "headline": "The Simulation Register & Proofs", "position": 34, "isPartOf": {"@type": "Book", "name": "The Fusion Energy Equations", "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/", "identifier": "https://doi.org/10.5281/zenodo.22179328"}, "author": {"@type": "Person", "name": "P. I. Ford"}, "publisher": {"@type": "Organization", "name": "Kronos Fusion Energy"}, "inLanguage": "en", "isAccessibleForFree": true, "license": "https://creativecommons.org/licenses/by/4.0/", "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/chapters/the-simulation-register-proofs.html"}</script><style id="rl-css">.readlisten{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#f3efe6;border:1px solid #e2ded4;border-radius:12px;padding:12px 16px;margin:0 0 8px;font:14px "Space Grotesk",system-ui,sans-serif}.readlisten .rl-lbl{color:#6b7480}.readlisten .rl-opt{font-weight:600;color:#7a1420}.readlisten .rl-listen{background:#7a1420;color:#fff;border:0;border-radius:8px;padding:8px 14px;cursor:pointer;font:inherit;font-weight:600}.readlisten .rl-listen:hover{background:#611019}.rl-player{margin:0 0 20px}.rl-player .rl-voice{display:inline-flex;gap:6px;margin-bottom:8px}.rl-player .rl-voice button{background:#fff;border:1px solid #c9c1b0;border-radius:20px;padding:5px 14px;cursor:pointer;font:13px "Space Grotesk";color:#5b6675}.rl-player .rl-voice button.on{background:#0a0e17;color:#fff;border-color:#0a0e17}.rl-player audio{width:100%;max-width:560px;display:block}.rl-note{color:#8a7a52;font:12px "Space Mono",monospace;margin:6px 0 0}html.tfe-dark .readlisten,html.tfe-dark .rl-player .rl-voice button{background:#12161c!important;border-color:#242b34!important;color:#c7d0dc!important}html.tfe-dark .readlisten .rl-lbl{color:#8792a0!important}</style></head><body><!-- ══════════════════════════════════════════════════════════════════════════
+     KRONOS FUSION ENERGY — GLOBAL HEADER + FOOTER (self-contained embed)
+     Paste this entire block into the <body> of any static page.
+     • all CSS inline in one <style> block (only external ref: Google Fonts link)
+     • logo is inline SVG
+     • dropdowns work with plain CSS + vanilla JS (no React, no bundler)
+     • all links are absolute paths on kronosfusionenergy.com
+     ══════════════════════════════════════════════════════════════════════ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+/* ── Kronos embed scope ───────────────────────────────────────────────── */
+.kfe-embed,
+.kfe-embed *,
+.kfe-embed *::before,
+.kfe-embed *::after { box-sizing: border-box; }
+
+.kfe-embed {
+  --kfe-bg:        #1f2733;
+  --kfe-bg-deep:   #0f141c;
+  --kfe-bg-panel:  rgba(15, 20, 28, 0.98);
+  --kfe-fg:        #dfe4ec;
+  --kfe-accent:    #e8c476;
+  --kfe-border:    rgba(150, 165, 190, 0.28);
+  --kfe-sans: "Space Grotesk", system-ui, -apple-system, Segoe UI, sans-serif;
+  --kfe-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-family: var(--kfe-sans);
+  color: var(--kfe-fg);
+  -webkit-font-smoothing: antialiased;
+}
+.kfe-embed a { text-decoration: none; color: inherit; }
+.kfe-embed ul { list-style: none; margin: 0; padding: 0; }
+.kfe-embed button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+
+/* ── Header ───────────────────────────────────────────────────────────── */
+.kfe-header {
+  position: sticky; top: 0; z-index: 9000;
+  height: 80px;
+  background: rgba(15, 20, 28, 0.92);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--kfe-border);
+}
+.kfe-header-inner {
+  max-width: 1440px; margin: 0 auto; height: 100%;
+  padding: 0 20px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.kfe-brand { display: flex; align-items: center; gap: 12px; }
+.kfe-brand svg { width: 52px; height: 52px; flex: none; }
+.kfe-brand-text { display: flex; flex-direction: column; line-height: 1; }
+.kfe-brand-text b {
+  font-family: var(--kfe-mono); font-size: 14px; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+}
+.kfe-brand-text span {
+  font-family: var(--kfe-mono); font-size: 9px; margin-top: 4px;
+  letter-spacing: 0.25em; text-transform: uppercase; color: rgba(223,228,236,.55);
+}
+
+.kfe-nav { display: flex; align-items: center; gap: 4px; }
+.kfe-nav > li { position: relative; }
+.kfe-nav-link, .kfe-nav-trigger {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 12px; border-radius: 2px;
+  font-size: 12px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase;
+  color: rgba(223,228,236,.72); transition: color .15s, background .15s;
+  white-space: nowrap;
+}
+.kfe-nav-link:hover, .kfe-nav-trigger:hover,
+.kfe-nav li.kfe-open > .kfe-nav-trigger { color: var(--kfe-accent); background: rgba(232,196,118,.07); }
+.kfe-caret { width: 10px; height: 10px; transition: transform .18s; }
+.kfe-nav li.kfe-open .kfe-caret { transform: rotate(180deg); }
+
+.kfe-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 18px; border-radius: 2px;
+  font-family: var(--kfe-mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: #14181f; background: var(--kfe-accent);
+  border: 1px solid var(--kfe-accent); transition: opacity .15s;
+}
+.kfe-cta:hover { opacity: .85; }
+
+.kfe-dropdown {
+  position: absolute; top: 100%; left: 0; margin-top: 4px;
+  min-width: 260px; padding: 8px 0;
+  background: var(--kfe-bg-panel);
+  border: 1px solid var(--kfe-border);
+  box-shadow: 0 16px 40px rgba(5, 8, 12, .7);
+  backdrop-filter: blur(20px);
+  opacity: 0; visibility: hidden; transform: translateY(-6px);
+  transition: opacity .16s, transform .16s, visibility .16s;
+}
+.kfe-dropdown::before {
+  content: ""; position: absolute; top: -1px; left: 0; right: 0; height: 1px;
+  background: rgba(232,196,118,.45);
+}
+.kfe-nav li.kfe-open > .kfe-dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+.kfe-nav li:last-child .kfe-dropdown { left: auto; right: 0; }
+.kfe-dropdown a {
+  display: block; padding: 9px 18px;
+  font-size: 12.5px; letter-spacing: .02em; color: rgba(223,228,236,.72);
+  border-left: 2px solid transparent; transition: all .14s;
+}
+.kfe-dropdown a:hover {
+  color: var(--kfe-accent); background: rgba(232,196,118,.06);
+  border-left-color: var(--kfe-accent);
+}
+
+/* ── Mobile ───────────────────────────────────────────────────────────── */
+.kfe-burger { display: none; padding: 10px; }
+.kfe-burger svg { width: 22px; height: 22px; }
+.kfe-mobile {
+  display: none; position: fixed; inset: 80px 0 0 0; z-index: 8999;
+  overflow-y: auto; padding: 16px 20px 60px;
+  background: rgba(15, 20, 28, .985); backdrop-filter: blur(16px);
+}
+.kfe-mobile.kfe-open { display: block; }
+.kfe-mobile details { border-bottom: 1px solid rgba(150,165,190,.16); }
+.kfe-mobile summary {
+  list-style: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 48px; padding: 12px 4px;
+  font-size: 13px; letter-spacing: .1em; text-transform: uppercase;
+  color: rgba(223,228,236,.85);
+}
+.kfe-mobile summary::-webkit-details-marker { display: none; }
+.kfe-mobile details[open] summary { color: var(--kfe-accent); }
+.kfe-mobile details a, .kfe-mobile > a {
+  display: flex; align-items: center; min-height: 44px; padding: 10px 4px 10px 16px;
+  font-size: 13.5px; color: rgba(223,228,236,.68);
+}
+.kfe-mobile > a { border-bottom: 1px solid rgba(150,165,190,.16); text-transform: uppercase; letter-spacing: .1em; font-size: 13px; padding-left: 4px; }
+.kfe-mobile .kfe-cta { margin-top: 20px; width: 100%; justify-content: center; min-height: 48px; }
+
+@media (max-width: 1180px) {
+  .kfe-nav, .kfe-header .kfe-cta { display: none; }
+  .kfe-burger { display: inline-flex; }
+}
+
+/* ── Footer ───────────────────────────────────────────────────────────── */
+.kfe-footer {
+  position: relative; background: var(--kfe-bg-deep);
+  border-top: 1px solid rgba(232,196,118,.25);
+}
+.kfe-footer-inner { max-width: 1280px; margin: 0 auto; padding: 56px 20px 40px; }
+.kfe-footer-brand { display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px; }
+.kfe-footer-brand .kfe-brand svg { width: 44px; height: 44px; }
+.kfe-footer-tag { max-width: 460px; font-size: 12px; line-height: 1.7; color: rgba(223,228,236,.5); }
+.kfe-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
+.kfe-col h3 {
+  margin: 0 0 12px; font-family: var(--kfe-mono); font-size: 10px; font-weight: 400;
+  letter-spacing: .18em; text-transform: uppercase; color: rgba(223,228,236,.4);
+}
+.kfe-col a {
+  display: block; padding: 5px 0; font-size: 13.5px;
+  color: rgba(223,228,236,.6); transition: color .15s;
+}
+.kfe-col a:hover { color: var(--kfe-accent); }
+.kfe-bottom {
+  margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(150,165,190,.15);
+  display: flex; flex-wrap: wrap; align-items: center; gap: 16px; justify-content: space-between;
+}
+.kfe-bottom-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.kfe-bottom-links span, .kfe-bottom-links a {
+  font-family: var(--kfe-mono); font-size: 11px; color: rgba(223,228,236,.5);
+}
+.kfe-bottom-links a:hover { color: var(--kfe-accent); }
+.kfe-social { display: flex; align-items: center; gap: 14px; }
+.kfe-social a { color: rgba(223,228,236,.5); transition: color .15s; }
+.kfe-social a:hover { color: var(--kfe-accent); }
+.kfe-social svg { width: 17px; height: 17px; display: block; }
+.kfe-disclosure {
+  margin-top: 20px; font-size: 11px; line-height: 1.7; color: rgba(223,228,236,.35);
+}
+@media (max-width: 900px) { .kfe-cols { grid-template-columns: repeat(2, 1fr); gap: 28px; } }
+@media (max-width: 560px) { .kfe-cols { grid-template-columns: 1fr; } }
+
+/* === MATCH LIVE kronosfusionenergy.com HEADER (blend + muted nav + outlined CTA) === */
+.kfe-embed .kfe-header{background:transparent!important;backdrop-filter:none!important;
+  border-bottom:1px solid transparent!important;box-shadow:none!important;
+  transition:background .4s ease,backdrop-filter .4s ease,border-color .4s ease!important}
+.kfe-embed .kfe-header.kfe-scrolled{background:rgba(20,26,34,.92)!important;
+  backdrop-filter:blur(18px)!important;border-bottom:1px solid rgba(231,235,242,.07)!important}
+.kfe-embed .kfe-nav-link,.kfe-embed .kfe-nav-trigger{color:rgba(224,229,235,.6)!important;
+  font-size:12px!important;font-weight:500!important;letter-spacing:1.8px!important;
+  text-transform:uppercase!important;background:transparent!important;border-bottom:none!important;
+  text-decoration:none!important}
+.kfe-embed .kfe-nav-link:hover,.kfe-embed .kfe-nav-trigger:hover,
+.kfe-embed .kfe-nav li.kfe-open>.kfe-nav-trigger{color:#E7EBF2!important;background:transparent!important}
+.kfe-embed .kfe-header .kfe-cta{background:transparent!important;color:#D4AD5C!important;
+  border:1px solid #D4AD5C!important;border-radius:0!important;padding:9px 16px!important;
+  font-size:10px!important;letter-spacing:2.5px!important;text-transform:uppercase!important;box-shadow:none!important}
+.kfe-embed .kfe-header .kfe-cta:hover{background:rgba(212,173,92,.12)!important;color:#E2C57E!important;opacity:1!important}
+
+</style>
+
+<!-- ── HEADER ──────────────────────────────────────────────────────────── -->
+<div class="kfe-embed">
+<header class="kfe-header">
+  <div class="kfe-header-inner">
+    <a class="kfe-brand" href="/" aria-label="Kronos Fusion Energy — home">
+      <svg viewBox="0 0 120 120" role="img" aria-hidden="true">
+        <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+          <circle cx="60" cy="60" r="50" />
+          <line x1="60" y1="16" x2="60" y2="104" />
+          <path d="M26,60 C44,42 76,42 94,60" />
+          <path d="M26,60 C44,78 76,78 94,60" />
+        </g>
+        <circle cx="60" cy="60" r="7.5" fill="#e8c476" />
+      </svg>
+      <span class="kfe-brand-text"><b>Kronos</b><span>Fusion Energy</span></span>
+    </a>
+
+    <nav aria-label="Primary">
+      <ul class="kfe-nav">
+        <li data-kfe-menu>
+          <button class="kfe-nav-trigger" aria-expanded="false">Technology
+            <svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="kfe-dropdown">
+            <a href="/how-it-works">How it works</a>
+            <a href="/hyperion">Breeder — Hyperion</a>
+            <a href="/aegis">Burner — Aegis</a>
+            <a href="/metrovolt">Burner — MetroVolt</a>
+            <a href="/ai">AI-Native Architecture</a>
+            <a href="/magnets">Magnets</a>
+            <a href="/fuel-cycle">Fuel cycle</a>
+            <a href="/safety">Safety</a>
+            <a href="/roadmap">Roadmap</a>
+          </div>
+        </li>
+        <li data-kfe-menu>
+          <button class="kfe-nav-trigger" aria-expanded="false">Solutions
+            <svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="kfe-dropdown">
+            <a href="/metrovolt">AI &amp; Data Centers</a>
+            <a href="/defense">Defense &amp; Government</a>
+            <a href="/metrovolt">Grid &amp; Baseload</a>
+            <a href="/defense">Neutron Detection</a>
+            <a href="/ai">Quantum</a>
+          </div>
+        </li>
+        <li><a class="kfe-nav-link" href="/learn/">Learn</a></li>
+        <li><a class="kfe-nav-link" href="/technical/">Technical Library</a></li>
+        <li data-kfe-menu>
+          <button class="kfe-nav-trigger" aria-expanded="false">Proof
+            <svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="kfe-dropdown">
+            <a href="/publications">Publications</a>
+            <a href="/whitepapers">Whitepapers</a>
+            <a href="/technical/">Technical Library</a>
+            <a href="/mission">Open Science &amp; Reproducibility</a>
+            <a href="/aegis/gate-honest-index.html">The Honest Gates</a>
+          </div>
+        </li>
+        <li data-kfe-menu>
+          <button class="kfe-nav-trigger" aria-expanded="false">Company
+            <svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="kfe-dropdown">
+            <a href="/mission">About / Mission</a>
+            <a href="/leadership">Leadership</a>
+            <a href="/ehs">Environment Health &amp; Safety</a>
+            <a href="/investors">Investors</a>
+            <a href="/careers">Careers</a>
+            <a href="/press">Press</a>
+            <a href="/contact">Contact</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="kfe-cta" href="/3D_Model">3D Model</a>
+
+    <button class="kfe-burger" id="kfe-burger" aria-label="Open menu" aria-expanded="false" aria-controls="kfe-mobile">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ── MOBILE MENU ─────────────────────────────────────────────────────── -->
+<div class="kfe-mobile" id="kfe-mobile">
+  <details>
+    <summary>Technology<svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></summary>
+    <a href="/how-it-works">How it works</a>
+    <a href="/hyperion">Breeder — Hyperion</a>
+    <a href="/aegis">Burner — Aegis</a>
+    <a href="/metrovolt">Burner — MetroVolt</a>
+    <a href="/ai">AI-Native Architecture</a>
+    <a href="/magnets">Magnets</a>
+    <a href="/fuel-cycle">Fuel cycle</a>
+    <a href="/safety">Safety</a>
+    <a href="/roadmap">Roadmap</a>
+  </details>
+  <details>
+    <summary>Solutions<svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></summary>
+    <a href="/metrovolt">AI &amp; Data Centers</a>
+    <a href="/defense">Defense &amp; Government</a>
+    <a href="/metrovolt">Grid &amp; Baseload</a>
+    <a href="/defense">Neutron Detection</a>
+    <a href="/ai">Quantum</a>
+  </details>
+  <a href="/learn/">Learn</a>
+  <a href="/technical/">Technical Library</a>
+  <details>
+    <summary>Proof<svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></summary>
+    <a href="/publications">Publications</a>
+    <a href="/whitepapers">Whitepapers</a>
+    <a href="/technical/">Technical Library</a>
+    <a href="/mission">Open Science &amp; Reproducibility</a>
+    <a href="/aegis/gate-honest-index.html">The Honest Gates</a>
+  </details>
+  <details>
+    <summary>Company<svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></summary>
+    <a href="/mission">About / Mission</a>
+    <a href="/leadership">Leadership</a>
+    <a href="/ehs">Environment Health &amp; Safety</a>
+    <a href="/investors">Investors</a>
+    <a href="/careers">Careers</a>
+    <a href="/press">Press</a>
+    <a href="/contact">Contact</a>
+  </details>
+  <a class="kfe-cta" href="/3D_Model">3D Model</a>
+</div>
+
+
+</div>
+<main class="chap"><div class="kk">The Fusion Energy Equations · Chapter 34 of 44</div><nav class="chapnav" aria-label="Chapter navigation"><a href="the-machines-by-the-numbers.html">&larr; The Machines, by the Numbers</a><div class="mid"><a href="./">All chapters</a><a href="../">Full book</a><a href="../audiobook/">Audiobook</a></div><a href="the-record-deposits-dois.html">The Record: Deposits &amp; DOIs &rarr;</a></nav><div class="readlisten"><span class="rl-lbl">This chapter:</span><span class="rl-opt">📖 You’re reading</span><button class="rl-listen" type="button" aria-expanded="false">🎧 Listen instead</button></div><div class="rl-player" hidden><div class="rl-voice"><button type="button" data-v="male" class="on">Male voice</button><button type="button" data-v="female">Female voice</button></div><audio controls preload="none" aria-label="Listen to this chapter"><source data-male="../audiobook/male/the-simulation-register-proofs.m4a" data-female="../audiobook/female/the-simulation-register-proofs.m4a" src="../audiobook/male/the-simulation-register-proofs.m4a" type="audio/mp4"></audio><p class="rl-note">Narration in production — this player goes live when the chapter audio lands.</p></div><section id="sec-33">
+<h1 id="the-simulation-register-proofs-33">The Simulation Register &amp; Proofs</h1>
+<p>A book that asks you to believe in a machine before it is built has one honest option: it must show its work. Not gesture at it, not summarize it, not ask you to trust that the work was done — show it, line by line, in a form a stranger can pick up and check. That is what this appendix is. Elsewhere in the book I make the argument in prose; here I lay out the ledger the prose is drawn from. Every headline number the program stands on has an entry, an origin, and a status, and none of them hides behind me.</p>
+<p>I call this the register because that is what it is: a catalog of the individual computational proofs that, taken together, define the two machines. There are dozens of them. Some are a few lines of analysis you could redo on paper. Some are Monte-Carlo scans across tens of thousands of configurations. Some are finite-element stress calculations, some are trained neural networks, some are fault-tolerant quantum resource estimates that took a documented cost model and ran it out to its unhappy conclusion. What they have in common is that each one produces a number, and each number is either right or wrong in a way the open record lets you test. The design is <em>solved</em> in the sense that these proofs close; it is not yet <em>built</em>, and this appendix is scrupulous about the difference.</p>
+<p>A word on why this is separate from the machine datasheets and from the sources note. The datasheets tell you what the machines <em>are</em>. The sources note tells you <em>where</em> the open record lives. This register tells you <em>how each number was earned</em> — which proof produced it, by what method, and how far along the road from calculation to hardware it has actually traveled. It is the connective tissue between a claim on one page and the code that generated it on another.</p>
+<h2 id="how-to-read-the-register-33">How to read the register</h2>
+<p>Each entry has four columns. An <strong>ID</strong> — a short handle (S-series for the shared physics, B for the breeder, L for the burner's tandem-mirror line, R for the REBCO magnets, D for direct energy conversion, A for the AI and control layer) so a claim in the main text can point straight at its proof. A plain statement of <strong>what it computes</strong>. The <strong>headline result</strong>, in public numbers only — physics, geometry, scores, never money. And an <strong>evidence class</strong>, which is the honest part, because it says how much weight the number can actually bear.</p>
+<p>Three evidence classes run through the whole register, and the distinction between them is the most important thing on these pages:</p>
+<ul>
+<li><strong>DERIVED</strong> — the result follows analytically, from established physics and a stated reactivity or cost basis. These are the closest to certain, because they do not depend on a simulator being faithful or a machine being built; they depend only on the mathematics being correct, which anyone can check with a pencil and enough patience. A derived result can still be <em>applied</em> wrongly, but it cannot be <em>faked</em>.</li>
+<li><strong>RECOMPUTED</strong> — the number is produced by a deposited, reproducible script. Pull the deposit, run the driver, and the figure regenerates. Some of these reproduce byte-for-byte (the Monte-Carlo engines, the quantum resource estimates, the statevector results, the calibration curves); some, where a trained model is involved, reproduce as a tight tolerance band across fixed random seeds rather than to the last digit, and I say so where it matters. Recomputed means <em>reproducible on paper</em>. It does not mean <em>demonstrated in steel</em>.</li>
+<li><strong>VALIDATION-PENDING</strong> — the number is a design-point target or a physical requirement that no hardware has yet met. These are the frontier. They are not guesses — each is the output of a real calculation — but they name a thing the program must still go and prove against the physical world. The scientific gain of the breeder is here. The burner's end-plug density is here. Honesty demands they be flagged as clearly as the results that are already in hand.</li>
+</ul>
+<p>That is the whole scheme. It maps onto the spine of the book: this register is the evidence for <strong>Q40</strong> — the fortyfold energy return that is the physics half of the three forties — and it is deliberately conservative about which parts of that case are settled and which are still owed.</p>
+<h2 id="shared-and-general-physics-s-series-33">Shared and general physics (S-series)</h2>
+<p>The program opens, in the breeder paper, with a set of results that belong to no single machine. They are statements about any deuterium-burning plasma, and they matter because they clear away a great deal of wishful thinking before a single design choice is made. They are almost all DERIVED, which is exactly why they are load-bearing: they do not ask you to trust a simulator.</p>
+<div class="tw"><table>
+<tr><th>ID</th><th>What it computes</th><th>Headline result</th><th>Evidence</th></tr>
+<tr><td>S1</td><td>Charged-particle self-heating vs bremsstrahlung in a pure deuterium plasma</td><td>Four independent routes give <strong>0.984 to 1.121</strong> at 107–109 keV — they straddle unity, so pure D–D sits on a radiation knife-edge and every neglected loss channel is strictly negative</td><td>DERIVED</td></tr>
+<tr><td>S2</td><td>Whether plasma gain in a D–D device saturates as confinement improves</td><td>Because photons leave at <em>c</em>, radiation is not a transport channel; gain saturates without bound and the peak fusion-to-bremsstrahlung ratio is only <strong>1.589</strong> at 108 keV (Z_eff = 1)</td><td>DERIVED</td></tr>
+<tr><td>S3</td><td>The dependence of the radiation ratio on plasma purity</td><td>The fusion-to-radiation ratio is <strong>affine in Z_eff, not inverse</strong> — critical Z_eff = <strong>1.045</strong> at 108 keV — so any impurity-tolerance claim must name the species and the temperature</td><td>DERIVED</td></tr>
+<tr><td>S4</td><td>Whether "charged power" and "directed, recoverable power" are the same quantity</td><td>They are not; directed power available to direct conversion is strictly less than total charged power, a distinction that governs the entire burner balance</td><td>DERIVED</td></tr>
+</table></div>
+<p>Read S1 and S2 together and you have the reason this program does not chase pure deuterium-deuterium fusion as a power source, however tempting its abundant fuel. The self-heating and the radiation losses are equal to within the uncertainty of the underlying reaction-rate data — the plasma sits on a knife-edge — and even in the best case the fusion power beats the radiation power by a factor of only about 1.6, once, at one temperature. There is no confinement miracle that rescues this, because improving confinement cannot suppress a loss that travels at the speed of light. That is a derived fact, not a modeling opinion, and it is why the question "how much better must confinement get for D–D to work?" is, as the paper puts it bluntly, malformed. S3 does the same demolition to the loose claim that a little impurity does not matter: the penalty is affine, so the tolerance is real but small and must always be quoted with its temperature. S4 is the quiet one that pays off later — the recognition that the charged fusion products carry a birth energy which is <em>not</em> the same as the directed energy you can actually collect at the exhaust, a distinction the direct-energy-conversion work (D-series) turns into its central result.</p>
+<h2 id="the-breeder-hyperion-b-series-33">The breeder — Hyperion (B-series)</h2>
+<p>Hyperion is a deuterium–tritium spherical tokamak whose purpose is to <em>make fuel</em>, not electricity: tritium, helium-3, and 14 MeV neutrons for materials qualification. On a full engineering balance it is net-negative on power, and that is by design. The B-series proofs establish that a compact machine can meet a national-scale fuel requirement, and they are candid about the one thing that remains a target rather than a result — the plasma gain itself.</p>
+<div class="tw"><table>
+<tr><th>ID</th><th>What it computes</th><th>Headline result</th><th>Evidence</th></tr>
+<tr><td>B1</td><td>Minimum plasma current meeting a tritium-production duty, scanned across the design space</td><td>Across <strong>25,200 configurations</strong> (checked by an independent aspect-ratio sweep of <strong>2.36 × 10⁶</strong> evaluations), the minimum current for a 1.87–4.0 kg/yr duty falls from <strong>15.52 MA</strong> (D–D) to <strong>4.93 MA</strong> (D–T) — about a third of a flagship conventional tokamak's</td><td>RECOMPUTED</td></tr>
+<tr><td>B2</td><td>The frozen design point (config 22021)</td><td>R₀ = 1.2 m, A = 2.5, δ = −0.30, I_p = <strong>9.66 MA</strong>, B₀ = 8 T, P_fus = <strong>85.04 MW</strong>, Q_sci = <strong>3.076</strong></td><td>VALIDATION-PENDING</td></tr>
+<tr><td>B3</td><td>Tritium breeding ratio vs blanket design</td><td>Bare ⁶Li blanket sub-unity; frozen lever <strong>1.03–1.06</strong> (literal recipe, Be 9.6–11.8 vol%) → <strong>1.18–1.20</strong> (5 cm solid-Be), OpenMC / ENDF-B-VIII.0</td><td>RECOMPUTED (lever 1.03–1.20) · VALIDATION-PENDING (FOAK measured TBR)</td></tr>
+<tr><td>B4</td><td>Helium-3 yield and the destructive burn-up channel</td><td>He-3 is bred independently of the blanket; the destructive n + ³He → p + T channel removes only <strong>0.18 ppm</strong> of the helium-3 on the staged-extraction path</td><td>RECOMPUTED</td></tr>
+<tr><td>B5</td><td>Equilibrium tritium inventory on site</td><td><strong>6.2 kg</strong>, inside existing civil licensing precedent</td><td>RECOMPUTED</td></tr>
+<tr><td>B6</td><td>Exhaust handling under negative triangularity</td><td>Negative triangularity eliminates edge-localized modes (an ELM-free edge is externally demonstrated at δ_avg = −0.5); the trade is a narrow scrape-off layer, λ_q ≈ <strong>0.202 mm</strong> and ~<strong>14.3 GW/m²</strong> upstream parallel heat flux</td><td>DERIVED</td></tr>
+</table></div>
+<p>The heart of the breeder case is B1 and B2, and it is worth being precise about why they carry different evidence classes. B1 is a scan: the program took the governing physics — pressure-limited operation at fixed beta — and asked, across a very large space of machine configurations, what the <em>minimum</em> plasma current is that still meets the fuel-production duty. That the answer for deuterium–tritium (4.93 MA) is a third of the current for pure deuterium–deuterium (15.52 MA) is a recomputed result, because it comes out of a deposited scan you can rerun, and it is cross-checked by a second, independent sweep of over two million evaluations. This is the proof behind the sentence "fuel follows purpose": D–D would make more tritium per unit of fusion energy, but it costs so much more current to run that D–T is the correct breeder fuel anyway.</p>
+<p>B2 is different, and I flag it VALIDATION-PENDING deliberately. The frozen design point — configuration 22021, at 9.66 MA, delivering 85.04 MW of fusion power at a scientific gain of 3.076 — <em>closes</em> in the scan. The arithmetic is real and reproducible. But the gain of 3.076 is a design-point target that no device has yet demonstrated: the best any machine has achieved to date is a scientific Q of about 0.7. This is the single most important honesty in the whole book, and I will not let a reproducible calculation borrow the credibility of a hardware result. The gain is <em>solved</em> on paper. It is not <em>built</em>. The register says so in the evidence column, not in a footnote.</p>
+<p>B3 carries a split evidence class for the same reason. The lever values are recomputed in the deposited neutronics and is already net-breeding — the blanket makes more tritium than the plasma burns. The headline TBR of 1.8 that the machines are specified to is above that demonstrated figure; it corresponds to an advanced blanket and is carried, openly, as a development target rather than a delivered result. Both numbers appear because hiding the gap between them would be exactly the kind of quiet substitution this appendix exists to prevent.</p>
+<h2 id="the-burner-the-d-he-tandem-mirror-l-series-33">The burner — the D–³He tandem mirror (L-series)</h2>
+<p>The burner is the later act: a deuterium–helium-3 tandem-mirror generator that <em>burns</em> the fuel the breeder makes, for firm, low-neutron power, in two housings — Aegis for fixed defense sites and MetroVolt for data centers. Its physics is genuinely harder than the breeder's, and the L-series is where the program is most exposed, because it names an open requirement rather than absorbing it into an optimistic assumption. The 40-year horizon in the three forties, and the $40/MWh that lives with this machine, both depend on the L-series requirements eventually being met — and on cheap lunar helium-3 to fuel it.</p>
+<div class="tw"><table>
+<tr><th>ID</th><th>What it computes</th><th>Headline result</th><th>Evidence</th></tr>
+<tr><td>L1</td><td>Engineering power balance on measured component efficiencies</td><td>Using ions-only direct conversion at the best measured ion-tube efficiency (η_ion = <strong>0.470</strong>), the device closes with <strong>Q_E = 1.318</strong> at the design operating point (x_³He = 0.30), for net <strong>+850 to +2832 MWe</strong> across the 440–1400 m configurations — <em>provided</em> the end plug reaches the required density</td><td>RECOMPUTED</td></tr>
+<tr><td>L2</td><td>Neutron power fraction of the fuel cycle</td><td><strong>f_n = 5.44%</strong> at the design point — low-neutron, roughly an order of magnitude below D–T (not aneutronic); closure holds across x_³He ∈ [0.20, 0.43], with f_n running 9.52% → 2.77%</td><td>DERIVED</td></tr>
+<tr><td>L3</td><td>The end-plug density the balance requires</td><td>Plug-to-central density ratio <strong>n_p/n_c ≈ 16</strong> (~4 × 10²¹ m⁻³), roughly two orders of magnitude above any operated tandem-mirror plug — the design's single largest open requirement; at the reference ratio the balance falls to Q_E = 0.63, and pure D–D never closes (Q_E = 0.42)</td><td>VALIDATION-PENDING</td></tr>
+<tr><td>L4</td><td>Synchrotron reabsorption scaling</td><td>The effective harmonic cutoff is <strong>not</strong> a fixed plasma property but scales as <strong>n\* ∝ a^(1/3)</strong> — synchrotron loss is a function of machine size, not a fixed fraction of fusion power</td><td>DERIVED</td></tr>
+<tr><td>L5</td><td>Why pure deuterium cannot close the balance</td><td>The failure is a charged-power budget, not confinement: charged power is a factor <strong>~5.8</strong> short of the axial loss (697 vs 4055 MW at 440 m, length-independent)</td><td>RECOMPUTED</td></tr>
+<tr><td>L6</td><td>The end-plug thermal barrier</td><td>The one real physics gate: attempted on a historical tandem mirror, which returned a measured negative; it is named as a requirement, not claimed as solved</td><td>VALIDATION-PENDING</td></tr>
+</table></div>
+<p>L1 is the burner's closure proof, and it is honest about being conditional. The balance closes — positive engineering gain, no requirement-class efficiency in the ledger, using only efficiencies that have actually been measured on hardware — but it closes <em>provided</em> the end plug can hold the density ratio in L3. That proviso is the whole game. The plug density needed, n_p/n_c ≈ 16, is about two orders of magnitude beyond anything an operated tandem mirror has achieved, and I mark it VALIDATION-PENDING because it is the largest single open requirement in the program. At the more conservative reference plug ratio the balance does not close (Q_E drops to 0.63). The program does not paper over this; it states the number, states the gap, and calls the thermal barrier that governs the plug (L6) the one real physics gate the burner has to clear.</p>
+<p>The genuinely new physics in the L-series is L4, and it is DERIVED because it is a result about how the equations scale rather than a fit to a simulation. The finding is that synchrotron reabsorption — the degree to which the plasma reabsorbs its own emitted radiation — depends on the size of the machine, through the one-third power of the minor radius, rather than being a fixed fraction of the fusion power as the field had generally treated it. That single scaling reorganizes how you think about losses in a large mirror. L5 is the recomputed proof of <em>why</em> the low-neutron advantage of D–³He cannot simply be traded for pure deuterium: the shortfall is in the charged-power budget, and it is a factor of nearly six, which no amount of better confinement closes.</p>
+<h2 id="the-rebco-magnets-r-series-33">The REBCO magnets (R-series)</h2>
+<p>Both machines live or die on their high-field superconducting magnets, and the magnet paper's central result is an honest negative — a case where the calculation says <em>this does not close as drawn</em>. That is exactly the kind of result a reproducibility-first program should be proud to publish, and the R-series reports it in full.</p>
+<div class="tw"><table>
+<tr><th>ID</th><th>What it computes</th><th>Headline result</th><th>Evidence</th></tr>
+<tr><td>R1</td><td>Verification of the winding-mechanics method</td><td>One bore-resolved mechanics, validated to <strong>0.8%</strong> against a closed-form elasticity solution — an independent ground truth before any design is judged</td><td>RECOMPUTED</td></tr>
+<tr><td>R2</td><td>Breeder centrepost magnet</td><td>Stress-comfortable at a realizable <strong>~20 T-on-conductor</strong> point (the frozen design’s on-conductor peak for 8 T on-axis); the binding limit here is coil-field and neutron lifetime, not stress</td><td>RECOMPUTED</td></tr>
+<tr><td>R3</td><td>Burner end-plug magnet — the honest negative</td><td>At its physically required bore (0.648 m), the plug is stress- and strain-bound: peak hoop stress <strong>2.7–3.9×</strong> the reinforced allowable and inner-turn strain <strong>4.6–6.5×</strong> the 0.40% irreversible cap, with engineered pre-load reducing peak strain by only <strong>~11%</strong></td><td>RECOMPUTED</td></tr>
+<tr><td>R4</td><td>What the conductor material permits vs what a coil can realize</td><td>REBCO's upper critical field exceeds <strong>100 T</strong>, so a 35 T operating point is one-third of the material limit — the constraint is winding mechanics and bore, not the superconductor</td><td>DERIVED</td></tr>
+</table></div>
+<p>The R-series is a study in keeping two things separate: what the <em>material</em> can do and what a <em>coil</em> can do. R4 is the derived statement that the superconductor itself is nowhere near its ceiling — a 35 T operating field is a third of REBCO's upper critical field. R2 shows the breeder centrepost is comfortable on stress at the field it needs; its real limits are elsewhere (how much field the geometry can produce, and how long the conductor survives the neutron flux). And then R3 is the negative the program refuses to hide: at the bore the burner's high-field end-plug physically requires, the winding is over its stress allowance by up to a factor of four and over its irreversible-strain cap by up to a factor of six-and-a-half, and the usual trick of engineered pre-load buys only about eleven percent of relief. The point of R1 is that you can trust R3, because the mechanics that produced it was first checked against a closed-form solution to within 0.8%. A program willing to publish R3 at full strength is a program you can believe when it publishes a result that closes.</p>
+<h2 id="direct-energy-conversion-d-series-33">Direct energy conversion (D-series)</h2>
+<p>Direct energy conversion is the burner's promise of capturing charged fusion products as electricity without a steam cycle. The D-series delivers a genuinely counterintuitive result and is honest that the technique is a bounded upside lever, not the machine's closure mechanism.</p>
+<div class="tw"><table>
+<tr><th>ID</th><th>What it computes</th><th>Headline result</th><th>Evidence</th></tr>
+<tr><td>D1</td><td>The composition of the axial loss stream at reactor temperature</td><td>Although the 14.66 MeV D–³He proton carries ≈80% of the charged birth energy, at T_i = 80 keV it thermalizes on the electrons before it can escape; the axial exit is a thermalized split — <strong>≈55.5% electron/thermal, ≈44.5% directed ion</strong> — an inversion of the received picture that holds across 20–200 keV</td><td>DERIVED</td></tr>
+<tr><td>D2</td><td>A quasineutral two-species expander to recover the electron channel</td><td>One worked embodiment (expansion ratio 20, 5 T → 0.25 T) recovers a bounded <strong>≈28%</strong> of the electron channel after realistic demagnetization and detachment losses, without the space-charge back-emission wall</td><td>RECOMPUTED</td></tr>
+<tr><td>D3</td><td>What the expander actually buys at the plant level</td><td>It lifts axial electric recovery by <strong>≈13% (≈97 MWe)</strong> but moves plant energy multiplication only from <strong>Q_E = 1.0023 to 1.0026</strong>, because Q_E is gated by recirculating plug power, not by DEC</td><td>RECOMPUTED</td></tr>
+</table></div>
+<p>The D-series is the payoff of S4, the shared-physics observation that directed power is not the same as charged power. D1 is the derived surprise: the fast proton that everyone designs an ion converter around does not, at reactor temperature, arrive at the exhaust as a directed ion — it has already dumped most of its energy onto the electrons, so the loss stream is <em>majority electron</em>, a fact no conventional direct converter is built to recover. D2 proposes and recomputes a device that recovers about a quarter of that electron channel by running an ambipolar magnetic nozzle backward. D3 is the honesty: even done well, this lifts the plant energy multiplication by a few parts in ten thousand, because the thing that actually gates the burner is the recirculating power of the end plug, not the efficiency of the exhaust. DEC is a real lever and a real piece of physics; it is not, and the paper says plainly it is not, the burner's closure mechanism. (These Q_E figures come from the DEC study's own conservative, electron-inclusive balance and should not be read against the burner paper's L1 gain, which uses a different convention — a caution the register makes explicit rather than letting the two numbers collide.)</p>
+<h2 id="ai-control-and-quantum-a-series-33">AI, control, and quantum (A-series)</h2>
+<p>The control and computation layer is where the program has the most results that are working <em>now</em>, on the digital twin, with hard numbers — and the most disciplined accounting of what does not work. It holds three technology tiers strictly apart: physics-informed machine learning is deployable now, in the loop, when its error is bounded and deterministically clamped; quantum <em>sensing</em> is a near-term diagnostics technology; and quantum <em>computation</em> is, for fusion, an offline calibration tier with no advantage this decade — a point the program makes plainly rather than selling. The program's AI work is developed as a member of NVIDIA's Inception program, the one external partner named in this book.</p>
+<div class="tw"><table>
+<tr><th>ID</th><th>What it computes</th><th>Headline result</th><th>Evidence</th></tr>
+<tr><td>A1</td><td>The deterministic safety clamp</td><td>Across 15 runs / 150,000 control steps with 3000 injected limit violations, the rules-engine clamp caught <strong>3000/3000 with zero escapes</strong></td><td>RECOMPUTED</td></tr>
+<tr><td>A2</td><td>The calibration spine — injecting high-fidelity anchors into a control surrogate</td><td>Surrogate error drops up to <strong>1691×</strong> on a chemistry benchmark (5 anchors), <strong>36.8×</strong> on a plasma-transport closure (8 anchors, 0.82% rel), and <strong>7475×</strong> on the magnet surrogate — the mechanism transfers across domains</td><td>RECOMPUTED</td></tr>
+<tr><td>A3</td><td>Disruption prediction ensemble</td><td>AUC <strong>0.990</strong> (false-alarm rate 4.0%) on twin-synthetic pulses anchored to a real operating space; honest miss kept — median warning 22.3 ms against a 30 ms target — with an out-of-distribution layer handing unseen classes to the hardware failsafe (missed-alarm ~0.9 → 0)</td><td>RECOMPUTED</td></tr>
+<tr><td>A4</td><td>Fused magnet quench precursor</td><td>A fiber-Bragg-strain + magnetization ensemble gives <strong>47.2 ms</strong> of warning versus 2.6 ms for terminal-voltage detection (AUC 0.9998)</td><td>RECOMPUTED</td></tr>
+<tr><td>A5</td><td>Formal control-barrier certificate</td><td>Forward-invariance of the safe set proven on 3 of 4 faces at ±3σ, and proven <em>preserved through a gated calibration update</em> — a barrier-floored margin restores invariance <strong>10/10</strong> where the as-filed gate breaks 1/10</td><td>RECOMPUTED</td></tr>
+<tr><td>A6</td><td>The as-built-data-driven magnet twin</td><td>Per-coil qualification recovers <strong>+30.0%</strong> usable winding-pack current density vs worst-case derating, and a computed per-turn pre-load brings all 82 turns' operating strain to <strong>0.017%</strong> against the 0.40% limit</td><td>RECOMPUTED</td></tr>
+<tr><td>A7</td><td>Equilibrium surrogate — the kept negative</td><td>A Fourier neural operator reaches <strong>2.5%</strong> relative flux error on the breeder equilibrium (0.16% on the mirror), missing the 1% target; positioned honestly as a warm-start accelerator, not a fast native solver</td><td>RECOMPUTED</td></tr>
+<tr><td>A8</td><td>Fault-tolerant quantum resource estimates</td><td><strong>No crossover this decade</strong> for three fusion kernels; the equilibrium linear solve alone needs ≈<strong>1.8 × 10¹⁷</strong> T-gates once read-in/read-out are counted — reported as a pre-registered negative</td><td>RECOMPUTED</td></tr>
+<tr><td>A9</td><td>Quantum-inspired tensor-network kinetic solver</td><td><strong>21.2×</strong> over the classical baseline at bond dimension d = 7, and the only feasible method at d ≥ 10, validated to machine precision (10⁻¹⁵) against exact diagonalization</td><td>RECOMPUTED</td></tr>
+<tr><td>A10</td><td>De-circularization against independent codes</td><td>The twin equilibrium validated against the independent open-source FreeGS solver to <strong>2.66%</strong> field error (circularity index halved, 0.348 → 0.165), and 19/19 engineering assumptions tagged against a public design corpus</td><td>RECOMPUTED</td></tr>
+</table></div>
+<p>Two entries deserve emphasis because they show the register's ethic working in both directions. A1 is the safety proof the whole architecture is built to earn: three thousand deliberately injected limit violations, three thousand caught, zero escapes over a hundred and fifty thousand control steps. The safety case does not rest on the learned model being right — it rests on a deterministic clamp that projects every command onto the safe set before it reaches a coil, with a hardware failsafe outside the loop entirely, and A5 turns that empirical result into a formal forward-invariance certificate that survives even an online calibration update. That is the difference between "our AI is good" and "our AI cannot drive the machine out of the safe set even when it is wrong."</p>
+<p>And A7 is the kept negative, published at full strength alongside the wins: the physics-informed equilibrium surrogate did <em>not</em> become the fast native solver it was hoped to be — it lands at 2.5% error against a 1% target on the breeder geometry — so the program reframes it as a warm-start accelerator and reports the miss rather than the aspiration. A8 is a negative of a different kind, and a deliberate one: a full fault-tolerant resource estimate for three fusion computing kernels finds no quantum-computing advantage this decade, with the equilibrium solve needing an astronomical T-gate count once you honestly account for getting data in and out. The program leads with that result rather than burying it, and then shows in A9 where a quantum-<em>inspired</em> classical method genuinely does win today. This is what "no near-term quantum-computing advantage" looks like when it is proven rather than asserted.</p>
+<h2 id="the-deposited-record-and-how-to-rerun-it-33">The deposited record and how to rerun it</h2>
+<p>Every number in this register lives in a permanent public deposit. A DOI — a digital object identifier — is a permanent address that does not rot, move, or quietly change, which is precisely the property a reproducible claim needs, because it lets someone revisit the exact record that produced a figure years after it was printed. The five 2026 deposits, each with its DOI and a scan code, are catalogued together in the <strong>Deposits &amp; DOIs</strong> section a few pages on; that catalog is the canonical list, and this register maps to it.</p>
+<p>The two deposits the main text leans on most are the AI-and-control work and the breeder-gain analysis: everything the A-series reports regenerates from the former, and the B-series scan and gain result regenerate from the latter. To go from any ID in this register to its artifact, match its subject to the deposits catalog and follow the DOI there.</p>
+<p>Rerunning them is meant to be a mechanical act, not a negotiation. The path is the same for each deposit:</p>
+<p>1. <strong>Pull the deposit at its DOI.</strong> You get the code, the input data, the figure scripts, and a reproduction harness — a run-all driver — rather than a set of assertions. 2. <strong>Install the pinned environment.</strong> Each deposit ships exact version pins so the software stack you run is the one that produced the printed numbers, not a drifting approximation of it. 3. <strong>Run the driver from the fixed seed.</strong> The analyses regenerate from a single documented random seed (seed 20260726 in the control deposit). The Monte-Carlo engine reproduces its feasibility counts exactly from that seed. 4. <strong>Check against the manifest.</strong> A validation manifest records a checksum for each artifact. Two tiers of reproducibility apply, and the deposit is explicit about which is which. <strong>Tier-1</strong> quantities — the Monte-Carlo engines, the quantum resource estimates, the statevector results, the calibration curves — reproduce <em>byte-for-byte</em>. <strong>Tier-2</strong> quantities — anything that involves a trained model — are reported as five-seed tolerance bands rather than to the last digit, because a trained network's metrics are not byte-identical run to run, and claiming otherwise would be dishonest. 5. <strong>Compare to the page.</strong> If your regenerated number matches the one printed here, the claim has earned a little of your trust. If it does not, you have found something worth writing to the author about, and the record is specific enough that the disagreement can be located rather than argued about in the abstract.</p>
+<p>For the two machines whose physics is most often questioned, there is an even lower barrier. The reduced-order physics engines behind the breeder and burner deposits can be run live in a browser, with no installation at all, at the program's public physics-validation simulation page. You can move an input and watch a headline number move with it. That is reproducibility offered as an invitation, not a chore.</p>
+<h2 id="reproduced-on-paper-is-not-validated-in-hardware-33">Reproduced on paper is not validated in hardware</h2>
+<p>I want to close this appendix on the line it exists to hold, because everything above can be misread if this line is not stated flatly. <strong>Reproducibility and validation are not the same thing, and this book never lets the first stand in for the second.</strong></p>
+<p>Reproducibility means the design and its numbers can be independently recomputed from the open record. For the vast majority of this register — everything marked DERIVED or RECOMPUTED — that is done, now, today. Anyone with a laptop can regenerate these figures and try to break them, and the program has deposited exactly what they need to try.</p>
+<p>Validation means hardware has demonstrated those numbers in the physical world. That has <em>not</em> happened, because no machine has been built. Construction of the first breeder begins in 2027; the first tritium is targeted for around 2030. Until then, the numbers flagged VALIDATION-PENDING — the breeder's scientific gain of 3.076, the advanced-blanket TBR of 1.8, the burner's required end-plug density and its thermal barrier — are the honest frontier of the program. They are real calculations. They are not yet real results.</p>
+<p>This is what "gain solved, not scaled" means, stated as precisely as I can state it. The gain is <em>solved</em>: the design closes, the calculation reproduces, the record is open and deposited. The gain is not <em>built</em>: the best scientific Q any device has reached remains about 0.7, and the program does not claim to have exceeded it in hardware, because it has not. The honest work of the next years is to walk the VALIDATION-PENDING rows of this register, one at a time, off the page and into the machine — and to publish the results, wins and misses alike, in exactly the deposited, checkable form this appendix describes. The register is not a victory lap. It is a promissory note, written in a currency anyone can audit, and a public record of which parts of it have already been paid.</p>
+</section><nav class="chapnav" aria-label="Chapter navigation"><a href="the-machines-by-the-numbers.html">&larr; The Machines, by the Numbers</a><div class="mid"><a href="./">All chapters</a><a href="../">Full book</a><a href="../audiobook/">Audiobook</a></div><a href="the-record-deposits-dois.html">The Record: Deposits &amp; DOIs &rarr;</a></nav></main>
+<div class="kfe-embed">
+<!-- ══ PAGE CONTENT GOES HERE ══════════════════════════════════════════ -->
+
+<!-- ── FOOTER ──────────────────────────────────────────────────────────── -->
+<footer class="kfe-footer">
+  <div class="kfe-footer-inner">
+    <div class="kfe-footer-brand">
+      <a class="kfe-brand" href="/">
+        <svg viewBox="0 0 120 120" role="img" aria-hidden="true">
+          <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+            <circle cx="60" cy="60" r="50" />
+            <line x1="60" y1="16" x2="60" y2="104" />
+            <path d="M26,60 C44,42 76,42 94,60" />
+            <path d="M26,60 C44,78 76,78 94,60" />
+          </g>
+          <circle cx="60" cy="60" r="7.5" fill="#e8c476" />
+        </svg>
+        <span class="kfe-brand-text"><b>Kronos</b><span>Fusion Energy</span></span>
+      </a>
+      <p class="kfe-footer-tag">MetroVolt &amp; AEGIS · compact fusion generators on the Kronos breeder-to-burner architecture.</p>
+    </div>
+
+    <div class="kfe-cols">
+      <div class="kfe-col">
+        <h3>Technology</h3>
+        <a href="/how-it-works">How it works</a>
+        <a href="/hyperion">Breeder — Hyperion</a>
+        <a href="/aegis">Burner — Aegis</a>
+        <a href="/metrovolt">Burner — MetroVolt</a>
+        <a href="/ai">AI-Native Architecture</a>
+        <a href="/magnets">Magnets</a>
+        <a href="/fuel-cycle">Fuel cycle</a>
+        <a href="/safety">Safety</a>
+        <a href="/roadmap">Roadmap</a>
+      </div>
+      <div class="kfe-col">
+        <h3>Solutions</h3>
+        <a href="/metrovolt">AI &amp; Data Centers</a>
+        <a href="/defense">Defense &amp; Government</a>
+        <a href="/metrovolt">Grid &amp; Baseload</a>
+        <a href="/defense">Neutron Detection</a>
+        <a href="/ai">Quantum</a>
+      </div>
+      <div class="kfe-col">
+        <h3>Proof</h3>
+        <a href="/publications">Publications</a>
+        <a href="/whitepapers">Whitepapers</a>
+        <a href="/technical/">Technical Library</a>
+        <a href="/mission">Open Science &amp; Reproducibility</a>
+        <a href="/aegis/gate-honest-index.html">The Honest Gates</a>
+        <a href="/rss.xml">News RSS</a>
+      </div>
+      <div class="kfe-col">
+        <h3>Company</h3>
+        <a href="/mission">About / Mission</a>
+        <a href="/leadership">Leadership</a>
+        <a href="/ehs">Environment Health &amp; Safety</a>
+        <a href="/investors">Investors</a>
+        <a href="/careers">Careers</a>
+        <a href="/press">Press</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="kfe-bottom">
+      <div class="kfe-bottom-links">
+        <span>© 2026 Kronos Fusion Energy, Inc.</span>
+        <a href="/legal/privacy">Privacy</a>
+        <a href="/legal/terms">Terms</a>
+        <a href="/legal/legal-notices">Corrections log</a>
+        <a href="/legal/cookie-policy">Cookies</a>
+        <a href="/legal/accessibility">Accessibility</a>
+        <a href="/rss.xml">RSS</a>
+      </div>
+      <div class="kfe-social">
+        <a href="https://www.linkedin.com/company/kronosfusionenergy/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/kronosfusionenergy/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@KronosFusionEnergy" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="https://x.com/Kronos__Fusion" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <p class="kfe-disclosure">
+      Kronos Fusion Energy, Inc. is a pre-commercial technology company. Engineering figures on this
+      site reflect the frozen design point and simulation results; they are not operating measurements
+      and are not an offer to sell securities.
+    </p>
+  </div>
+</footer>
+</div>
+
+<script>
+(function () {
+  var root = document.currentScript ? document.currentScript.previousElementSibling : null;
+  var menus = document.querySelectorAll('.kfe-embed [data-kfe-menu]');
+
+  function closeAll(except) {
+    menus.forEach(function (li) {
+      if (li === except) return;
+      li.classList.remove('kfe-open');
+      var b = li.querySelector('.kfe-nav-trigger');
+      if (b) b.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  menus.forEach(function (li) {
+    var btn = li.querySelector('.kfe-nav-trigger');
+    var open = function () { closeAll(li); li.classList.add('kfe-open'); btn.setAttribute('aria-expanded', 'true'); };
+    var close = function () { li.classList.remove('kfe-open'); btn.setAttribute('aria-expanded', 'false'); };
+
+    li.addEventListener('mouseenter', open);
+    li.addEventListener('mouseleave', close);
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.contains('kfe-open') ? close() : open();
+    });
+    li.addEventListener('focusout', function (e) {
+      if (!li.contains(e.relatedTarget)) close();
+    });
+  });
+
+  document.addEventListener('click', function () { closeAll(null); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      closeAll(null);
+      var m = document.getElementById('kfe-mobile');
+      var b = document.getElementById('kfe-burger');
+      if (m) m.classList.remove('kfe-open');
+      if (b) b.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  var burger = document.getElementById('kfe-burger');
+  var mobile = document.getElementById('kfe-mobile');
+  if (burger && mobile) {
+    burger.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = mobile.classList.toggle('kfe-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+  }
+})();
+
+(function(){var h=document.querySelector('.kfe-embed .kfe-header');if(!h)return;
+var f=function(){h.classList.toggle('kfe-scrolled',(window.scrollY||document.documentElement.scrollTop)>8);};
+f();window.addEventListener('scroll',f,{passive:true});})();
+
+</script>
+<!-- ══ END KRONOS HEADER + FOOTER EMBED ═══════════════════════════════ -->
+<script>
+(function(){
+ function slug(s){return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,60)||'s';}
+ function ready(fn){if(document.readyState!='loading')fn();else document.addEventListener('DOMContentLoaded',fn);}
+ ready(function(){
+  try{
+   var body=document.body;
+   // skip link
+   var sk=document.createElement('a');sk.href='#contents';sk.className='tfe-skip';sk.textContent='Skip to contents';
+   body.insertBefore(sk,body.firstChild);
+   // progress bar
+   var pb=document.createElement('div');pb.id='tfe-prog';body.appendChild(pb);
+   function prog(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;pb.style.width=(m>0?(h.scrollTop/m*100):0)+'%';}
+   window.addEventListener('scroll',prog,{passive:true});prog();
+   // toolbar: dark toggle + top
+   var tb=document.createElement('div');tb.className='tfe-toolbar';
+   var dk=document.createElement('button');dk.type='button';dk.textContent='◐ Dark';
+   try{if(localStorage.getItem('tfe-dark')=='1'){document.documentElement.classList.add('tfe-dark');dk.textContent='◑ Light';}}catch(e){}
+   dk.onclick=function(){var on=document.documentElement.classList.toggle('tfe-dark');dk.textContent=on?'◑ Light':'◐ Dark';try{localStorage.setItem('tfe-dark',on?'1':'0');}catch(e){}};
+   var up=document.createElement('button');up.type='button';up.textContent='↑ Top';up.onclick=function(){window.scrollTo({top:0,behavior:'smooth'});};
+   tb.appendChild(dk);tb.appendChild(up);body.appendChild(tb);
+   // main + toc landmarks
+   var main=document.querySelector('main');if(main){main.id=main.id||'tfe-main';main.setAttribute('role','main');}
+   var tocnav=document.querySelector('nav.toc');if(tocnav){tocnav.setAttribute('aria-label','Table of contents');var tp=tocnav.querySelector('h2');if(tp)tp.id=tp.id||'contents';}
+   // sections: order + titles
+   var secs=[].slice.call(document.querySelectorAll('section[id^="sec-"]'));
+   secs.forEach(function(sec,i){
+     sec.setAttribute('role','doc-chapter');
+     var h=sec.querySelector('h1,h2');var ttl=h?h.textContent.trim():('Chapter '+(i+1));
+     if(h){ h.id=h.id||sec.id; if(!h.querySelector('.hlink')){var a=document.createElement('a');a.className='hlink';a.href='#'+sec.id;a.textContent='#';a.setAttribute('aria-label','Link to this section');h.appendChild(a);}
+       // read time
+       var words=(sec.textContent||'').trim().split(/\s+/).length;var mins=Math.max(1,Math.round(words/200));
+       var rt=document.createElement('span');rt.className='tfe-rt';rt.textContent=mins+' min read · '+words.toLocaleString()+' words';h.insertAdjacentElement('afterend',rt);
+     }
+     // ids for inner headings (deep-linkable)
+     [].slice.call(sec.querySelectorAll('h2,h3,h4')).forEach(function(hh){if(!hh.id){hh.id=sec.id+'-'+slug(hh.textContent);} if(!hh.querySelector('.hlink')&&hh!==h){var a2=document.createElement('a');a2.className='hlink';a2.href='#'+hh.id;a2.textContent='#';a2.setAttribute('aria-label','Link to this subsection');hh.appendChild(a2);}});
+     // prev/next + back to contents
+     var nl=document.createElement('div');nl.className='tfe-navlinks';
+     var prev=i>0?'<a href="#'+secs[i-1].id+'">&larr; Previous</a>':'<span></span>';
+     var next=i<secs.length-1?'<a href="#'+secs[i+1].id+'">Next &rarr;</a>':'<span></span>';
+     nl.innerHTML=prev+'<a class="tfe-top" href="#contents">&uarr; Contents</a>'+next;
+     sec.appendChild(nl);
+   });
+   // 2-level TOC: under each chapter link, nest its sub-headings
+   if(tocnav){
+     [].slice.call(tocnav.querySelectorAll('a[href^="#sec-"]')).forEach(function(a){
+       var sid=a.getAttribute('href').slice(1);var sec=document.getElementById(sid);if(!sec)return;
+       var subs=[].slice.call(sec.querySelectorAll('h2')).filter(function(hh){return hh.id&&hh.id!==sid;});
+       if(subs.length<2)return;
+       var li=a.closest('li');if(!li)return;
+       var det=document.createElement('details');var sm=document.createElement('summary');sm.appendChild(a.cloneNode(true));
+       var ul=document.createElement('ul');
+       subs.slice(0,24).forEach(function(hh){var l=document.createElement('li');l.innerHTML='<a href="#'+hh.id+'">'+hh.textContent.replace(/#$/,'').trim()+'</a>';ul.appendChild(l);});
+       det.appendChild(sm);det.appendChild(ul);a.replaceWith(det);
+     });
+   }
+   // scrollspy: highlight current chapter in toc
+   var links={};[].slice.call((tocnav||document).querySelectorAll('a[href^="#sec-"]')).forEach(function(a){links[a.getAttribute('href').slice(1)]=a;});
+   if('IntersectionObserver' in window){
+     var io=new IntersectionObserver(function(es){es.forEach(function(e){var a=links[e.target.id];if(!a)return;if(e.isIntersecting){for(var k in links)links[k].classList.remove('tfe-cur');a.classList.add('tfe-cur');}});},{rootMargin:'-40% 0px -55% 0px'});
+     secs.forEach(function(s){io.observe(s);});
+   }
+   // figure lightbox
+   var lb=document.createElement('div');lb.id='tfe-lb';var lbi=document.createElement('img');lb.appendChild(lbi);body.appendChild(lb);
+   lb.onclick=function(){lb.classList.remove('on');};document.addEventListener('keydown',function(e){if(e.key=='Escape')lb.classList.remove('on');});
+   body.addEventListener('click',function(e){var im=e.target;if(im.tagName=='IMG'&&/figures\//.test(im.getAttribute('src')||'')){lbi.src=im.currentSrc||im.src;lbi.alt=im.alt||'';lb.classList.add('on');}});
+  }catch(err){console&&console.warn&&console.warn('tfe enhance',err);}
+ });
+})();
+</script><script>(function(){var rl=document.querySelector(".readlisten");if(!rl)return;var pl=document.querySelector(".rl-player");rl.querySelector(".rl-listen").addEventListener("click",function(){pl.hidden=!pl.hidden;this.setAttribute("aria-expanded",pl.hidden?"false":"true");this.textContent=pl.hidden?"🎧 Listen instead":"✕ Hide player";});var au=pl.querySelector("audio"),src=pl.querySelector("source");pl.querySelectorAll(".rl-voice button").forEach(function(b){b.addEventListener("click",function(){pl.querySelectorAll(".rl-voice button").forEach(function(x){x.classList.remove("on")});b.classList.add("on");var v=b.getAttribute("data-v");src.src=src.getAttribute("data-"+v)||src.src;au.load();});});})();</script></body></html>

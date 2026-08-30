@@ -1,0 +1,675 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>To the Moon for Fuel · The Fusion Energy Equations</title><meta name="description" content="An earlier version of this book had a chapter about the Sun. Not fusion in the Sun — I mean solar power collected in orbit and beamed down, a grand tangent I allowed myself because"><meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large"><meta name="author" content="P. I. Ford"><link rel="canonical" href="https://kronosfusionenergy.com/the-fusion-energy-equations/chapters/to-the-moon-for-fuel.html"><link rel="icon" href="https://kronosfusionenergy.com/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet"><style>body{margin:0;background:#fbfaf7;color:#14181f;font:18px/1.75 "Iowan Old Style",Palatino,Georgia,serif}main.chap{max-width:820px;margin:0 auto;padding:36px 22px 30px}.chap .kk{font:12px/1 "Space Mono",monospace;letter-spacing:.18em;text-transform:uppercase;color:#9a6a1a}.chapnav{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;margin:6px 0 18px;font:14px "Space Grotesk",system-ui,sans-serif}.chapnav a{color:#7a1420;text-decoration:none} .chapnav a:hover{text-decoration:underline}.chapnav .mid{display:flex;gap:14px}main.chap img{max-width:100%;height:auto}</style><style id="book-nav-fix">body .kfe-embed .kfe-header{background:#0a0e17 !important;border-bottom:1px solid rgba(212,173,92,.22)!important;backdrop-filter:none!important}body .kfe-embed .kfe-header .kfe-nav-link,body .kfe-embed .kfe-header .kfe-nav-trigger{color:rgba(226,231,239,.88)!important}body .kfe-embed .kfe-header .kfe-nav-link:hover,body .kfe-embed .kfe-header .kfe-nav-trigger:hover{color:#fff!important}body .kfe-embed .kfe-header .kfe-cta{color:#D4AD5C!important;border-color:rgba(212,173,92,.5)!important}</style><style id="tfe-enhance">
+:root{--tfe-gold:#9a6a1a;--tfe-accent:#7a1420}
+.tfe-skip{position:absolute;left:-999px;top:0;background:#0a0e17;color:#fff;padding:10px 16px;z-index:99999;border-radius:0 0 6px 0}
+.tfe-skip:focus{left:0}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #d4ad5c;outline-offset:2px}
+#tfe-prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#5ea0c0,#e94f9c);z-index:99998;transition:width .1s}
+.tfe-toolbar{position:fixed;right:16px;bottom:16px;display:flex;gap:8px;z-index:9000}
+.tfe-toolbar button{background:#0a0e17;color:#e2e8ef;border:1px solid #2a333d;border-radius:8px;padding:8px 10px;font:13px/1 'Space Grotesk',system-ui,sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.tfe-toolbar button:hover{border-color:#d4ad5c;color:#d4ad5c}
+.hlink{margin-left:.4em;color:#c9b489;text-decoration:none;opacity:0;font-weight:400}
+h2:hover .hlink,h3:hover .hlink{opacity:.8}
+.tfe-rt{display:block;font:12px/1 'Space Mono',ui-monospace,monospace;color:#8a7a52;margin:.2em 0 .6em;letter-spacing:.04em;text-transform:none}
+.tfe-navlinks{display:flex;justify-content:space-between;gap:12px;margin:26px 0 8px;padding-top:14px;border-top:1px solid #e2ded4;font:13px 'Space Grotesk',system-ui,sans-serif}
+.tfe-navlinks a{color:#7a1420;text-decoration:none} .tfe-navlinks a:hover{text-decoration:underline}
+.tfe-top{font:13px 'Space Grotesk',system-ui,sans-serif}
+nav.toc details{margin:2px 0} nav.toc details>summary{cursor:pointer;list-style:none} nav.toc details ul{margin:4px 0 8px 14px}
+nav.toc a.tfe-cur{color:#7a1420;font-weight:700}
+.tfe-extras{background:#f3efe6;border-top:2px solid #e2ded4;margin-top:40px;padding:40px 22px}
+.tfe-extras .tfe-in{max-width:820px;margin:0 auto}
+.tfe-extras h2{font-family:Georgia,'Iowan Old Style',serif;font-size:22px;margin:26px 0 10px}
+.tfe-dl{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 8px}
+.tfe-btn{display:inline-block;text-decoration:none;font:600 14px 'Space Grotesk',system-ui,sans-serif;padding:11px 16px;border-radius:8px;border:1px solid #c9c1b0;color:#7a1420;background:#fff}
+.tfe-btn.pri{background:#7a1420;color:#fff;border-color:#7a1420} .tfe-btn:hover{border-color:#7a1420}
+.tfe-cite pre{background:#fff;border:1px solid #e2ded4;border-radius:8px;padding:12px;overflow:auto;font-size:12.5px}
+.tfe-gloss dt{font-weight:700;margin-top:10px} .tfe-gloss dd{margin:2px 0 0 0;color:#3a3a38}
+.tfe-doi a{color:#7a1420}
+#tfe-lb{position:fixed;inset:0;background:rgba(8,10,14,.92);display:none;align-items:center;justify-content:center;z-index:99990;padding:24px}
+#tfe-lb.on{display:flex} #tfe-lb img{max-width:95%;max-height:92%;border-radius:8px}
+figure img,img[src^="figures/"]{cursor:zoom-in}
+/* dark reading theme */
+html.tfe-dark body{background:#0e1116 !important;color:#d7dde6 !important}
+html.tfe-dark .tfe-extras{background:#12161c !important;border-color:#242b34 !important}
+html.tfe-dark .tfe-extras h2,html.tfe-dark h1,html.tfe-dark h2,html.tfe-dark h3{color:#eef2f7 !important}
+html.tfe-dark a{color:#d4ad5c !important}
+html.tfe-dark .tfe-btn{background:#161b22 !important;color:#d4ad5c !important;border-color:#2a333d !important}
+html.tfe-dark .tfe-btn.pri{background:#7a1420 !important;color:#fff !important}
+html.tfe-dark .tfe-cite pre,html.tfe-dark table,html.tfe-dark td,html.tfe-dark th{background:#12161c !important;color:#cfd6df !important;border-color:#242b34 !important}
+html.tfe-dark nav.toc a{color:#c7d0dc !important}html.tfe-dark nav.toc{background:#12161c !important;border-color:#242b34 !important}html.tfe-dark nav.toc h2,html.tfe-dark nav.toc summary,html.tfe-dark nav.toc strong{color:#e6ebf2 !important}html.tfe-dark .tfe-navlinks{border-color:#242b34 !important}html.tfe-dark .tfe-rt{color:#9aa88f !important}
+@media print{.tfe-toolbar,#tfe-prog,.kfe-header{display:none !important}}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": ["Chapter", "Article"], "name": "To the Moon for Fuel", "headline": "To the Moon for Fuel", "position": 26, "isPartOf": {"@type": "Book", "name": "The Fusion Energy Equations", "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/", "identifier": "https://doi.org/10.5281/zenodo.22179328"}, "author": {"@type": "Person", "name": "P. I. Ford"}, "publisher": {"@type": "Organization", "name": "Kronos Fusion Energy"}, "inLanguage": "en", "isAccessibleForFree": true, "license": "https://creativecommons.org/licenses/by/4.0/", "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/chapters/to-the-moon-for-fuel.html"}</script><style id="rl-css">.readlisten{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#f3efe6;border:1px solid #e2ded4;border-radius:12px;padding:12px 16px;margin:0 0 8px;font:14px "Space Grotesk",system-ui,sans-serif}.readlisten .rl-lbl{color:#6b7480}.readlisten .rl-opt{font-weight:600;color:#7a1420}.readlisten .rl-listen{background:#7a1420;color:#fff;border:0;border-radius:8px;padding:8px 14px;cursor:pointer;font:inherit;font-weight:600}.readlisten .rl-listen:hover{background:#611019}.rl-player{margin:0 0 20px}.rl-player .rl-voice{display:inline-flex;gap:6px;margin-bottom:8px}.rl-player .rl-voice button{background:#fff;border:1px solid #c9c1b0;border-radius:20px;padding:5px 14px;cursor:pointer;font:13px "Space Grotesk";color:#5b6675}.rl-player .rl-voice button.on{background:#0a0e17;color:#fff;border-color:#0a0e17}.rl-player audio{width:100%;max-width:560px;display:block}.rl-note{color:#8a7a52;font:12px "Space Mono",monospace;margin:6px 0 0}html.tfe-dark .readlisten,html.tfe-dark .rl-player .rl-voice button{background:#12161c!important;border-color:#242b34!important;color:#c7d0dc!important}html.tfe-dark .readlisten .rl-lbl{color:#8792a0!important}</style></head><body><!-- ══════════════════════════════════════════════════════════════════════════
+     KRONOS FUSION ENERGY — GLOBAL HEADER + FOOTER (self-contained embed)
+     Paste this entire block into the <body> of any static page.
+     • all CSS inline in one <style> block (only external ref: Google Fonts link)
+     • logo is inline SVG
+     • dropdowns work with plain CSS + vanilla JS (no React, no bundler)
+     • all links are absolute paths on kronosfusionenergy.com
+     ══════════════════════════════════════════════════════════════════════ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+/* ── Kronos embed scope ───────────────────────────────────────────────── */
+.kfe-embed,
+.kfe-embed *,
+.kfe-embed *::before,
+.kfe-embed *::after { box-sizing: border-box; }
+
+.kfe-embed {
+  --kfe-bg:        #1f2733;
+  --kfe-bg-deep:   #0f141c;
+  --kfe-bg-panel:  rgba(15, 20, 28, 0.98);
+  --kfe-fg:        #dfe4ec;
+  --kfe-accent:    #e8c476;
+  --kfe-border:    rgba(150, 165, 190, 0.28);
+  --kfe-sans: "Space Grotesk", system-ui, -apple-system, Segoe UI, sans-serif;
+  --kfe-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-family: var(--kfe-sans);
+  color: var(--kfe-fg);
+  -webkit-font-smoothing: antialiased;
+}
+.kfe-embed a { text-decoration: none; color: inherit; }
+.kfe-embed ul { list-style: none; margin: 0; padding: 0; }
+.kfe-embed button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+
+/* ── Header ───────────────────────────────────────────────────────────── */
+.kfe-header {
+  position: sticky; top: 0; z-index: 9000;
+  height: 80px;
+  background: rgba(15, 20, 28, 0.92);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--kfe-border);
+}
+.kfe-header-inner {
+  max-width: 1440px; margin: 0 auto; height: 100%;
+  padding: 0 20px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.kfe-brand { display: flex; align-items: center; gap: 12px; }
+.kfe-brand svg { width: 52px; height: 52px; flex: none; }
+.kfe-brand-text { display: flex; flex-direction: column; line-height: 1; }
+.kfe-brand-text b {
+  font-family: var(--kfe-mono); font-size: 14px; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+}
+.kfe-brand-text span {
+  font-family: var(--kfe-mono); font-size: 9px; margin-top: 4px;
+  letter-spacing: 0.25em; text-transform: uppercase; color: rgba(223,228,236,.55);
+}
+
+.kfe-nav { display: flex; align-items: center; gap: 4px; }
+.kfe-nav > li { position: relative; }
+.kfe-nav-link, .kfe-nav-trigger {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 12px; border-radius: 2px;
+  font-size: 12px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase;
+  color: rgba(223,228,236,.72); transition: color .15s, background .15s;
+  white-space: nowrap;
+}
+.kfe-nav-link:hover, .kfe-nav-trigger:hover,
+.kfe-nav li.kfe-open > .kfe-nav-trigger { color: var(--kfe-accent); background: rgba(232,196,118,.07); }
+.kfe-caret { width: 10px; height: 10px; transition: transform .18s; }
+.kfe-nav li.kfe-open .kfe-caret { transform: rotate(180deg); }
+
+.kfe-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 18px; border-radius: 2px;
+  font-family: var(--kfe-mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: #14181f; background: var(--kfe-accent);
+  border: 1px solid var(--kfe-accent); transition: opacity .15s;
+}
+.kfe-cta:hover { opacity: .85; }
+
+.kfe-dropdown {
+  position: absolute; top: 100%; left: 0; margin-top: 4px;
+  min-width: 260px; padding: 8px 0;
+  background: var(--kfe-bg-panel);
+  border: 1px solid var(--kfe-border);
+  box-shadow: 0 16px 40px rgba(5, 8, 12, .7);
+  backdrop-filter: blur(20px);
+  opacity: 0; visibility: hidden; transform: translateY(-6px);
+  transition: opacity .16s, transform .16s, visibility .16s;
+}
+.kfe-dropdown::before {
+  content: ""; position: absolute; top: -1px; left: 0; right: 0; height: 1px;
+  background: rgba(232,196,118,.45);
+}
+.kfe-nav li.kfe-open > .kfe-dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+.kfe-nav li:last-child .kfe-dropdown { left: auto; right: 0; }
+.kfe-dropdown a {
+  display: block; padding: 9px 18px;
+  font-size: 12.5px; letter-spacing: .02em; color: rgba(223,228,236,.72);
+  border-left: 2px solid transparent; transition: all .14s;
+}
+.kfe-dropdown a:hover {
+  color: var(--kfe-accent); background: rgba(232,196,118,.06);
+  border-left-color: var(--kfe-accent);
+}
+
+/* ── Mobile ───────────────────────────────────────────────────────────── */
+.kfe-burger { display: none; padding: 10px; }
+.kfe-burger svg { width: 22px; height: 22px; }
+.kfe-mobile {
+  display: none; position: fixed; inset: 80px 0 0 0; z-index: 8999;
+  overflow-y: auto; padding: 16px 20px 60px;
+  background: rgba(15, 20, 28, .985); backdrop-filter: blur(16px);
+}
+.kfe-mobile.kfe-open { display: block; }
+.kfe-mobile details { border-bottom: 1px solid rgba(150,165,190,.16); }
+.kfe-mobile summary {
+  list-style: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 48px; padding: 12px 4px;
+  font-size: 13px; letter-spacing: .1em; text-transform: uppercase;
+  color: rgba(223,228,236,.85);
+}
+.kfe-mobile summary::-webkit-details-marker { display: none; }
+.kfe-mobile details[open] summary { color: var(--kfe-accent); }
+.kfe-mobile details a, .kfe-mobile > a {
+  display: flex; align-items: center; min-height: 44px; padding: 10px 4px 10px 16px;
+  font-size: 13.5px; color: rgba(223,228,236,.68);
+}
+.kfe-mobile > a { border-bottom: 1px solid rgba(150,165,190,.16); text-transform: uppercase; letter-spacing: .1em; font-size: 13px; padding-left: 4px; }
+.kfe-mobile .kfe-cta { margin-top: 20px; width: 100%; justify-content: center; min-height: 48px; }
+
+@media (max-width: 1180px) {
+  .kfe-nav, .kfe-header .kfe-cta { display: none; }
+  .kfe-burger { display: inline-flex; }
+}
+
+/* ── Footer ───────────────────────────────────────────────────────────── */
+.kfe-footer {
+  position: relative; background: var(--kfe-bg-deep);
+  border-top: 1px solid rgba(232,196,118,.25);
+}
+.kfe-footer-inner { max-width: 1280px; margin: 0 auto; padding: 56px 20px 40px; }
+.kfe-footer-brand { display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px; }
+.kfe-footer-brand .kfe-brand svg { width: 44px; height: 44px; }
+.kfe-footer-tag { max-width: 460px; font-size: 12px; line-height: 1.7; color: rgba(223,228,236,.5); }
+.kfe-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
+.kfe-col h3 {
+  margin: 0 0 12px; font-family: var(--kfe-mono); font-size: 10px; font-weight: 400;
+  letter-spacing: .18em; text-transform: uppercase; color: rgba(223,228,236,.4);
+}
+.kfe-col a {
+  display: block; padding: 5px 0; font-size: 13.5px;
+  color: rgba(223,228,236,.6); transition: color .15s;
+}
+.kfe-col a:hover { color: var(--kfe-accent); }
+.kfe-bottom {
+  margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(150,165,190,.15);
+  display: flex; flex-wrap: wrap; align-items: center; gap: 16px; justify-content: space-between;
+}
+.kfe-bottom-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.kfe-bottom-links span, .kfe-bottom-links a {
+  font-family: var(--kfe-mono); font-size: 11px; color: rgba(223,228,236,.5);
+}
+.kfe-bottom-links a:hover { color: var(--kfe-accent); }
+.kfe-social { display: flex; align-items: center; gap: 14px; }
+.kfe-social a { color: rgba(223,228,236,.5); transition: color .15s; }
+.kfe-social a:hover { color: var(--kfe-accent); }
+.kfe-social svg { width: 17px; height: 17px; display: block; }
+.kfe-disclosure {
+  margin-top: 20px; font-size: 11px; line-height: 1.7; color: rgba(223,228,236,.35);
+}
+@media (max-width: 900px) { .kfe-cols { grid-template-columns: repeat(2, 1fr); gap: 28px; } }
+@media (max-width: 560px) { .kfe-cols { grid-template-columns: 1fr; } }
+
+/* === MATCH LIVE kronosfusionenergy.com HEADER (blend + muted nav + outlined CTA) === */
+.kfe-embed .kfe-header{background:transparent!important;backdrop-filter:none!important;
+  border-bottom:1px solid transparent!important;box-shadow:none!important;
+  transition:background .4s ease,backdrop-filter .4s ease,border-color .4s ease!important}
+.kfe-embed .kfe-header.kfe-scrolled{background:rgba(20,26,34,.92)!important;
+  backdrop-filter:blur(18px)!important;border-bottom:1px solid rgba(231,235,242,.07)!important}
+.kfe-embed .kfe-nav-link,.kfe-embed .kfe-nav-trigger{color:rgba(224,229,235,.6)!important;
+  font-size:12px!important;font-weight:500!important;letter-spacing:1.8px!important;
+  text-transform:uppercase!important;background:transparent!important;border-bottom:none!important;
+  text-decoration:none!important}
+.kfe-embed .kfe-nav-link:hover,.kfe-embed .kfe-nav-trigger:hover,
+.kfe-embed .kfe-nav li.kfe-open>.kfe-nav-trigger{color:#E7EBF2!important;background:transparent!important}
+.kfe-embed .kfe-header .kfe-cta{background:transparent!important;color:#D4AD5C!important;
+  border:1px solid #D4AD5C!important;border-radius:0!important;padding:9px 16px!important;
+  font-size:10px!important;letter-spacing:2.5px!important;text-transform:uppercase!important;box-shadow:none!important}
+.kfe-embed .kfe-header .kfe-cta:hover{background:rgba(212,173,92,.12)!important;color:#E2C57E!important;opacity:1!important}
+
+</style>
+
+<!-- ── HEADER ──────────────────────────────────────────────────────────── -->
+<div class="kfe-embed">
+<header class="kfe-header">
+  <div class="kfe-header-inner">
+    <a class="kfe-brand" href="/" aria-label="Kronos Fusion Energy — home">
+      <svg viewBox="0 0 120 120" role="img" aria-hidden="true">
+        <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+          <circle cx="60" cy="60" r="50" />
+          <line x1="60" y1="16" x2="60" y2="104" />
+          <path d="M26,60 C44,42 76,42 94,60" />
+          <path d="M26,60 C44,78 76,78 94,60" />
+        </g>
+        <circle cx="60" cy="60" r="7.5" fill="#e8c476" />
+      </svg>
+      <span class="kfe-brand-text"><b>Kronos</b><span>Fusion Energy</span></span>
+    </a>
+
+    <nav aria-label="Primary">
+      <ul class="kfe-nav">
+        <li data-kfe-menu>
+          <button class="kfe-nav-trigger" aria-expanded="false">Technology
+            <svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="kfe-dropdown">
+            <a href="/how-it-works">How it works</a>
+            <a href="/hyperion">Breeder — Hyperion</a>
+            <a href="/aegis">Burner — Aegis</a>
+            <a href="/metrovolt">Burner — MetroVolt</a>
+            <a href="/ai">AI-Native Architecture</a>
+            <a href="/magnets">Magnets</a>
+            <a href="/fuel-cycle">Fuel cycle</a>
+            <a href="/safety">Safety</a>
+            <a href="/roadmap">Roadmap</a>
+          </div>
+        </li>
+        <li data-kfe-menu>
+          <button class="kfe-nav-trigger" aria-expanded="false">Solutions
+            <svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="kfe-dropdown">
+            <a href="/metrovolt">AI &amp; Data Centers</a>
+            <a href="/defense">Defense &amp; Government</a>
+            <a href="/metrovolt">Grid &amp; Baseload</a>
+            <a href="/defense">Neutron Detection</a>
+            <a href="/ai">Quantum</a>
+          </div>
+        </li>
+        <li><a class="kfe-nav-link" href="/learn/">Learn</a></li>
+        <li><a class="kfe-nav-link" href="/technical/">Technical Library</a></li>
+        <li data-kfe-menu>
+          <button class="kfe-nav-trigger" aria-expanded="false">Proof
+            <svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="kfe-dropdown">
+            <a href="/publications">Publications</a>
+            <a href="/whitepapers">Whitepapers</a>
+            <a href="/technical/">Technical Library</a>
+            <a href="/mission">Open Science &amp; Reproducibility</a>
+            <a href="/aegis/gate-honest-index.html">The Honest Gates</a>
+          </div>
+        </li>
+        <li data-kfe-menu>
+          <button class="kfe-nav-trigger" aria-expanded="false">Company
+            <svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="kfe-dropdown">
+            <a href="/mission">About / Mission</a>
+            <a href="/leadership">Leadership</a>
+            <a href="/ehs">Environment Health &amp; Safety</a>
+            <a href="/investors">Investors</a>
+            <a href="/careers">Careers</a>
+            <a href="/press">Press</a>
+            <a href="/contact">Contact</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="kfe-cta" href="/3D_Model">3D Model</a>
+
+    <button class="kfe-burger" id="kfe-burger" aria-label="Open menu" aria-expanded="false" aria-controls="kfe-mobile">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ── MOBILE MENU ─────────────────────────────────────────────────────── -->
+<div class="kfe-mobile" id="kfe-mobile">
+  <details>
+    <summary>Technology<svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></summary>
+    <a href="/how-it-works">How it works</a>
+    <a href="/hyperion">Breeder — Hyperion</a>
+    <a href="/aegis">Burner — Aegis</a>
+    <a href="/metrovolt">Burner — MetroVolt</a>
+    <a href="/ai">AI-Native Architecture</a>
+    <a href="/magnets">Magnets</a>
+    <a href="/fuel-cycle">Fuel cycle</a>
+    <a href="/safety">Safety</a>
+    <a href="/roadmap">Roadmap</a>
+  </details>
+  <details>
+    <summary>Solutions<svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></summary>
+    <a href="/metrovolt">AI &amp; Data Centers</a>
+    <a href="/defense">Defense &amp; Government</a>
+    <a href="/metrovolt">Grid &amp; Baseload</a>
+    <a href="/defense">Neutron Detection</a>
+    <a href="/ai">Quantum</a>
+  </details>
+  <a href="/learn/">Learn</a>
+  <a href="/technical/">Technical Library</a>
+  <details>
+    <summary>Proof<svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></summary>
+    <a href="/publications">Publications</a>
+    <a href="/whitepapers">Whitepapers</a>
+    <a href="/technical/">Technical Library</a>
+    <a href="/mission">Open Science &amp; Reproducibility</a>
+    <a href="/aegis/gate-honest-index.html">The Honest Gates</a>
+  </details>
+  <details>
+    <summary>Company<svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></summary>
+    <a href="/mission">About / Mission</a>
+    <a href="/leadership">Leadership</a>
+    <a href="/ehs">Environment Health &amp; Safety</a>
+    <a href="/investors">Investors</a>
+    <a href="/careers">Careers</a>
+    <a href="/press">Press</a>
+    <a href="/contact">Contact</a>
+  </details>
+  <a class="kfe-cta" href="/3D_Model">3D Model</a>
+</div>
+
+
+</div>
+<main class="chap"><div class="kk">The Fusion Energy Equations · Chapter 26 of 44</div><nav class="chapnav" aria-label="Chapter navigation"><a href="energy-is-water.html">&larr; Energy Is Water</a><div class="mid"><a href="./">All chapters</a><a href="../">Full book</a><a href="../audiobook/">Audiobook</a></div><a href="the-road-to-40-a-megawatt-hour-worked.html">The Road to $40 a Megawatt-Hour, Worked &rarr;</a></nav><div class="readlisten"><span class="rl-lbl">This chapter:</span><span class="rl-opt">📖 You’re reading</span><button class="rl-listen" type="button" aria-expanded="false">🎧 Listen instead</button></div><div class="rl-player" hidden><div class="rl-voice"><button type="button" data-v="male" class="on">Male voice</button><button type="button" data-v="female">Female voice</button></div><audio controls preload="none" aria-label="Listen to this chapter"><source data-male="../audiobook/male/to-the-moon-for-fuel.m4a" data-female="../audiobook/female/to-the-moon-for-fuel.m4a" src="../audiobook/male/to-the-moon-for-fuel.m4a" type="audio/mp4"></audio><p class="rl-note">Narration in production — this player goes live when the chapter audio lands.</p></div><section id="sec-25">
+<h1 id="to-the-moon-for-fuel-25">To the Moon for Fuel</h1>
+<p>An earlier version of this book had a chapter about the Sun. Not fusion in the Sun — I mean solar power collected in orbit and beamed down, a grand tangent I allowed myself because the story then was still an argument about what <em>might</em> be possible. I have cut it. In its place is a harder, stranger, and far more honest chapter, because the version of this story that is actually true leads somewhere I did not expect it to, somewhere no fusion company was supposed to go: up off the planet entirely, to the surface of the Moon, and to the last of the three forties. When I first followed the fuel to its source I did not quite believe where the arrow pointed. It pointed at the sky.</p>
+<figure><figcaption>The third forty lives off the planet. The burner's fuel — helium-3 — is nearly gone from Earth, but the Moon has been collecting it from the solar wind for four and a half billion years.</figcaption></figure>
+<p>Recall the spine of this book. <strong>Q40</strong> is the physics — a fortyfold energy return, solved on paper. <strong>Forty dollars a megawatt-hour</strong> is the economics — firm, clean electricity at a price that beats the incumbents. And <em>within forty years</em> is the horizon — the deliberately conservative deadline I hold myself to, with an internal plan that reaches full scale around 2050. This chapter is about that third forty. It is the most speculative chapter in the book, and I want to be candid from the first line: the thing that stands between the burner and cheap firm power at continental scale is not a physics problem. We solved the physics. It is a <em>fuel</em> problem. And the cheapest place in the entire solar system to solve it may not be on Earth at all — a sentence I would have laughed at, a few years ago, from anyone but myself.</p>
+<h2 id="the-fuel-the-burner-actually-eats-25">The fuel the burner actually eats</h2>
+<p>Everything hinges on the reaction the burner runs, so start there, with the fire itself. The breeder, Hyperion, fuses deuterium and tritium — the easy reaction, the one that lights first, the one that makes fuel and materials while running net-negative on electricity. The burner does something different, harder, and far cleaner: it fuses deuterium with helium-3 — the D–³He reaction whose 18.35-MeV yield and neutron-poor, charged-particle output the burner chapter lays out in full. What matters here is only the consequence. Almost all of that energy leaves as charged particles rather than neutrons, which is the whole reason the burner exists: charged particles can be steered by magnetic fields and turned toward electricity directly, without the torrent of fast neutrons that makes a deuterium–tritium plant slowly destroy its own walls. This is the clean, gentle, long-lived machine an earlier version of this book was really dreaming of — the fire that does not consume its own hearth. The physics of it is settled and published.</p>
+<p>The catch is the ingredient, and it is a spectacular catch. Deuterium is trivially abundant — it is in every glass of seawater, and one part in roughly six thousand of the hydrogen on Earth is deuterium. There is enough of it in the oceans to run civilization until the Sun swells and swallows us. Helium-3 is the exact opposite. It is one of the rarest useful isotopes on the planet, and Earth, it turns out, is nearly out of it.</p>
+<p>Here is why. Helium-3 is light and stable, and the young Earth did not hold on to it; the primordial supply largely escaped to space billions of years ago, drifting off into the dark while the planet was still cooling. What little exists now comes almost entirely from the radioactive decay of tritium — and tritium itself is rare, man-made, and short-lived. The practical consequence is that the entire terrestrial supply of helium-3 is a trickle: on the order of <strong>two kilograms a year</strong>, harvested mostly from the slow decay of tritium in aging nuclear stockpiles. There is no deposit to discover, no mine to open, no field to drill. And that trickle is already spoken for. Helium-3 is prized for uses with no easy substitute — ultra-low-temperature refrigeration for quantum computers and superconducting instruments, neutron detectors for security screening at borders and ports, and specialized medical imaging. These users have fought over the supply for years; shortages have repeatedly rationed research programs and driven prices to eye-watering levels.</p>
+<p>Now put a power plant on top of that. A single commercial burner, running flat out, has an appetite for helium-3 measured not in grams but in <strong>tens of kilograms a year</strong> — our frozen accounting puts it near <strong>170 kilograms per full-power year</strong> for a commercial unit, net of the deuterium–deuterium recycle (gate BR-OUT-4). Set that against the two kilograms a year the entire Earth produces and you get the number my team decided we had to print in the open, however uncomfortable it looked on the page:</p>
+<blockquote>One commercial burner would demand roughly four hundred times the world's yearly helium-3 supply. The machine is gated on a fuel that does not yet exist at the scale it needs.</blockquote>
+<p>I want to dwell on the choice to publish that number, because it is the kind of number a company is supposed to hide. It would have been easy to bury. A generator with no fuel is not a working machine, and a fusion company announcing that its flagship product runs on the single scarcest isotope it could have picked is not an obvious marketing triumph. But the entire discipline of this program is to state the gates plainly, especially the ones we cannot engineer our way around from inside our own buildings. The four-hundred-fold gap is not a cost we can drive down with a better supply contract. It is a physical-supply fact, as hard as the osmotic pressure of the sea. The helium-3 is simply not present on Earth in the quantity a fleet would need, and no amount of money changes that. So the honest question is not <em>how do we buy more</em> but <em>where, in the solar system, is there more</em> — and the answer to that question is what quietly turns a fusion company into, of all improbable things, a space company.</p>
+<h2 id="the-bridge-helium-3-the-breeder-makes-25">The bridge: helium-3 the breeder makes</h2>
+<p>Before we leave Earth, there is a piece of good fortune worth naming, because it is what makes the whole staged plan credible rather than a leap of faith into the vacuum.</p>
+<p>The breeder makes helium-3 too. Hyperion is a deuterium–tritium spherical tokamak built as a fuel foundry, and among the products in its exhaust is helium-3 — co-produced as an operational byproduct — about <strong>0.9 kilograms a year</strong> per breeder at equilibrium, the decay stream of its surplus tritium (gate BR-OUT-2). That is not a rounding error; it is on the order of half of today's entire world supply, from a single machine. But hold the two numbers side by side — 0.9 out, 170 in — and the conclusion writes itself: the loop does not close on Earth; at the literal lever it would take roughly 192 breeders to feed one burner. The breeder seeds the market. It cannot fuel the fleet, and it comes from infrastructure we are building anyway, for reasons that stand on their own commercial legs. One foundry, quietly matching the entire planet's annual output.</p>
+<p>This is the bridge. It is not enough to fuel a fleet — nowhere close — but it does not have to be. Consider what the early years actually demand:</p>
+<ul>
+<li>The <strong>first test burner</strong>, around 2032, is a roughly 100-megawatt demonstrator whose job is to prove the physics, not to power a city. A demonstrator's helium-3 appetite is small enough that breeder-made supply, supplemented by the decay trickle, can feed it.</li>
+<li>The <strong>first commercial burners</strong>, from around 2036, are larger and hungrier — and here the breeder supply becomes the binding constraint. You can fuel a handful of units from a handful of breeders. You cannot fuel ninety.</li>
+</ul>
+<p>So the breeders buy time — they are the stepping stones across a river we cannot yet bridge. They bootstrap the demonstrator, they fuel the first commercial units, and above all they let us prove the burner works on real, bred fuel while the far larger supply is still being organized. A scarce, contested isotope becomes, inside this architecture, a renewable output of energy infrastructure — a bottleneck turned into a byproduct. That reframing is genuine, and it is the reason the two machines are one program and not two products. But I will not overstate it. The breeder bridge gets us to the first units. It does not get us to the fleet. For the fleet, we have to leave the planet.</p>
+<figure class="fig"><img src="../figures/DIAG_HE3.svg" alt="DIAG_HE3" loading="lazy">
+<figcaption><strong>Figure.</strong> The breeder's helium-3, accounted honestly — about 0.9 kg a year at equilibrium (BR-OUT-2) against a burner appetite near 170 kg per full-power year (BR-OUT-4): enough to bootstrap the demonstrator, never enough to fuel a fleet. The bridge, not the destination — the loop closes on the Moon, not on Earth.</figcaption></figure>
+<h2 id="why-the-moon-25">Why the Moon</h2>
+<p>The Moon has no atmosphere and no magnetic field. For four and a half billion years — since before there was a single living cell on Earth — it has sat, naked and unshielded, in the path of the solar wind, the ceaseless stream of charged particles the Sun throws off in every direction. That wind is mostly hydrogen and helium, and a small but steady fraction of the helium in it is helium-3. On Earth, our magnetic field and thick atmosphere deflect nearly all of that away; the same shield that protects our DNA has been turning away our fuel for the entire history of life. On the Moon, there is no shield. The wind simply slams into the ground and stays, implanted grain by grain into the top few meters of pulverized rock and dust we call the regolith. The Moon has been collecting this fuel, patiently, for longer than Earth has had oceans.</p>
+<p>Over the age of the solar system, that slow rain has salted the lunar surface with helium-3 in quantities that dwarf anything on Earth. Not because the Moon is rich in the ordinary sense — it is not. The concentrations are tiny, a few parts per <em>billion</em> by mass, richer in the older, titanium-heavy plains of the lunar maria where the mineral ilmenite traps and holds the gas more tenaciously. The point is not the concentration. The point is the sheer area and depth over which it has been accumulating, uninterrupted, for longer than there has been life on Earth. Estimates of the total lunar inventory vary across a wide range and should be treated with real caution — this is one of the genuinely uncertain numbers in the field, and I will not pretend otherwise — but even the conservative figures run to hundreds of thousands of tonnes. Against a terrestrial supply of two kilograms a year, that is not an incremental improvement. It is a different category of thing entirely: the difference between a leaking faucet and an ocean.</p>
+<figure class="fig"><img src="../figures/DIAG_LUNAR.svg" alt="DIAG_LUNAR" loading="lazy">
+<figcaption><strong>Figure.</strong> Why the road runs through the Moon. Earth’s entire terrestrial output is about 2 kg of helium-3 a year; a breeder adds ~0.9 kg a year, and a single commercial burner consumes ~170 kg per full-power year — the loop does not close indigenously (roughly 192 breeders per burner at the literal lever). The lunar regolith holds hundreds of thousands of tonnes — enough to turn a fuel constraint into a supply chain (fleet gate ~2038–40).</figcaption></figure>
+<p>And we have physical evidence, not just theory — this is the part that lifts it out of science fiction. The Apollo missions brought back lunar soil, and when scientists heated those samples in the lab, helium-3 came off them, exactly as the solar-wind implantation picture predicts. The fuel of a future civilization was sitting in a sample drawer, waiting to be noticed. The mechanism to recover it is, in principle, almost embarrassingly simple: dig up regolith, heat it to a few hundred degrees Celsius, and the implanted gases — helium-3 among them — bake out and can be collected. No exotic chemistry. No enrichment cascade. Warm the dust and catch what boils off.</p>
+<p>There is a deeper reason the Moon is worth the trouble, and it lives in the energy density of the fuel — in that number, 18.35 million electron-volts, that we met at the start. That is an enormous return on a single pair of nuclei, a concentration of energy nothing in the fossil world comes close to. A few tens of kilograms of helium-3 a year fuels a gigawatt-class plant. That extraordinary compactness is what makes an interplanetary supply chain even conceivable: you are not shipping trainloads of coal or tankers of gas across the void. You are shipping, per plant per year, an amount of fuel a person could carry in their arms. When the payload is that energy-dense, the brutal cost of climbing out of a gravity well stops being an automatic disqualification and becomes, instead, a number to be worked down — a hard number, but only a number.</p>
+<h2 id="a-fuel-budget-in-kilograms-25">A fuel budget, in kilograms</h2>
+<p>Let me make the whole staged plan add up in the one unit that finally matters — kilograms of helium-3 a year — because the arithmetic, laid out honestly, is the most convincing argument I know for why the road runs through the Moon.</p>
+<p>Start at the bottom, with the demonstrator. The first test burner, around 2032, is a hundred-megawatt machine — a tenth the scale of a commercial unit — and it runs in campaigns, not around the clock, because its job is to prove physics, not to sell power. Its yearly appetite is a few kilograms of helium-3 at most. A single breeder co-produces about 0.9 kilograms a year — 3.6 to 4.5 kilograms a year at foundry scale of four to five units, and up to ~2.0 kilograms of surplus tritium per unit per year at the advanced-blanket ceiling. A handful of breeders, topped up by the slow terrestrial decay trickle, feed the demonstrator with room to spare. This first gate, the hardest one to clear on physics, is the easiest one to fuel.</p>
+<p>Now step up to the first commercial burners, from around 2036: gigawatt-class machines, each with a published appetite of roughly twenty-eight to fifty-four kilograms of helium-3 a year. Hold that against the breeder's two kilograms. A <em>single</em> commercial unit, at the low end of its range, would swallow the entire annual helium-3 output of fourteen breeders — and at the high end, closer to twenty-seven. You can, with real effort, stand up a first handful of commercial burners behind a fleet of breeders built for their own sake. You cannot fuel a country this way. The breeder bridge, genuine as it is, is already groaning under the weight of the <em>second</em> commercial cohort.</p>
+<p>Then look at the destination — ninety units, ninety gigawatts, by 2050 — and the terrestrial arithmetic simply breaks. Ninety commercial burners would demand on the order of three to four <em>tonnes</em> of helium-3 every year. Against Earth's native supply of two kilograms, that is very nearly two thousand times the entire planet's annual output. Against the breeders, it would take something like eighteen hundred foundries running solely to make fuel — an absurdity that answers itself. There is no arrangement of decay trickle and bred byproduct that fuels a fleet from this planet. The gap is not a factor you optimise away. It is three orders of magnitude, and it is the reason this chapter exists.</p>
+<p>And now turn the same unit on the Moon, and watch the despair invert. The lunar regolith, on even conservative estimates, holds helium-3 in the hundreds of thousands of tonnes. Set a three-to-four-tonne annual fleet demand against a reservoir of that size and the supply horizon stops being measured in years and starts being measured in the deep time of geology: tens of thousands of years of fuel for a ninety-gigawatt civilisation, and on the more generous inventories, longer than our own species has walked the Earth. That is the number that reframes everything. The bottleneck that throttles the fleet to a handful of units on Earth becomes, on the Moon, a supply so vast that running out of it is a worry for a descendant civilisation we cannot yet imagine. The Moon does not merely relieve the constraint. It abolishes it.</p>
+<p>And ninety gigawatts is worth translating out of the abstract, because it is the human weight the whole fuel budget is really carrying. Ninety gigawatts running around the clock is on the order of eight hundred terawatt-hours of firm, clean electricity a year — the steady output of dozens of the largest conventional stations, enough to carry the baseload of an industrial nation of a hundred million people and more, delivered without a gram of carbon or a wisp of soot. That is the prize hiding inside the kilograms. The fuel is a payload you could carry in your arms; what it unlocks is a continent's worth of firm power that never sets with the sun.</p>
+<h2 id="what-the-regolith-actually-is-and-how-you-would-wo-25">What the regolith actually is, and how you would work it</h2>
+<p>If we are going to mine another world — and read that phrase again, slowly, because it deserves the weight — it is worth being precise about the material, because the engineering lives in its physical details and I do not want to wave at "moon dust" as if it were sand at a beach. The reality is far stranger and far more hostile than the word suggests.</p>
+<p>The lunar regolith is a blanket of shattered, pulverised rock several metres deep, ground out over billions of years by the ceaseless rain of micrometeorites that a world with no atmosphere cannot stop. It is not sand. It is sharp, jagged, statically charged glass and mineral fragments, much of it finer than talc, and it clings to everything — it wrecked seals and abraded suits during Apollo, and any machine that has to move and process it for years will fight that abrasion every hour of every shift. The helium-3 is not in nuggets or veins you could stake a claim to. It is implanted, ion by ion, in the outermost skin of individual grains, driven there by the solar wind and held most tenaciously in the titanium-rich mineral ilmenite that is abundant in the dark plains of the lunar maria. That is why the maria matter: not because the concentration is high anywhere — it is a few parts per billion by mass, everywhere — but because the ilmenite holds what little there is, and the maria are where the ilmenite lies.</p>
+<p>The recovery mechanism, I said earlier, is almost embarrassingly simple in principle: heat the regolith and the implanted gases bake out. Let me make that concrete, because the simplicity of the chemistry is exactly what makes the <em>scale</em> of the engineering so daunting, and honesty requires holding both facts at once. Heating the soil to a few hundred degrees Celsius liberates the helium-3 along with hydrogen, other helium isotopes, and volatiles; you then separate the helium-3 from that mixed gas — a cryogenic and isotopic separation that is well-understood on Earth but must be made to run untended on the Moon. So a working system is really a chain: excavate the regolith, feed it to a heater, capture and separate the evolved gases, and return the spent soil. Every link in that chain has to operate autonomously, in vacuum, in one-sixth gravity, through the fourteen-day night and the punishing swings of the lunar day, on a surface that abrades and clings and charges, for years, with almost no possibility of a repair crew. It is the most demanding factory floor humanity has ever contemplated, and it is a quarter of a million miles from the nearest wrench.</p>
+<p>And the concentrations dictate the brutal arithmetic of throughput. A few parts per billion means that to collect a kilogram of helium-3 you must process an amount of regolith measured not in tonnes but in something far larger — you are moving and heating a mountain to extract a suitcase. The energy to excavate and heat that much soil, the rate at which the machines can churn through it, the fraction of the gas you actually capture rather than lose — these are the numbers that decide whether lunar helium-3 is a real supply or a permanent "someday," and they are precisely the numbers that do not honestly exist yet. I will put none of them in this book, because the credible ones have not been measured, and a number I cannot stand behind is worse than no number at all. What I can say is that this is a materials-handling problem at planetary scale, and materials handling is the least glamorous and most decisive discipline in the whole enterprise — the unglamorous truth beneath the romance of the Moon.</p>
+<h2 id="a-day-that-lasts-a-month-25">A day that lasts a month</h2>
+<p>It is worth standing, for a moment, on that factory floor a quarter of a million miles away, because imagining the work honestly is the best cure for romanticising it. The lunar day is not a day. It is roughly a terrestrial month long: about fourteen Earth-days of relentless sun followed by fourteen of absolute dark, and across that cycle the surface temperature swings by hundreds of degrees, from well above the boiling point of water at noon to a cryogenic deep-freeze in the long night. Every machine that works the regolith must survive that swing, repeated without pause, for years.</p>
+<p>Picture the operation, then, not as a dramatic mine with pickaxes and ore carts but as a patient, autonomous farm of the dust. Excavators creep across the dark maria, skimming the top few metres of regolith where the solar wind has salted the grains with helium-3. The soil is fed to heaters that bake it to a few hundred degrees, driving off the implanted gases; the gas is caught and carried to a separation train that pulls the helium-3 from the hydrogen and the other volatiles; the spent soil is returned to the surface it came from. No crew hovers over any of it. A repair that would take an afternoon on Earth might take a launch window on the Moon, so the machines must diagnose themselves, protect themselves, and keep working while no human is watching — the same philosophy of autonomous, self-protecting control that runs through the reactors elsewhere in this book, now stretched across the vacuum.</p>
+<p>The long night is the hardest master. For fourteen days at a stretch there is no sunlight to power anything, and the cold is savage enough to seize mechanisms and embrittle materials. An operation that must run continuously through that dark cannot lean on solar panels alone; it needs stored or generated power that does not care whether the Sun is up — which is one more reason a firm, compact power source is the enabling technology of the whole endeavour, on the Moon as much as on Earth. There is a quiet symmetry in it that I find hard to resist: the fuel that could give Earth firm power through every night may itself have to be mined by machines kept alive through a night two weeks long. The Moon asks of its miners exactly the thing the burner offers the world — power that does not flinch when the light goes out.</p>
+<p>I linger on this not to dazzle but to inoculate. The chemistry of baking gas out of warm dust is genuinely simple; the enterprise of doing it, untended, through the lunar month, across square kilometres, for years, is one of the hardest sustained engineering problems a species could set itself. Both things are true at once, and a reader who holds only the first has been sold a fantasy. The romance of the Moon is real. So is the abrasion, the dark, the cold, and the quarter-million-mile distance to the nearest wrench.</p>
+<h2 id="why-now-and-not-before-25">Why now, and not before</h2>
+<p>There is a reasonable objection at this point, and I not only share it, I insist on it: people have been promising lunar helium-3 for decades, and the Moon is still just a bright light in the sky. Why should the 2030s and 2040s be different from the 1990s? Why is this not one more dream that dies in a glossy conference slide?</p>
+<p>The honest answer is that helium-3 is not, and should never be, the thing that justifies going to the Moon. It is a passenger on a train that is finally leaving the station for other reasons entirely. For the first time since Apollo, there is a real and accelerating lunar economy taking shape — national programs returning crews to the surface, a growing cadence of commercial landers, and serious work on <em>in-situ resource utilization</em>: learning to extract water ice for drinking, breathing, and rocket propellant so that missions do not have to haul everything up from Earth. The machinery that a helium-3 industry would need — the ability to land heavy equipment, to excavate and process regolith at scale, to power surface operations through the long lunar night, to move material back to Earth — is precisely the machinery that this broader lunar build-out is developing anyway, on someone else's schedule and someone else's budget. We do not have to build the road. We only have to be waiting when it opens.</p>
+<p>That is why the timing works, and it is also why I refuse to promise it early. A helium-3 supply chain is not expected to exist before roughly the mid-2030s at the very earliest, and our planning basis assumes lunar fuel does not arrive at meaningful scale until around <strong>2040</strong>. We are not proposing to build the lunar economy. We are proposing to be one of its customers, once it exists — a demand signal patient enough to wait for the infrastructure, and specific enough to help pull it into being. Helium-3 mining, if it happens, will ride on top of a cislunar economy built for water and access and presence. If that economy stalls, so does this part of our story, and I would rather tell you that now, in plain words, than pretend otherwise and be caught by it later.</p>
+<h2 id="the-economics-of-an-energy-dense-payload-25">The economics of an energy-dense payload</h2>
+<p>The objection that stops most people cold is the obvious one, and it deserves a real answer, not a hand-wave: it is fantastically expensive to move anything to or from the Moon, so how could fuel hauled across four hundred thousand kilometres ever be cheap enough to matter? The answer is the single most important number in this chapter, and we have already met it — the energy density of the reaction.</p>
+<p>Recall that each D–³He fusion releases 18.35 million electron-volts, and that a gigawatt-class burner runs for a year on a few tens of kilograms of helium-3. Sit with the scale of that, really sit with it. The annual fuel for a plant that could power a city is a payload a single person could lift — not trainloads of coal, not tankers of gas, not the endless fossil supply chain that must be fed forever and re-fed tomorrow, but a quantity you could carry in a backpack. When the payload is that small and that valuable, the calculus of leaving a gravity well changes completely. The cost of a lunar supply chain is enormous per kilogram; but the kilograms are few, and the energy each one unlocks is vast. A supply chain that would be absurd for bulk commodities becomes merely difficult for something this concentrated — and "merely difficult" is the whole business of engineering.</p>
+<p>This is why helium-3 is one of the very few conceivable reasons to run cargo <em>back down</em> from the Moon at all. Most of the lunar economy taking shape is about using lunar resources <em>on the Moon</em> — water for drinking and propellant, metals for construction — precisely because hauling anything back to Earth is so costly that it almost never pays. Helium-3 is the rare exception whose value density might justify the return trip. It rides home on capability being built for other reasons, but unlike almost everything else on the surface, it is worth the ride — a cargo dense enough in energy to earn its passage through the most expensive freight lane ever imagined.</p>
+<p>And there is a genuine synergy I want to name without overstating it, because it is the kind of thing that sounds too good and therefore demands discipline. The processing of regolith for helium-3 also liberates water, hydrogen, and other volatiles — the very in-situ resources a lunar settlement needs for life support and propellant. A helium-3 operation is not a single-product mine; it is a volatiles refinery whose several outputs each help pay for the others. That coupling is part of why a fusion company's demand signal could help pull the broader lunar infrastructure into being rather than free-riding on it: the same machines that bake out the fuel bake out the water that keeps people alive up there. But I hold the discipline of this whole chapter: coupling is an argument for why the economics <em>might</em> close, not a claim that they <em>have</em>. The mine that refines volatiles and helium-3 together does not yet exist in any form, and I will not pretend the synergy is a substitute for building it.</p>
+<h2 id="the-energy-in-a-kilogram-25">The energy in a kilogram</h2>
+<p>I have leaned hard on the phrase <em>energy-dense</em>, and a claim that load-bearing deserves a number, derived in the open, so you can see it is physics and not salesmanship.</p>
+<p>Take the reaction we started with: each fusion of a deuteron and a helium-3 nucleus releases 18.35 million electron-volts. A kilogram of helium-3 contains a little over two hundred trillion trillion nuclei — the vast, silent multitude packed into three grams a mole, counted out a kilogram's worth. Fuse them all, and that tiny per-reaction energy multiplied by that staggering count comes to something on the order of <strong>a hundred and sixty gigawatt-hours per kilogram</strong> of helium-3. Let that land. One kilogram — a mass you could close your hand around — fused to completion would keep a gigawatt power plant, a plant that lights a city, running for the better part of a week.</p>
+<p>Now the receipts reconcile, and this is the part I find quietly beautiful. A gigawatt-class burner runs a full year on the order of fifty-odd kilograms of helium-3 at full output — and fifty-odd kilograms, at a hundred and sixty gigawatt-hours each, is very nearly exactly the energy a gigawatt plant pours out across a year. The published fuel range of twenty-eight to fifty-four kilograms a unit is not a marketing figure plucked from the air. It is what the reaction's own energy density demands, once you fold in real conversion and duty. The number on the fuel budget and the number in the physics are the same number, reached from two directions. That is what it looks like when a design is solved rather than hoped.</p>
+<p>To feel the density from the other side, weigh it against the fuel it would replace. One kilogram of helium-3, fused, releases about as much energy as burning something like twenty thousand tonnes of coal — a hopper train stretched for kilometres down the track, reduced to a mass you could carry up a flight of stairs. That is the whole reason an interplanetary fuel line is even thinkable. A coal plant of the same output devours trainloads a day, an endless black river fed forever and re-fed tomorrow. The burner's yearly fuel is a package a single person could lift. You are not proposing to run freighters of ore across the void; you are proposing to bring home, once a year, a cargo so concentrated that its energy would embarrass every tanker that ever crossed an ocean. When the payload is that small and that valuable, the monstrous cost of climbing out of a gravity well is divided across so much delivered energy that it stops being a disqualification and becomes, at last, just another line to engineer down. Energy density is not a footnote to the lunar case. It is the entire reason the case exists.</p>
+<h2 id="the-honest-gates-25">The honest gates</h2>
+<p>This is the chapter where I have to be most disciplined about the difference between what is solved and what is hoped, because the vision here is the most seductive in the book and seduction is exactly what a reader should be protected from. So let me lay the gates out without softening any of them, one hard truth at a time.</p>
+<p><strong>Extraction is unproven at scale.</strong> Baking helium-3 out of a spoonful of Apollo soil in a laboratory is a demonstrated fact. Doing it across square kilometers of the lunar surface, with autonomous machines excavating and heating millions of tonnes of abrasive, clinging regolith in vacuum, through fourteen-day nights and punishing thermal swings, is an engineering program that does not yet exist. In the language of technology readiness, the laboratory chemistry is mature and the field system is near the bottom of the ladder. Between those two points is most of the work — and most of the risk.</p>
+<p><strong>The concentrations are punishing.</strong> A few parts per billion means you must process staggering tonnages of soil to collect kilograms of gas. The economics of that — the energy to move and heat the regolith, the throughput of the machines, the fraction of helium-3 you actually capture — are estimates layered on estimates. I will put no numbers of that kind in this book, because the honest ones do not exist yet.</p>
+<p><strong>The logistics are their own frontier.</strong> Even granting extraction, the fuel has to come home: collected, purified, and returned across roughly four hundred thousand kilometers to plants on Earth. The saving grace, again, is energy density — the annual payload is small — but "small and from the Moon" is still an unsolved supply chain, dependent on launch cadence and return capability that are being built for other purposes and on other timelines.</p>
+<p><strong>And it is outside our control.</strong> This is the part that separates this gate from every other gate in the book, and I want it to land with full force. The physics of the burner is ours; we solved it and published it and you can check our work. The lunar supply is not ours. It depends on programs, companies, and national ambitions we do not run and cannot command. We have stated it, in our own technical library, as exactly what it is: an external bet. The most we have done to hedge it is to make sure the expertise is in the room — the founding team deliberately includes a specialist in lunar helium-3 — but expertise on the team is not the same as fuel in the tank, and I will not dress it up as if it were.</p>
+<p>None of this is a reason to look away. It is a reason to sequence the program so that nothing near-term depends on the bet paying off — to build a company that can survive being wrong about the Moon. The breeder is profitable on materials without ever setting foot on the lunar surface. The demonstrator and the first commercial burners run on bred and decayed helium-3 from Earth. The Moon is the gate on <em>scale</em> — on the fleet, not on survival. If lunar helium-3 arrives on schedule, the ceiling lifts and the sky, quite literally, is no longer the limit. If it is late, the program does not fall; it simply grows more slowly, on breeder-limited fuel, until the fuel landscape changes. That is what it means to build a company that can wait — and patience, in a field littered with the wreckage of the impatient, is its own kind of superpower.</p>
+<h2 id="the-third-forty-made-physical-25">The third forty, made physical</h2>
+<p>Now the pieces fit together, and the horizon stops being an abstraction and becomes a road you can walk with your finger on the map.</p>
+<p>Follow the fuel through the plan. Around <strong>2032</strong>, the first test burner — a 100-megawatt demonstrator — proves the physics on breeder-made helium-3. Around <strong>2036</strong>, the first commercial units come online, roughly a gigawatt apiece, still fed from the limited terrestrial and bred supply, still counted in ones and twos because that is all the fuel allows. Then, around <strong>2040</strong>, if the lunar economy delivers, the fuel constraint that has capped everything simply lifts — the ceiling dissolves. A fleet that was rationed to a handful of units by the scarcity of a single isotope can begin to grow the way infrastructure grows, the way railroads and grids and the internet grew: toward something like <strong>ninety units, ninety gigawatts, by 2050.</strong></p>
+<figure><figcaption><strong>Figure.</strong> The burner — a tandem-mirror generator that turns the charged products of D–³He fusion toward electricity directly. Its physics is solved and published; its scale is gated on helium-3 supply, and the Moon is where that gate opens.</figcaption></figure>
+<p>That last number is the third forty wearing work clothes. Q40 is the fortyfold physics of the reaction. Forty dollars a megawatt-hour is the price the burner can reach when its fuel is abundant and cheap rather than scarce and contested — and the single largest lever on that price is where the helium-3 comes from. And <em>within forty years</em> is the runway this whole staged march needs: breeders first, demonstrator next, a first commercial cohort after that, and only then — patiently, dependent on a frontier we do not own — a fleet fueled from the surface of another world. The horizon is not a slogan. It is the honest sum of how long each of these gates takes to open, added up without cheating.</p>
+<p>I called this the most speculative chapter, and it is. But notice what <em>kind</em> of speculation it is, because the distinction is everything. Nothing here asks you to believe in undiscovered physics or a miracle machine that violates a law of nature. The reaction is real and its energy is settled at 18.35 MeV. The regolith holds the fuel; the Apollo samples proved it in a laboratory decades ago. The mechanism to release it is a hot plate, not an alchemist's dream. What is unproven is the engineering and the enterprise of doing it at scale, on time, and off the Earth — and <em>unproven</em> is a very different word from <em>impossible</em>. The first fusion company most people imagined would need one impossible thing to be true. This one needs a series of difficult things to be done, in order, by people who have said out loud, in print, which ones they cannot yet do.</p>
+<p>The road that began with two machines, in the last chapter, ends here — with a fuel that was salted into the lunar soil by the Sun over billions of years, grain by grain, silent and waiting, it turns out, for a reason to be dug up. There is something almost mythic in it: the same star that lights our days seeding the Moon with the fuel to light our nights, and leaving it there across the whole span of life on Earth until a species clever enough to burn it finally arrived. Whether we reach it on the timeline I have drawn is the open question of this book. That we should try, and that the physics rewards us if we succeed, is not.</p>
+</section><nav class="chapnav" aria-label="Chapter navigation"><a href="energy-is-water.html">&larr; Energy Is Water</a><div class="mid"><a href="./">All chapters</a><a href="../">Full book</a><a href="../audiobook/">Audiobook</a></div><a href="the-road-to-40-a-megawatt-hour-worked.html">The Road to $40 a Megawatt-Hour, Worked &rarr;</a></nav></main>
+<div class="kfe-embed">
+<!-- ══ PAGE CONTENT GOES HERE ══════════════════════════════════════════ -->
+
+<!-- ── FOOTER ──────────────────────────────────────────────────────────── -->
+<footer class="kfe-footer">
+  <div class="kfe-footer-inner">
+    <div class="kfe-footer-brand">
+      <a class="kfe-brand" href="/">
+        <svg viewBox="0 0 120 120" role="img" aria-hidden="true">
+          <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+            <circle cx="60" cy="60" r="50" />
+            <line x1="60" y1="16" x2="60" y2="104" />
+            <path d="M26,60 C44,42 76,42 94,60" />
+            <path d="M26,60 C44,78 76,78 94,60" />
+          </g>
+          <circle cx="60" cy="60" r="7.5" fill="#e8c476" />
+        </svg>
+        <span class="kfe-brand-text"><b>Kronos</b><span>Fusion Energy</span></span>
+      </a>
+      <p class="kfe-footer-tag">MetroVolt &amp; AEGIS · compact fusion generators on the Kronos breeder-to-burner architecture.</p>
+    </div>
+
+    <div class="kfe-cols">
+      <div class="kfe-col">
+        <h3>Technology</h3>
+        <a href="/how-it-works">How it works</a>
+        <a href="/hyperion">Breeder — Hyperion</a>
+        <a href="/aegis">Burner — Aegis</a>
+        <a href="/metrovolt">Burner — MetroVolt</a>
+        <a href="/ai">AI-Native Architecture</a>
+        <a href="/magnets">Magnets</a>
+        <a href="/fuel-cycle">Fuel cycle</a>
+        <a href="/safety">Safety</a>
+        <a href="/roadmap">Roadmap</a>
+      </div>
+      <div class="kfe-col">
+        <h3>Solutions</h3>
+        <a href="/metrovolt">AI &amp; Data Centers</a>
+        <a href="/defense">Defense &amp; Government</a>
+        <a href="/metrovolt">Grid &amp; Baseload</a>
+        <a href="/defense">Neutron Detection</a>
+        <a href="/ai">Quantum</a>
+      </div>
+      <div class="kfe-col">
+        <h3>Proof</h3>
+        <a href="/publications">Publications</a>
+        <a href="/whitepapers">Whitepapers</a>
+        <a href="/technical/">Technical Library</a>
+        <a href="/mission">Open Science &amp; Reproducibility</a>
+        <a href="/aegis/gate-honest-index.html">The Honest Gates</a>
+        <a href="/rss.xml">News RSS</a>
+      </div>
+      <div class="kfe-col">
+        <h3>Company</h3>
+        <a href="/mission">About / Mission</a>
+        <a href="/leadership">Leadership</a>
+        <a href="/ehs">Environment Health &amp; Safety</a>
+        <a href="/investors">Investors</a>
+        <a href="/careers">Careers</a>
+        <a href="/press">Press</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="kfe-bottom">
+      <div class="kfe-bottom-links">
+        <span>© 2026 Kronos Fusion Energy, Inc.</span>
+        <a href="/legal/privacy">Privacy</a>
+        <a href="/legal/terms">Terms</a>
+        <a href="/legal/legal-notices">Corrections log</a>
+        <a href="/legal/cookie-policy">Cookies</a>
+        <a href="/legal/accessibility">Accessibility</a>
+        <a href="/rss.xml">RSS</a>
+      </div>
+      <div class="kfe-social">
+        <a href="https://www.linkedin.com/company/kronosfusionenergy/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/kronosfusionenergy/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@KronosFusionEnergy" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="https://x.com/Kronos__Fusion" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <p class="kfe-disclosure">
+      Kronos Fusion Energy, Inc. is a pre-commercial technology company. Engineering figures on this
+      site reflect the frozen design point and simulation results; they are not operating measurements
+      and are not an offer to sell securities.
+    </p>
+  </div>
+</footer>
+</div>
+
+<script>
+(function () {
+  var root = document.currentScript ? document.currentScript.previousElementSibling : null;
+  var menus = document.querySelectorAll('.kfe-embed [data-kfe-menu]');
+
+  function closeAll(except) {
+    menus.forEach(function (li) {
+      if (li === except) return;
+      li.classList.remove('kfe-open');
+      var b = li.querySelector('.kfe-nav-trigger');
+      if (b) b.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  menus.forEach(function (li) {
+    var btn = li.querySelector('.kfe-nav-trigger');
+    var open = function () { closeAll(li); li.classList.add('kfe-open'); btn.setAttribute('aria-expanded', 'true'); };
+    var close = function () { li.classList.remove('kfe-open'); btn.setAttribute('aria-expanded', 'false'); };
+
+    li.addEventListener('mouseenter', open);
+    li.addEventListener('mouseleave', close);
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.contains('kfe-open') ? close() : open();
+    });
+    li.addEventListener('focusout', function (e) {
+      if (!li.contains(e.relatedTarget)) close();
+    });
+  });
+
+  document.addEventListener('click', function () { closeAll(null); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      closeAll(null);
+      var m = document.getElementById('kfe-mobile');
+      var b = document.getElementById('kfe-burger');
+      if (m) m.classList.remove('kfe-open');
+      if (b) b.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  var burger = document.getElementById('kfe-burger');
+  var mobile = document.getElementById('kfe-mobile');
+  if (burger && mobile) {
+    burger.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = mobile.classList.toggle('kfe-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+  }
+})();
+
+(function(){var h=document.querySelector('.kfe-embed .kfe-header');if(!h)return;
+var f=function(){h.classList.toggle('kfe-scrolled',(window.scrollY||document.documentElement.scrollTop)>8);};
+f();window.addEventListener('scroll',f,{passive:true});})();
+
+</script>
+<!-- ══ END KRONOS HEADER + FOOTER EMBED ═══════════════════════════════ -->
+<script>
+(function(){
+ function slug(s){return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,60)||'s';}
+ function ready(fn){if(document.readyState!='loading')fn();else document.addEventListener('DOMContentLoaded',fn);}
+ ready(function(){
+  try{
+   var body=document.body;
+   // skip link
+   var sk=document.createElement('a');sk.href='#contents';sk.className='tfe-skip';sk.textContent='Skip to contents';
+   body.insertBefore(sk,body.firstChild);
+   // progress bar
+   var pb=document.createElement('div');pb.id='tfe-prog';body.appendChild(pb);
+   function prog(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;pb.style.width=(m>0?(h.scrollTop/m*100):0)+'%';}
+   window.addEventListener('scroll',prog,{passive:true});prog();
+   // toolbar: dark toggle + top
+   var tb=document.createElement('div');tb.className='tfe-toolbar';
+   var dk=document.createElement('button');dk.type='button';dk.textContent='◐ Dark';
+   try{if(localStorage.getItem('tfe-dark')=='1'){document.documentElement.classList.add('tfe-dark');dk.textContent='◑ Light';}}catch(e){}
+   dk.onclick=function(){var on=document.documentElement.classList.toggle('tfe-dark');dk.textContent=on?'◑ Light':'◐ Dark';try{localStorage.setItem('tfe-dark',on?'1':'0');}catch(e){}};
+   var up=document.createElement('button');up.type='button';up.textContent='↑ Top';up.onclick=function(){window.scrollTo({top:0,behavior:'smooth'});};
+   tb.appendChild(dk);tb.appendChild(up);body.appendChild(tb);
+   // main + toc landmarks
+   var main=document.querySelector('main');if(main){main.id=main.id||'tfe-main';main.setAttribute('role','main');}
+   var tocnav=document.querySelector('nav.toc');if(tocnav){tocnav.setAttribute('aria-label','Table of contents');var tp=tocnav.querySelector('h2');if(tp)tp.id=tp.id||'contents';}
+   // sections: order + titles
+   var secs=[].slice.call(document.querySelectorAll('section[id^="sec-"]'));
+   secs.forEach(function(sec,i){
+     sec.setAttribute('role','doc-chapter');
+     var h=sec.querySelector('h1,h2');var ttl=h?h.textContent.trim():('Chapter '+(i+1));
+     if(h){ h.id=h.id||sec.id; if(!h.querySelector('.hlink')){var a=document.createElement('a');a.className='hlink';a.href='#'+sec.id;a.textContent='#';a.setAttribute('aria-label','Link to this section');h.appendChild(a);}
+       // read time
+       var words=(sec.textContent||'').trim().split(/\s+/).length;var mins=Math.max(1,Math.round(words/200));
+       var rt=document.createElement('span');rt.className='tfe-rt';rt.textContent=mins+' min read · '+words.toLocaleString()+' words';h.insertAdjacentElement('afterend',rt);
+     }
+     // ids for inner headings (deep-linkable)
+     [].slice.call(sec.querySelectorAll('h2,h3,h4')).forEach(function(hh){if(!hh.id){hh.id=sec.id+'-'+slug(hh.textContent);} if(!hh.querySelector('.hlink')&&hh!==h){var a2=document.createElement('a');a2.className='hlink';a2.href='#'+hh.id;a2.textContent='#';a2.setAttribute('aria-label','Link to this subsection');hh.appendChild(a2);}});
+     // prev/next + back to contents
+     var nl=document.createElement('div');nl.className='tfe-navlinks';
+     var prev=i>0?'<a href="#'+secs[i-1].id+'">&larr; Previous</a>':'<span></span>';
+     var next=i<secs.length-1?'<a href="#'+secs[i+1].id+'">Next &rarr;</a>':'<span></span>';
+     nl.innerHTML=prev+'<a class="tfe-top" href="#contents">&uarr; Contents</a>'+next;
+     sec.appendChild(nl);
+   });
+   // 2-level TOC: under each chapter link, nest its sub-headings
+   if(tocnav){
+     [].slice.call(tocnav.querySelectorAll('a[href^="#sec-"]')).forEach(function(a){
+       var sid=a.getAttribute('href').slice(1);var sec=document.getElementById(sid);if(!sec)return;
+       var subs=[].slice.call(sec.querySelectorAll('h2')).filter(function(hh){return hh.id&&hh.id!==sid;});
+       if(subs.length<2)return;
+       var li=a.closest('li');if(!li)return;
+       var det=document.createElement('details');var sm=document.createElement('summary');sm.appendChild(a.cloneNode(true));
+       var ul=document.createElement('ul');
+       subs.slice(0,24).forEach(function(hh){var l=document.createElement('li');l.innerHTML='<a href="#'+hh.id+'">'+hh.textContent.replace(/#$/,'').trim()+'</a>';ul.appendChild(l);});
+       det.appendChild(sm);det.appendChild(ul);a.replaceWith(det);
+     });
+   }
+   // scrollspy: highlight current chapter in toc
+   var links={};[].slice.call((tocnav||document).querySelectorAll('a[href^="#sec-"]')).forEach(function(a){links[a.getAttribute('href').slice(1)]=a;});
+   if('IntersectionObserver' in window){
+     var io=new IntersectionObserver(function(es){es.forEach(function(e){var a=links[e.target.id];if(!a)return;if(e.isIntersecting){for(var k in links)links[k].classList.remove('tfe-cur');a.classList.add('tfe-cur');}});},{rootMargin:'-40% 0px -55% 0px'});
+     secs.forEach(function(s){io.observe(s);});
+   }
+   // figure lightbox
+   var lb=document.createElement('div');lb.id='tfe-lb';var lbi=document.createElement('img');lb.appendChild(lbi);body.appendChild(lb);
+   lb.onclick=function(){lb.classList.remove('on');};document.addEventListener('keydown',function(e){if(e.key=='Escape')lb.classList.remove('on');});
+   body.addEventListener('click',function(e){var im=e.target;if(im.tagName=='IMG'&&/figures\//.test(im.getAttribute('src')||'')){lbi.src=im.currentSrc||im.src;lbi.alt=im.alt||'';lb.classList.add('on');}});
+  }catch(err){console&&console.warn&&console.warn('tfe enhance',err);}
+ });
+})();
+</script><script>(function(){var rl=document.querySelector(".readlisten");if(!rl)return;var pl=document.querySelector(".rl-player");rl.querySelector(".rl-listen").addEventListener("click",function(){pl.hidden=!pl.hidden;this.setAttribute("aria-expanded",pl.hidden?"false":"true");this.textContent=pl.hidden?"🎧 Listen instead":"✕ Hide player";});var au=pl.querySelector("audio"),src=pl.querySelector("source");pl.querySelectorAll(".rl-voice button").forEach(function(b){b.addEventListener("click",function(){pl.querySelectorAll(".rl-voice button").forEach(function(x){x.classList.remove("on")});b.classList.add("on");var v=b.getAttribute("data-v");src.src=src.getAttribute("data-"+v)||src.src;au.load();});});})();</script></body></html>

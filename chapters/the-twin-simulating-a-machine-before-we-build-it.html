@@ -1,0 +1,689 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Twin: Simulating a Machine Before We Build It · The Fusion Energy Equations</title><meta name="description" content="Four centuries ago, an astronomer could predict an eclipse to the minute but could not build the heavens he was charting. We have inverted that ancient bargain. Today we can build "><meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large"><meta name="author" content="P. I. Ford"><link rel="canonical" href="https://kronosfusionenergy.com/the-fusion-energy-equations/chapters/the-twin-simulating-a-machine-before-we-build-it.html"><link rel="icon" href="https://kronosfusionenergy.com/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet"><style>body{margin:0;background:#fbfaf7;color:#14181f;font:18px/1.75 "Iowan Old Style",Palatino,Georgia,serif}main.chap{max-width:820px;margin:0 auto;padding:36px 22px 30px}.chap .kk{font:12px/1 "Space Mono",monospace;letter-spacing:.18em;text-transform:uppercase;color:#9a6a1a}.chapnav{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;margin:6px 0 18px;font:14px "Space Grotesk",system-ui,sans-serif}.chapnav a{color:#7a1420;text-decoration:none} .chapnav a:hover{text-decoration:underline}.chapnav .mid{display:flex;gap:14px}main.chap img{max-width:100%;height:auto}</style><style id="book-nav-fix">body .kfe-embed .kfe-header{background:#0a0e17 !important;border-bottom:1px solid rgba(212,173,92,.22)!important;backdrop-filter:none!important}body .kfe-embed .kfe-header .kfe-nav-link,body .kfe-embed .kfe-header .kfe-nav-trigger{color:rgba(226,231,239,.88)!important}body .kfe-embed .kfe-header .kfe-nav-link:hover,body .kfe-embed .kfe-header .kfe-nav-trigger:hover{color:#fff!important}body .kfe-embed .kfe-header .kfe-cta{color:#D4AD5C!important;border-color:rgba(212,173,92,.5)!important}</style><style id="tfe-enhance">
+:root{--tfe-gold:#9a6a1a;--tfe-accent:#7a1420}
+.tfe-skip{position:absolute;left:-999px;top:0;background:#0a0e17;color:#fff;padding:10px 16px;z-index:99999;border-radius:0 0 6px 0}
+.tfe-skip:focus{left:0}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #d4ad5c;outline-offset:2px}
+#tfe-prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#5ea0c0,#e94f9c);z-index:99998;transition:width .1s}
+.tfe-toolbar{position:fixed;right:16px;bottom:16px;display:flex;gap:8px;z-index:9000}
+.tfe-toolbar button{background:#0a0e17;color:#e2e8ef;border:1px solid #2a333d;border-radius:8px;padding:8px 10px;font:13px/1 'Space Grotesk',system-ui,sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.tfe-toolbar button:hover{border-color:#d4ad5c;color:#d4ad5c}
+.hlink{margin-left:.4em;color:#c9b489;text-decoration:none;opacity:0;font-weight:400}
+h2:hover .hlink,h3:hover .hlink{opacity:.8}
+.tfe-rt{display:block;font:12px/1 'Space Mono',ui-monospace,monospace;color:#8a7a52;margin:.2em 0 .6em;letter-spacing:.04em;text-transform:none}
+.tfe-navlinks{display:flex;justify-content:space-between;gap:12px;margin:26px 0 8px;padding-top:14px;border-top:1px solid #e2ded4;font:13px 'Space Grotesk',system-ui,sans-serif}
+.tfe-navlinks a{color:#7a1420;text-decoration:none} .tfe-navlinks a:hover{text-decoration:underline}
+.tfe-top{font:13px 'Space Grotesk',system-ui,sans-serif}
+nav.toc details{margin:2px 0} nav.toc details>summary{cursor:pointer;list-style:none} nav.toc details ul{margin:4px 0 8px 14px}
+nav.toc a.tfe-cur{color:#7a1420;font-weight:700}
+.tfe-extras{background:#f3efe6;border-top:2px solid #e2ded4;margin-top:40px;padding:40px 22px}
+.tfe-extras .tfe-in{max-width:820px;margin:0 auto}
+.tfe-extras h2{font-family:Georgia,'Iowan Old Style',serif;font-size:22px;margin:26px 0 10px}
+.tfe-dl{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 8px}
+.tfe-btn{display:inline-block;text-decoration:none;font:600 14px 'Space Grotesk',system-ui,sans-serif;padding:11px 16px;border-radius:8px;border:1px solid #c9c1b0;color:#7a1420;background:#fff}
+.tfe-btn.pri{background:#7a1420;color:#fff;border-color:#7a1420} .tfe-btn:hover{border-color:#7a1420}
+.tfe-cite pre{background:#fff;border:1px solid #e2ded4;border-radius:8px;padding:12px;overflow:auto;font-size:12.5px}
+.tfe-gloss dt{font-weight:700;margin-top:10px} .tfe-gloss dd{margin:2px 0 0 0;color:#3a3a38}
+.tfe-doi a{color:#7a1420}
+#tfe-lb{position:fixed;inset:0;background:rgba(8,10,14,.92);display:none;align-items:center;justify-content:center;z-index:99990;padding:24px}
+#tfe-lb.on{display:flex} #tfe-lb img{max-width:95%;max-height:92%;border-radius:8px}
+figure img,img[src^="figures/"]{cursor:zoom-in}
+/* dark reading theme */
+html.tfe-dark body{background:#0e1116 !important;color:#d7dde6 !important}
+html.tfe-dark .tfe-extras{background:#12161c !important;border-color:#242b34 !important}
+html.tfe-dark .tfe-extras h2,html.tfe-dark h1,html.tfe-dark h2,html.tfe-dark h3{color:#eef2f7 !important}
+html.tfe-dark a{color:#d4ad5c !important}
+html.tfe-dark .tfe-btn{background:#161b22 !important;color:#d4ad5c !important;border-color:#2a333d !important}
+html.tfe-dark .tfe-btn.pri{background:#7a1420 !important;color:#fff !important}
+html.tfe-dark .tfe-cite pre,html.tfe-dark table,html.tfe-dark td,html.tfe-dark th{background:#12161c !important;color:#cfd6df !important;border-color:#242b34 !important}
+html.tfe-dark nav.toc a{color:#c7d0dc !important}html.tfe-dark nav.toc{background:#12161c !important;border-color:#242b34 !important}html.tfe-dark nav.toc h2,html.tfe-dark nav.toc summary,html.tfe-dark nav.toc strong{color:#e6ebf2 !important}html.tfe-dark .tfe-navlinks{border-color:#242b34 !important}html.tfe-dark .tfe-rt{color:#9aa88f !important}
+@media print{.tfe-toolbar,#tfe-prog,.kfe-header{display:none !important}}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": ["Chapter", "Article"], "name": "The Twin: Simulating a Machine Before We Build It", "headline": "The Twin: Simulating a Machine Before We Build It", "position": 18, "isPartOf": {"@type": "Book", "name": "The Fusion Energy Equations", "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/", "identifier": "https://doi.org/10.5281/zenodo.22179328"}, "author": {"@type": "Person", "name": "P. I. Ford"}, "publisher": {"@type": "Organization", "name": "Kronos Fusion Energy"}, "inLanguage": "en", "isAccessibleForFree": true, "license": "https://creativecommons.org/licenses/by/4.0/", "url": "https://kronosfusionenergy.com/the-fusion-energy-equations/chapters/the-twin-simulating-a-machine-before-we-build-it.html"}</script><style id="rl-css">.readlisten{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#f3efe6;border:1px solid #e2ded4;border-radius:12px;padding:12px 16px;margin:0 0 8px;font:14px "Space Grotesk",system-ui,sans-serif}.readlisten .rl-lbl{color:#6b7480}.readlisten .rl-opt{font-weight:600;color:#7a1420}.readlisten .rl-listen{background:#7a1420;color:#fff;border:0;border-radius:8px;padding:8px 14px;cursor:pointer;font:inherit;font-weight:600}.readlisten .rl-listen:hover{background:#611019}.rl-player{margin:0 0 20px}.rl-player .rl-voice{display:inline-flex;gap:6px;margin-bottom:8px}.rl-player .rl-voice button{background:#fff;border:1px solid #c9c1b0;border-radius:20px;padding:5px 14px;cursor:pointer;font:13px "Space Grotesk";color:#5b6675}.rl-player .rl-voice button.on{background:#0a0e17;color:#fff;border-color:#0a0e17}.rl-player audio{width:100%;max-width:560px;display:block}.rl-note{color:#8a7a52;font:12px "Space Mono",monospace;margin:6px 0 0}html.tfe-dark .readlisten,html.tfe-dark .rl-player .rl-voice button{background:#12161c!important;border-color:#242b34!important;color:#c7d0dc!important}html.tfe-dark .readlisten .rl-lbl{color:#8792a0!important}</style></head><body><!-- ══════════════════════════════════════════════════════════════════════════
+     KRONOS FUSION ENERGY — GLOBAL HEADER + FOOTER (self-contained embed)
+     Paste this entire block into the <body> of any static page.
+     • all CSS inline in one <style> block (only external ref: Google Fonts link)
+     • logo is inline SVG
+     • dropdowns work with plain CSS + vanilla JS (no React, no bundler)
+     • all links are absolute paths on kronosfusionenergy.com
+     ══════════════════════════════════════════════════════════════════════ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+/* ── Kronos embed scope ───────────────────────────────────────────────── */
+.kfe-embed,
+.kfe-embed *,
+.kfe-embed *::before,
+.kfe-embed *::after { box-sizing: border-box; }
+
+.kfe-embed {
+  --kfe-bg:        #1f2733;
+  --kfe-bg-deep:   #0f141c;
+  --kfe-bg-panel:  rgba(15, 20, 28, 0.98);
+  --kfe-fg:        #dfe4ec;
+  --kfe-accent:    #e8c476;
+  --kfe-border:    rgba(150, 165, 190, 0.28);
+  --kfe-sans: "Space Grotesk", system-ui, -apple-system, Segoe UI, sans-serif;
+  --kfe-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-family: var(--kfe-sans);
+  color: var(--kfe-fg);
+  -webkit-font-smoothing: antialiased;
+}
+.kfe-embed a { text-decoration: none; color: inherit; }
+.kfe-embed ul { list-style: none; margin: 0; padding: 0; }
+.kfe-embed button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+
+/* ── Header ───────────────────────────────────────────────────────────── */
+.kfe-header {
+  position: sticky; top: 0; z-index: 9000;
+  height: 80px;
+  background: rgba(15, 20, 28, 0.92);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--kfe-border);
+}
+.kfe-header-inner {
+  max-width: 1440px; margin: 0 auto; height: 100%;
+  padding: 0 20px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.kfe-brand { display: flex; align-items: center; gap: 12px; }
+.kfe-brand svg { width: 52px; height: 52px; flex: none; }
+.kfe-brand-text { display: flex; flex-direction: column; line-height: 1; }
+.kfe-brand-text b {
+  font-family: var(--kfe-mono); font-size: 14px; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+}
+.kfe-brand-text span {
+  font-family: var(--kfe-mono); font-size: 9px; margin-top: 4px;
+  letter-spacing: 0.25em; text-transform: uppercase; color: rgba(223,228,236,.55);
+}
+
+.kfe-nav { display: flex; align-items: center; gap: 4px; }
+.kfe-nav > li { position: relative; }
+.kfe-nav-link, .kfe-nav-trigger {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 12px; border-radius: 2px;
+  font-size: 12px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase;
+  color: rgba(223,228,236,.72); transition: color .15s, background .15s;
+  white-space: nowrap;
+}
+.kfe-nav-link:hover, .kfe-nav-trigger:hover,
+.kfe-nav li.kfe-open > .kfe-nav-trigger { color: var(--kfe-accent); background: rgba(232,196,118,.07); }
+.kfe-caret { width: 10px; height: 10px; transition: transform .18s; }
+.kfe-nav li.kfe-open .kfe-caret { transform: rotate(180deg); }
+
+.kfe-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 18px; border-radius: 2px;
+  font-family: var(--kfe-mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: #14181f; background: var(--kfe-accent);
+  border: 1px solid var(--kfe-accent); transition: opacity .15s;
+}
+.kfe-cta:hover { opacity: .85; }
+
+.kfe-dropdown {
+  position: absolute; top: 100%; left: 0; margin-top: 4px;
+  min-width: 260px; padding: 8px 0;
+  background: var(--kfe-bg-panel);
+  border: 1px solid var(--kfe-border);
+  box-shadow: 0 16px 40px rgba(5, 8, 12, .7);
+  backdrop-filter: blur(20px);
+  opacity: 0; visibility: hidden; transform: translateY(-6px);
+  transition: opacity .16s, transform .16s, visibility .16s;
+}
+.kfe-dropdown::before {
+  content: ""; position: absolute; top: -1px; left: 0; right: 0; height: 1px;
+  background: rgba(232,196,118,.45);
+}
+.kfe-nav li.kfe-open > .kfe-dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+.kfe-nav li:last-child .kfe-dropdown { left: auto; right: 0; }
+.kfe-dropdown a {
+  display: block; padding: 9px 18px;
+  font-size: 12.5px; letter-spacing: .02em; color: rgba(223,228,236,.72);
+  border-left: 2px solid transparent; transition: all .14s;
+}
+.kfe-dropdown a:hover {
+  color: var(--kfe-accent); background: rgba(232,196,118,.06);
+  border-left-color: var(--kfe-accent);
+}
+
+/* ── Mobile ───────────────────────────────────────────────────────────── */
+.kfe-burger { display: none; padding: 10px; }
+.kfe-burger svg { width: 22px; height: 22px; }
+.kfe-mobile {
+  display: none; position: fixed; inset: 80px 0 0 0; z-index: 8999;
+  overflow-y: auto; padding: 16px 20px 60px;
+  background: rgba(15, 20, 28, .985); backdrop-filter: blur(16px);
+}
+.kfe-mobile.kfe-open { display: block; }
+.kfe-mobile details { border-bottom: 1px solid rgba(150,165,190,.16); }
+.kfe-mobile summary {
+  list-style: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 48px; padding: 12px 4px;
+  font-size: 13px; letter-spacing: .1em; text-transform: uppercase;
+  color: rgba(223,228,236,.85);
+}
+.kfe-mobile summary::-webkit-details-marker { display: none; }
+.kfe-mobile details[open] summary { color: var(--kfe-accent); }
+.kfe-mobile details a, .kfe-mobile > a {
+  display: flex; align-items: center; min-height: 44px; padding: 10px 4px 10px 16px;
+  font-size: 13.5px; color: rgba(223,228,236,.68);
+}
+.kfe-mobile > a { border-bottom: 1px solid rgba(150,165,190,.16); text-transform: uppercase; letter-spacing: .1em; font-size: 13px; padding-left: 4px; }
+.kfe-mobile .kfe-cta { margin-top: 20px; width: 100%; justify-content: center; min-height: 48px; }
+
+@media (max-width: 1180px) {
+  .kfe-nav, .kfe-header .kfe-cta { display: none; }
+  .kfe-burger { display: inline-flex; }
+}
+
+/* ── Footer ───────────────────────────────────────────────────────────── */
+.kfe-footer {
+  position: relative; background: var(--kfe-bg-deep);
+  border-top: 1px solid rgba(232,196,118,.25);
+}
+.kfe-footer-inner { max-width: 1280px; margin: 0 auto; padding: 56px 20px 40px; }
+.kfe-footer-brand { display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px; }
+.kfe-footer-brand .kfe-brand svg { width: 44px; height: 44px; }
+.kfe-footer-tag { max-width: 460px; font-size: 12px; line-height: 1.7; color: rgba(223,228,236,.5); }
+.kfe-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
+.kfe-col h3 {
+  margin: 0 0 12px; font-family: var(--kfe-mono); font-size: 10px; font-weight: 400;
+  letter-spacing: .18em; text-transform: uppercase; color: rgba(223,228,236,.4);
+}
+.kfe-col a {
+  display: block; padding: 5px 0; font-size: 13.5px;
+  color: rgba(223,228,236,.6); transition: color .15s;
+}
+.kfe-col a:hover { color: var(--kfe-accent); }
+.kfe-bottom {
+  margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(150,165,190,.15);
+  display: flex; flex-wrap: wrap; align-items: center; gap: 16px; justify-content: space-between;
+}
+.kfe-bottom-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.kfe-bottom-links span, .kfe-bottom-links a {
+  font-family: var(--kfe-mono); font-size: 11px; color: rgba(223,228,236,.5);
+}
+.kfe-bottom-links a:hover { color: var(--kfe-accent); }
+.kfe-social { display: flex; align-items: center; gap: 14px; }
+.kfe-social a { color: rgba(223,228,236,.5); transition: color .15s; }
+.kfe-social a:hover { color: var(--kfe-accent); }
+.kfe-social svg { width: 17px; height: 17px; display: block; }
+.kfe-disclosure {
+  margin-top: 20px; font-size: 11px; line-height: 1.7; color: rgba(223,228,236,.35);
+}
+@media (max-width: 900px) { .kfe-cols { grid-template-columns: repeat(2, 1fr); gap: 28px; } }
+@media (max-width: 560px) { .kfe-cols { grid-template-columns: 1fr; } }
+
+/* === MATCH LIVE kronosfusionenergy.com HEADER (blend + muted nav + outlined CTA) === */
+.kfe-embed .kfe-header{background:transparent!important;backdrop-filter:none!important;
+  border-bottom:1px solid transparent!important;box-shadow:none!important;
+  transition:background .4s ease,backdrop-filter .4s ease,border-color .4s ease!important}
+.kfe-embed .kfe-header.kfe-scrolled{background:rgba(20,26,34,.92)!important;
+  backdrop-filter:blur(18px)!important;border-bottom:1px solid rgba(231,235,242,.07)!important}
+.kfe-embed .kfe-nav-link,.kfe-embed .kfe-nav-trigger{color:rgba(224,229,235,.6)!important;
+  font-size:12px!important;font-weight:500!important;letter-spacing:1.8px!important;
+  text-transform:uppercase!important;background:transparent!important;border-bottom:none!important;
+  text-decoration:none!important}
+.kfe-embed .kfe-nav-link:hover,.kfe-embed .kfe-nav-trigger:hover,
+.kfe-embed .kfe-nav li.kfe-open>.kfe-nav-trigger{color:#E7EBF2!important;background:transparent!important}
+.kfe-embed .kfe-header .kfe-cta{background:transparent!important;color:#D4AD5C!important;
+  border:1px solid #D4AD5C!important;border-radius:0!important;padding:9px 16px!important;
+  font-size:10px!important;letter-spacing:2.5px!important;text-transform:uppercase!important;box-shadow:none!important}
+.kfe-embed .kfe-header .kfe-cta:hover{background:rgba(212,173,92,.12)!important;color:#E2C57E!important;opacity:1!important}
+
+</style>
+
+<!-- ── HEADER ──────────────────────────────────────────────────────────── -->
+<div class="kfe-embed">
+<header class="kfe-header">
+  <div class="kfe-header-inner">
+    <a class="kfe-brand" href="/" aria-label="Kronos Fusion Energy — home">
+      <svg viewBox="0 0 120 120" role="img" aria-hidden="true">
+        <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+          <circle cx="60" cy="60" r="50" />
+          <line x1="60" y1="16" x2="60" y2="104" />
+          <path d="M26,60 C44,42 76,42 94,60" />
+          <path d="M26,60 C44,78 76,78 94,60" />
+        </g>
+        <circle cx="60" cy="60" r="7.5" fill="#e8c476" />
+      </svg>
+      <span class="kfe-brand-text"><b>Kronos</b><span>Fusion Energy</span></span>
+    </a>
+
+    <nav aria-label="Primary">
+      <ul class="kfe-nav">
+        <li data-kfe-menu>
+          <button class="kfe-nav-trigger" aria-expanded="false">Technology
+            <svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="kfe-dropdown">
+            <a href="/how-it-works">How it works</a>
+            <a href="/hyperion">Breeder — Hyperion</a>
+            <a href="/aegis">Burner — Aegis</a>
+            <a href="/metrovolt">Burner — MetroVolt</a>
+            <a href="/ai">AI-Native Architecture</a>
+            <a href="/magnets">Magnets</a>
+            <a href="/fuel-cycle">Fuel cycle</a>
+            <a href="/safety">Safety</a>
+            <a href="/roadmap">Roadmap</a>
+          </div>
+        </li>
+        <li data-kfe-menu>
+          <button class="kfe-nav-trigger" aria-expanded="false">Solutions
+            <svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="kfe-dropdown">
+            <a href="/metrovolt">AI &amp; Data Centers</a>
+            <a href="/defense">Defense &amp; Government</a>
+            <a href="/metrovolt">Grid &amp; Baseload</a>
+            <a href="/defense">Neutron Detection</a>
+            <a href="/ai">Quantum</a>
+          </div>
+        </li>
+        <li><a class="kfe-nav-link" href="/learn/">Learn</a></li>
+        <li><a class="kfe-nav-link" href="/technical/">Technical Library</a></li>
+        <li data-kfe-menu>
+          <button class="kfe-nav-trigger" aria-expanded="false">Proof
+            <svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="kfe-dropdown">
+            <a href="/publications">Publications</a>
+            <a href="/whitepapers">Whitepapers</a>
+            <a href="/technical/">Technical Library</a>
+            <a href="/mission">Open Science &amp; Reproducibility</a>
+            <a href="/aegis/gate-honest-index.html">The Honest Gates</a>
+          </div>
+        </li>
+        <li data-kfe-menu>
+          <button class="kfe-nav-trigger" aria-expanded="false">Company
+            <svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="kfe-dropdown">
+            <a href="/mission">About / Mission</a>
+            <a href="/leadership">Leadership</a>
+            <a href="/ehs">Environment Health &amp; Safety</a>
+            <a href="/investors">Investors</a>
+            <a href="/careers">Careers</a>
+            <a href="/press">Press</a>
+            <a href="/contact">Contact</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="kfe-cta" href="/3D_Model">3D Model</a>
+
+    <button class="kfe-burger" id="kfe-burger" aria-label="Open menu" aria-expanded="false" aria-controls="kfe-mobile">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ── MOBILE MENU ─────────────────────────────────────────────────────── -->
+<div class="kfe-mobile" id="kfe-mobile">
+  <details>
+    <summary>Technology<svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></summary>
+    <a href="/how-it-works">How it works</a>
+    <a href="/hyperion">Breeder — Hyperion</a>
+    <a href="/aegis">Burner — Aegis</a>
+    <a href="/metrovolt">Burner — MetroVolt</a>
+    <a href="/ai">AI-Native Architecture</a>
+    <a href="/magnets">Magnets</a>
+    <a href="/fuel-cycle">Fuel cycle</a>
+    <a href="/safety">Safety</a>
+    <a href="/roadmap">Roadmap</a>
+  </details>
+  <details>
+    <summary>Solutions<svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></summary>
+    <a href="/metrovolt">AI &amp; Data Centers</a>
+    <a href="/defense">Defense &amp; Government</a>
+    <a href="/metrovolt">Grid &amp; Baseload</a>
+    <a href="/defense">Neutron Detection</a>
+    <a href="/ai">Quantum</a>
+  </details>
+  <a href="/learn/">Learn</a>
+  <a href="/technical/">Technical Library</a>
+  <details>
+    <summary>Proof<svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></summary>
+    <a href="/publications">Publications</a>
+    <a href="/whitepapers">Whitepapers</a>
+    <a href="/technical/">Technical Library</a>
+    <a href="/mission">Open Science &amp; Reproducibility</a>
+    <a href="/aegis/gate-honest-index.html">The Honest Gates</a>
+  </details>
+  <details>
+    <summary>Company<svg class="kfe-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></summary>
+    <a href="/mission">About / Mission</a>
+    <a href="/leadership">Leadership</a>
+    <a href="/ehs">Environment Health &amp; Safety</a>
+    <a href="/investors">Investors</a>
+    <a href="/careers">Careers</a>
+    <a href="/press">Press</a>
+    <a href="/contact">Contact</a>
+  </details>
+  <a class="kfe-cta" href="/3D_Model">3D Model</a>
+</div>
+
+
+</div>
+<main class="chap"><div class="kk">The Fusion Energy Equations · Chapter 18 of 44</div><nav class="chapnav" aria-label="Chapter navigation"><a href="quantum-honestly.html">&larr; Quantum, Honestly</a><div class="mid"><a href="./">All chapters</a><a href="../">Full book</a><a href="../audiobook/">Audiobook</a></div><a href="igniting-the-markets-the-unbound-commercial-promise-of-fusion-energy.html">Igniting the Markets: The Unbound Commercial Promise of Fusion Energy &rarr;</a></nav><div class="readlisten"><span class="rl-lbl">This chapter:</span><span class="rl-opt">📖 You’re reading</span><button class="rl-listen" type="button" aria-expanded="false">🎧 Listen instead</button></div><div class="rl-player" hidden><div class="rl-voice"><button type="button" data-v="male" class="on">Male voice</button><button type="button" data-v="female">Female voice</button></div><audio controls preload="none" aria-label="Listen to this chapter"><source data-male="../audiobook/male/the-twin-simulating-a-machine-before-we-build-it.m4a" data-female="../audiobook/female/the-twin-simulating-a-machine-before-we-build-it.m4a" src="../audiobook/male/the-twin-simulating-a-machine-before-we-build-it.m4a" type="audio/mp4"></audio><p class="rl-note">Narration in production — this player goes live when the chapter audio lands.</p></div><section id="sec-17">
+<h1 id="the-twin-simulating-a-machine-before-we-build-it-17">The Twin: Simulating a Machine Before We Build It</h1>
+<p>Four centuries ago, an astronomer could predict an eclipse to the minute but could not build the heavens he was charting. We have inverted that ancient bargain. Today we can build a star's engine in a computer — every field line, every neutron, every turn of superconducting tape — years before we pour its foundations. There is a particular kind of nerve required to publish the full design of a power plant you have not built, cannot yet build, and will not begin building until construction breaks ground in 2027. The whole argument of this book is that the physics is solved — gain solved, not scaled — and that the two machines are reproducible on paper by anyone willing to check the math. But a design on paper carries a quiet, load-bearing assumption beneath every number: that the real machine, once welded together from steel and superconductor and chilled to within a few degrees of absolute zero, will actually behave the way the equations swear it will. Fusion history is a graveyard of designs that were flawless on paper and wrong in the vessel. So the honest question is not "is the design correct?" It is the harder one: "how do you wring the risk out of a machine before a single component of it exists?" This chapter is about the answer — a digital twin, and the simulation program that gives that twin teeth sharp enough to bite its own maker.</p>
+<p>"Digital twin" is one of the most abused phrases in modern engineering — easy to say, brutally hard to earn. Anyone can build a model that nods along with the design it was born from. That is not a twin. It is a mirror, and a mirror tells you nothing you did not already believe. A twin earns the name only when it is faithful enough to <em>surprise</em> you — faithful enough to reproduce a real experiment it was never shown, and then to turn around and reveal something about your own machine you never put in by hand. The difference between a mirror and a twin is the difference between flattery and a second opinion, and only one of them can save your life. That distinction — between a model that flatters the design and a model that could have proven it wrong — is the whole discipline of this chapter. It is also the reason the program is built the way it is, and the reason I will spend as much time on what did not work as on what did.</p>
+<h2 id="the-gate-is-confinement-17">The gate is confinement</h2>
+<p>Reach back to the first of the three forties — <strong>Q40</strong>, the physics: forty times more fusion energy out than the energy we spend to hold the plasma. The breeder, Hyperion, is a compact spherical tokamak with a major radius of just 1.2 metres, an aspect ratio of 2.5, elongation 2.0, and 8 tesla on axis. Its published scientific gain is Q_sci ≈ 3.076 — modest, deliberately so, because Hyperion's near-term business is making fuel, not power. But whether it hits even that number depends on one thing above all others, and it is not a number you can read off a blueprint. It is how fast heat leaks out of the plasma.</p>
+<figure><figcaption><strong>Figure.</strong> The breeder, Hyperion — a compact, negative-triangularity spherical tokamak whose near-term business is making fuel, not power. Everything in this chapter is a way of asking, and answering honestly, one question about this machine: how well does its plasma hold heat?</figcaption></figure>
+<p>Consider the sheer violence of the gradient we are asking this machine to hold. A fusion plasma is a hundred million degrees at its heart and merely warm at the wall a few centimetres away — the steepest temperature cliff anywhere in the solar system this side of a supernova. Nature loathes a gradient like that. Heat claws its way down the slope and toward the exit, and the rate at which it escapes — the <em>turbulent transport</em> — sets the confinement time. Confinement time is the thin line dividing a machine that ignites from a machine that merely glows and dies. Here is the uncomfortable part: turbulent transport is not something you can calculate with a formula. It emerges from the plasma tearing itself into a froth of microscopic eddies, driven by instabilities with names like the ion-temperature-gradient mode, and the only way to compute it from first principles is to simulate the turbulence itself, in five-dimensional phase space, one eddy at a time.</p>
+<h2 id="the-ladder-of-description-17">The ladder of description</h2>
+<figure class="fig"><img src="../figures/anim_turbulence.gif" alt="anim_turbulence_STILL" loading="lazy">
+<figcaption><strong>Plate.</strong> The adversary itself. Plasma turbulence resolved in nonlinear simulation — the churning transport this whole chapter's machinery exists to predict, and the web edition shows in motion.</figcaption></figure>
+<p>To see why that calculation is so expensive — and why a surrogate is not a luxury but a necessity — you have to understand that a plasma can be described at several levels of detail, and that each level buys tractability by throwing away information. Fusion modeling is the art of choosing the coarsest description that still keeps the physics you need.</p>
+<p>At the bottom of the ladder is the <em>particle</em> description: track every ion and electron through the electromagnetic fields, one Newtonian trajectory at a time. It is exact and it is hopeless — a cubic metre of fusion plasma holds far too many particles to follow individually, and no computer that will ever be built could carry them all. So you climb.</p>
+<p>The next rung is the <em>kinetic</em> description. Instead of tracking individual particles, you track a <em>distribution function</em> — a smooth cloud in the six-dimensional space of position and velocity that says how many particles are, statistically, at each place moving at each speed. This is where the honest turbulence physics lives, and it is governed by a kinetic equation for how that cloud evolves. But six dimensions is a brutal price, so fusion physicists use a specialized simplification called <em>gyrokinetics</em>. The trick exploits a fact about magnetized plasma: each particle spirals tightly around a magnetic field line, thousands of times faster than anything interesting happens to its overall drift. You do not care about the fast spiral; you care about the guiding centre it spirals around. Gyrokinetics averages the spiral away, collapsing six dimensions to five and removing the fastest, least interesting timescale — and that single act of averaging is what makes first-principles turbulence simulation possible at all.</p>
+<p>Climb once more and you reach the <em>fluid</em> description, which stops tracking the velocity cloud entirely and keeps only its bulk moments — density, flow, pressure — the way you describe water without tracking every molecule. Fluid models are fast and they are indispensable, but they need a <em>closure</em>: an assumption, imported from outside, about the quantities they threw away. And the most important closure of all is the turbulent heat flux — precisely the number gyrokinetics computes and fluid models cannot. At the top of the ladder sits magnetohydrodynamics, MHD, which treats the whole plasma as a single conducting fluid and is the right tool for large-scale stability but blind to the microscopic turbulence underneath.</p>
+<p>Every rung of the ladder trades detail for speed, and the whole discipline is choosing the coarsest description that still tells the truth — and then paying, once, in gyrokinetic cycles, to compute the one closure the fast models cannot. The reason the confinement question is the most expensive in the program is now plain: it lives on the kinetic rung, in five dimensions, and it cannot be answered honestly from any rung above it. You either pay the gyrokinetic cost or you guess.</p>
+<figure class="fig"><img src="../figures/F03_equation_method_map.png" alt="F03_EQUATION_METHOD_MAP" loading="lazy">
+<figcaption><strong>Figure.</strong> The ladder of description, mapped to the equation solved and the method that solves it. At the bottom, the exact particle picture — one Newtonian trajectory per ion — is exact and hopeless. Climb to the kinetic rung and its gyrokinetic simplification, where the honest turbulence physics lives in five dimensions; climb again to the fluid moments, which run fast but need a closure imported from below; and at the top, magnetohydrodynamics for large-scale stability. Every rung trades detail for speed, and the whole discipline is choosing the coarsest description that still tells the truth — then paying, once, in gyrokinetic cycles, for the one closure the fast models cannot supply.</figcaption></figure>
+<h2 id="a-zoo-of-instabilities-and-how-you-name-them-17">A zoo of instabilities, and how you name them</h2>
+<p>The turbulence that leaks heat out of a tokamak is not one thing. It is a whole zoo of microscopic instabilities, each with its own trigger, its own signature, and its own remedy, and a twin that hopes to predict confinement has to know which animals are in the cage.</p>
+<p>The transport they drive is, by long convention, sorted into three kinds. <em>Classical</em> transport is the irreducible minimum: particles bump into each other and random-walk across the field. <em>Neoclassical</em> transport adds the corrections that come from the doughnut geometry itself — particles that get trapped in the weaker field on the outboard side trace fat "banana" orbits that let them wander farther. Both of these are calculable and, it turns out, small. What dominates real machines is the third kind, historically called <em>anomalous</em> transport precisely because for decades no one could explain why the heat leaked out so much faster than classical and neoclassical theory allowed. The answer, now settled, is turbulence — and the turbulence is driven by drift-wave instabilities feeding on the very gradients that make the plasma useful.</p>
+<p>The main offenders have names worth knowing, because the twin has to resolve each one. The <em>ion-temperature-gradient</em> mode feeds on the steep ion temperature profile and is usually the dominant heat leak in the core. Its electron-scale cousin, the <em>electron-temperature-gradient</em> mode, does the same on a finer scale. The <em>trapped-electron</em> mode exploits those banana-orbit electrons. And the <em>microtearing</em> mode is a subtler, magnetic instability that tears and reconnects field lines on a tiny scale, channelling electron heat out through the plasma's edge. That edge is where the highest-stakes physics lives. A well-run tokamak spontaneously forms a <em>pedestal</em> — a narrow region at the boundary where the pressure gradient steepens dramatically and confinement jumps, the transition from ordinary low-confinement operation to the high-confinement mode that every reactor design quietly assumes. The pedestal is a gift and a hazard at once: it lifts performance, but it also stores energy that can be dumped in sudden bursts, the edge-localized modes that flick damaging heat pulses at the wall. Getting the pedestal right — steep enough to confine, controlled enough not to bite — is one of the hardest jobs the twin has.</p>
+<p>How do you tell these instabilities apart in a real plasma, where they all contribute at once? You fingerprint them. Each mode has a characteristic frequency, a characteristic spatial scale, and a characteristic ratio between the fluctuations it produces in density and in magnetic field. Modern internal-fluctuation diagnostics can measure those signatures directly, and by comparing the measured fingerprint against what a gyrokinetic simulation predicts for each candidate mode, you can identify which instability is actually running the show in a given discharge. It is genuinely like forensic identification: not "the plasma is turbulent" but "<em>this</em> mode, at <em>this</em> location, is carrying <em>this</em> fraction of the heat."</p>
+<p>That fingerprinting is also where fast, learned tools first entered fusion modeling, years before the surrogates of this program. Because a full gyrokinetic scan is far too slow to run inside an operating tokamak, physicists built <em>reduced models</em> — compact approximations, some of them frankly heuristic, that predict which modes will be unstable and how fast they will grow from a handful of local parameters, quickly enough to guide an experiment in progress. Neural networks trained on gyrokinetic databases pushed this further, delivering near-instant estimates of instability growth and even rapid reconstructions of the plasma equilibrium itself. Those early fast-surrogate successes are the direct ancestors of the transport surrogate at the heart of this chapter. The idea is the same one, grown up: pay the exact physics once, learn the shape of its answer, and thereafter reply in the blink of an eye.</p>
+<blockquote>Every design in this book rests on an assumption about how well its plasma holds heat. The twin exists to turn that assumption into a computed result.</blockquote>
+<p>That is the single most expensive question in the whole program, and until recently we answered it the way the field always has — with a reduced model, a fast approximation that captures the physics in broad strokes and runs in seconds. Reduced models are indispensable. They are also not proof. The point of the simulation program is to replace the assumption with a first-principles answer, validate that answer against reality, and then compress it into a tool fast enough to redesign the machine in an afternoon.</p>
+<h2 id="a-machine-that-has-to-run-in-two-places-at-once-17">A machine that has to run in two places at once</h2>
+<p>Before the physics, a word about <em>time</em>. A fusion generator is a stack of coupled processes whose natural timescales span ten orders of magnitude — the cross-layer timing ladder laid out in full earlier in this chapter, from the microsecond events that can wreck the machine to the months of fuel logistics.</p>
+<p>This is why the twin is not a single program. There is the <em>design</em> twin — slow, first-principles, exact, taking hours of supercomputer time to answer one question about one operating point — and there is the <em>predictive shadow</em>, the fast twin that runs alongside a live plasma, integrated fifty to a hundred milliseconds ahead of reality, catching trouble before it arrives. They are the same physics at opposite ends of the time ladder, and the bridge between them is the central trick of this chapter: the surrogate, a learned model that inherits the exact twin's accuracy and the shadow's speed. Get that bridge right and microsecond design exploration becomes possible — you can ask the machine ten thousand "what if" questions in the time it used to take to ask one.</p>
+<h2 id="the-pipeline-an-ordinary-desktop-an-extraordinary--17">The pipeline: an ordinary desktop, an extraordinary discipline</h2>
+<p>The exact turbulence physics runs in a first-principles nonlinear gyrokinetic code — the kind of tool that a decade ago lived only on national supercomputers. The program runs it two ways. On the ground is a single workstation, a 28-core machine with 768 gigabytes of memory, on which the full gyrokinetic suite is built, validated, and used for development. In the cloud are the accelerators — banks of high-end GPUs rented by the hour — where the heavy nonlinear runs actually execute. The workstation writes the problem; the cloud solves it; the answer comes home.</p>
+<p>The unglamorous detail I want to dwell on is that this pipeline is <em>bit-exact</em>. A calculation launched from the desktop and run on a rented cloud GPU returns results identical, to the last bit, to the same calculation run locally. That sounds like a triviality. It is not. It is the entire reproducibility case in one property. If the cloud and the desktop disagreed even in the last decimal place, you could never be sure whether a result was physics or an artifact of where it happened to run — and a fusion design that cannot be independently rerun is not a design, it is an anecdote. Bit-exactness means anyone, anywhere, on any comparable hardware, can regenerate the numbers. It is the same philosophy that governs the published papers: every headline reproduces off a script from a single random seed. The twin holds itself to the standard we hold the physics to.</p>
+<h2 id="validate-against-reality-then-and-only-then-trust--17">Validate against reality, then — and only then — trust the model</h2>
+<p>Here is the step that separates a twin from a mirror, and it is worth stating as a rule because the whole credibility of the program turns on it.</p>
+<p>You never trust a simulation of your own machine until the same simulation, unchanged, has reproduced an experiment someone already ran on a real machine.</p>
+<p>So before the code is ever pointed at Hyperion, it is pointed at a real tokamak discharge — a shot from an existing, operating device, with published measurements of how much heat actually leaked out of that real plasma. The code is given the real machine's geometry and profiles and asked, from first principles, to predict the measured heat flux. If it reproduces the experiment, within the error bars, without being tuned to do so, then and only then has it earned the right to be believed about a machine that does not yet exist. This is the difference between "our model says Hyperion works" and "our model reproduces reality, and our model says Hyperion works." The first is a claim. The second is evidence.</p>
+<p>I put the validation step deliberately <em>before</em> the design study in the plan, not after, because the temptation runs the other way. It is tempting to simulate your own machine first, get an encouraging number, and validate later if time allows. That ordering quietly poisons everything downstream, because once you have seen the answer you want, every subsequent modeling choice is contaminated by it. Validate first, against a discharge you did not design and cannot fudge, and the design result that follows is honest by construction.</p>
+<h2 id="a-validation-shot-worked-through-17">A validation shot, worked through</h2>
+<figure class="fig"><img src="../figures/I2_burn_timeline.png" alt="I2_burn_timeline" loading="lazy">
+<figcaption><strong>Plate.</strong> A discharge, end to end. The simulated burn timeline — startup, flat-top, and termination — of the machine that exists so far only as mathematics, run exactly as the real one will be.</figcaption></figure>
+<p>The rule above — never trust a simulation of your own machine until the same code, unchanged, has reproduced an experiment someone else already ran — is easy to state and laborious to honor. So let me walk one validation through, step by step, because the discipline lives in the details, not the slogan.</p>
+<p>You begin by choosing a discharge from an existing, operating tokamak — a real "shot," fired years ago on a machine you had no hand in designing, with published, peer-reviewed measurements of two things: the plasma profiles inside that shot, and, crucially, how much heat actually leaked out of it. The fact that you did not design the machine is not incidental. It is the entire point. A shot you cannot influence is a shot you cannot flatter. It sits in the literature as a fixed fact, indifferent to what you wish your code would say.</p>
+<p>Then you set the problem up honestly. You hand the gyrokinetic code that machine's real geometry and its measured profiles — the density and temperature and, above all, the <em>gradients</em> of those profiles at the radius you are testing, because it is the gradients that feed the turbulence. And then you do the hard thing: you tell the code nothing about the answer. You do not reveal the measured heat flux. You do not reach in and tune a coefficient to nudge the prediction toward the known result. The code integrates the turbulence from first principles — the ion-temperature-gradient mode and its cousins tearing the plasma into a froth of microscopic eddies — running forward until the transport saturates and the heat flux settles to a steady value. Hours of GPU time later, it reports a number it derived without ever being told what it was supposed to find.</p>
+<p>Only now do you look. You set the computed heat flux beside the measured one. If they agree within the experiment's error bars — and agree <em>without</em> any tuning to make them — then the code has earned something it can earn no other way: the right to be believed about Hyperion, a machine that does not yet exist. This is the exact moment a claim turns into evidence. Before it, you have "our model says Hyperion confines heat well enough." After it, you have "our model reproduces a real plasma it was never shown, and <em>that same model</em> says Hyperion confines heat well enough." Only the second sentence can carry the weight of a design.</p>
+<p>It is worth sitting with what a <em>failure</em> here would have meant, because that is what gives the passing grade its value. Suppose the computed flux had come out at half the measured value. You would not, in that case, have a Hyperion result you merely needed to caveat. You would have a modeling bug wearing the costume of a physics prediction — and every encouraging number the code later produced about your own machine would be worthless, because you would have no way to tell physics from artifact. That is precisely why the validation step is placed <em>before</em> the design study in the plan and never after: the ground has to be proven solid before you build on it, not once the building is up.</p>
+<p>And validation is never one triumphant checkmark. The honest version reports the match together with its error bar, flags the radii where the agreement is tight and the ones where it frays, and treats near-marginal points — the delicate cases sitting right at the edge of stability — with extra suspicion, because a coarse calculation will cheerfully report a clean answer there that is simply wrong. A twin earns trust one validated shot at a time, and it keeps a ledger of exactly how far that trust extends.</p>
+<h2 id="surrogates-turning-a-supercomputer-into-a-pocket-c-17">Surrogates: turning a supercomputer into a pocket calculator</h2>
+<p>A first-principles turbulence run is accurate and slow. One saturated nonlinear calculation — the kind that tells you how much heat truly leaks out at one set of gradients, one safety factor, one value of plasma pressure — costs hours of GPU time. To map the whole operating space of a machine, you need hundreds of them. That is a database, and a database is exactly what a machine-learning model wants to eat.</p>
+<p>A surrogate is a neural network trained on that database to reproduce the slow code's answer in a fraction of the time. Feed it the plasma conditions; it returns the heat flux — not by solving the physics, but by having learned the shape of the solution across every point it was trained on. The first-generation transport surrogate in the program was trained on a fast reduced (quasilinear) transport model rather than the full nonlinear code, as a proof of the mechanism, and it reached a coefficient of determination of <strong>R² = 0.999</strong> against its training physics. The successor, now that the first-principles database is being generated, is trained on the exact nonlinear code itself — inheriting its accuracy instead of the reduced model's approximation. Same architecture, better teacher.</p>
+<p>What that R² buys is worth translating carefully, because the number hides the point.</p>
+<p>``` One first-principles turbulence calculation:   ~hours on a cloud GPU One surrogate query for the same answer:       ~microseconds on a laptop</p>
+<p class="eq"><code>Accuracy retained by the surrogate:            R² = 0.999</code></p>
+<p>```</p>
+<p>In plain words: R² = 0.999 means the surrogate accounts for 99.9 percent of the variation in the exact code's answers — the two agree to about a part in a thousand across the operating space. And it delivers that agreement roughly a billion times faster. That ratio is not a convenience; it is a change in what design <em>is</em>. When one physics answer costs hours, you evaluate a handful of candidate machines and pick the least-bad. When one answer costs microseconds, you let an optimizer roam the entire design space — size, field, shape, gradients — evaluating millions of variants, and you find the operating point that is genuinely best rather than merely acceptable. The surrogate turns the most expensive question in fusion into something you can ask on a laptop between sips of coffee. That is how a design gets de-risked: not by trusting one calculation, but by exhausting the space around it.</p>
+<h2 id="a-design-search-worked-through-17">A design search, worked through</h2>
+<figure class="fig"><img src="../figures/I7_heating_schedule.png" alt="I7_heating_schedule" loading="lazy">
+<figcaption><strong>Plate.</strong> Steering the burn. Computed heating and current-drive schedule across a discharge — one of the thousands of operational questions answered in silicon before steel.</figcaption></figure>
+<p>Once the transport surrogate returns a heat flux in microseconds instead of hours, the design search itself — trading the field's old habit of stopping at the first acceptable machine for an optimizer that roams the whole space of candidate Hyperions and finds the genuinely best one — is the optimization story told in full earlier in this chapter. What matters for the twin is the shape it takes here: because Hyperion sits close to the ion-temperature-gradient threshold, the search does not hunt for a design that merely <em>passes</em> but for the operating point that sits <em>deepest</em> inside the feasible region — robust to exactly the gradient error bars a knife-edge design could not survive. That is what de-risking a design means in practice: not trusting one calculation, but exhausting the space around it so thoroughly that you know your chosen point is not a lucky accident.</p>
+<h2 id="the-burner-s-twin-and-a-real-net-gain-result-17">The burner's twin, and a real net-gain result</h2>
+<figure class="fig"><img src="../figures/I1_current_ramp.gif" alt="I1_current_ramp_STILL" loading="lazy">
+<figcaption><strong>Plate.</strong> The twin at work. A simulated current ramp under the control stack — the digital machine being flown, microsecond by rehearsed microsecond. · <em>In motion in the web edition at kronosfusionenergy.com.</em></figcaption></figure>
+<p>The breeder is a tokamak, and its turbulence is a tokamak's turbulence. The burner is another creature altogether — a D–³He tandem mirror, a straight magnetic bottle some 440 metres long, stoppered at each end by colossal mirror coils reaching 26.49 tesla, burning a fuel so clean it sheds only about 5.4 percent of its energy as neutrons. Picture it: not a doughnut of fire chasing its own tail, but a river of plasma running the length of a city block, pinched at both ends by two of the most powerful magnetic corks ever conceived. A tandem mirror does not confine plasma by bending it into a ring; it confines it by squeezing it between those corks. Whether that works — whether the machine produces more power than it spends holding the plasma in — comes down to a delicate balance between the pressure in the central cell and the far higher pressure in the plugs.</p>
+<figure><figcaption><strong>Figure.</strong> The burner's tandem-mirror axial layout: a long, low-field central cell where the fusion power is made, terminated at each end by a high-field plug that acts as a magnetic cork. The twin's job for this machine is not tokamak turbulence but the axial force balance — whether the plugs can hold the central-cell pressure well enough for the machine to run net-positive.</figcaption></figure>
+<p>The consequence for the twin is fundamental: a mirror is not a Grad–Shafranov machine, so almost none of the tokamak's equilibrium and turbulence machinery carries over. The confining physics is the force balance along the axis — how the pressure profile from the low-field central cell up to the towering plug field holds together — and the twin for the burner is built around that balance rather than around cross-field turbulent transport. Two machines, two twins, one discipline: build the exact model, validate it, compress it into a surrogate. The physics under the surrogate could hardly be more different; the method on top of it is identical.</p>
+<p>We built a surrogate for that balance too, trained on the burner's mirror force-balance model. It reached <strong>R² = 0.98</strong>, and it returned a result I find genuinely encouraging: the machine crosses into net power gain when the plug-to-central-cell density ratio reaches about <strong>13.8</strong>. The design target for that ratio is 16, comfortably above the crossover, at which point the engineering gain lands near Q_E ≈ 1.318 — more electricity out than in. That is exactly the kind of margin you want to see fall out of a surrogate: not a knife-edge, but a design point sitting on the safe side of the threshold with room to spare. It is a small, honest, computed result that says the burner's core premise holds.</p>
+<figure class="fig"><img src="../figures/F01_kronos_ctrl_blueprint.png" alt="A_BLUEPRINT" loading="lazy">
+<figcaption><strong>Figure.</strong> How the design twins nest inside the control architecture. The slow first-principles codes (top) generate the transport and force-balance databases; surrogates compress them into microsecond-latency models; those surrogates become the four-module predictive shadow at the core of the plant controller. Design de-risking and real-time control are the same twin, read at two different speeds.</figcaption></figure>
+<h2 id="the-gaps-told-plainly-17">The gaps, told plainly</h2>
+<p>I would not trust this chapter — you should not trust this chapter — if it were all clean R² values and comfortable margins. It is not. Three things in the program do not reconcile, and each teaches something.</p>
+<p><strong>The first linear map was noisy.</strong> The opening step of the turbulence campaign is a linear stability map: sweep the plasma gradients and find where the instabilities switch on and how fast they grow. Our first pass came out under-converged near the margin — the near-threshold modes, the ones sitting right at the edge of stability, were not integrated long enough or resolved finely enough to trust. Near-marginal modes are notoriously delicate; a coarse calculation will happily report a clean answer that is simply wrong. The fix is not clever, it is disciplined: longer integration, more radial resolution, rerun. That sweep is running as this is written. I mention it because a design program that never shows you a noisy first result is a program that is hiding its first results.</p>
+<p><strong>Hyperion sits close to the turbulence threshold.</strong> When we swept the gradients, the real machine came out weakly unstable to the ion-temperature-gradient mode near threshold — turbulent, but not violently so, right in the sensitive regime where small changes in the assumed gradients move the answer a lot. That is not a problem to paper over; it is a flag that says the operating point must be pinned down with the machine's <em>real</em> profile gradients, not the placeholder gradients used to explore the space. The geometry of Hyperion is locked and real. The gradients that ride on top of it are still being nailed to the design, and until they are, the confinement number carries an honest error bar.</p>
+<p><strong>And the one we abandoned.</strong> The burner needs a number called η_α — the efficiency with which the energy of fusion-born alpha particles is channelled back into the fuel ions rather than lost. We tried to compute it with a Fokker–Planck kinetic prototype, the natural tool for the job. It did not work. It predicted an ion-heating fraction of 1.6 percent against an accepted analytic value near 12 percent — off by nearly an order of magnitude, which is not a result, it is a broken model. So we abandoned it, and we said why: a survey of the available codes confirmed that η_α is simply not a turnkey output of any existing tool. There is no button to press. Getting it right is a collaboration-and-custom-development problem — the burner's kinetics belong to a different code lineage than the tokamak's turbulence, run in partnership with specialists, with bespoke code written for the alpha-channelling physics on top. We logged it as an open build item rather than fudging a number to fill the hole. An abandoned prototype, honestly retired, is worth more than a plausible number nobody can defend.</p>
+<blockquote>The prototype that failed by a factor of seven taught us more than the surrogate that succeeded to a part in a thousand. It told us where the real work is.</blockquote>
+<p>That is the two-track reality of the program in one paragraph. The breeder's turbulence is a GPU problem, solved with a first-principles gyrokinetic code and compressed into a surrogate — a track we can drive ourselves, today. The burner's kinetics is a partnership problem, requiring collaboration and custom development, and no amount of GPU time substitutes for it. Pretending the second track is as far along as the first would be the easiest and most dishonest thing in this book.</p>
+<h2 id="proving-the-twin-is-not-a-mirror-17">Proving the twin is not a mirror</h2>
+<p>Return to the promise at the top of this chapter: a model that agrees with the design it was built from is a mirror, not a twin, and it tells you nothing you did not already assume. Validating against someone else's experiment is the first defence against that trap. There is a second, and it is worth describing because it is the kind of check most simulation programs quietly skip.</p>
+<p>The worry is circularity. Our twin computes an equilibrium; our surrogate learns that equilibrium; our controller trusts the surrogate. If every link in that chain was written by the same team with the same assumptions, the chain can be internally consistent and wrong — a closed loop congratulating itself. So we deliberately introduced an outsider. We took the twin's equilibrium and checked it against a completely separate, open-source equilibrium solver, written by a different community for a different purpose, with no knowledge of our machine. The fields agreed to within 2.66 percent — close enough to trust, and — the honest part — with one discrepancy in the flux near the magnetic axis that we keep on the record as a characterized failure mode rather than sand away. By that independent check, our internal measure of circularity roughly halved. The twin was made to answer to an authority it did not control.</p>
+<p>We did the same with the engineering. The twin's assumptions about magnets, materials, and structural strain were benchmarked, one by one, against the published engineering design basis of the largest international tokamak project — nineteen assumptions, each tagged as inside that reference envelope, deliberately outside it, or having no basis in it either way. Some of our choices sit outside the reference on purpose, because we use a high-temperature superconductor at a field and strain that project never designed for, and we label those honestly rather than imply an endorsement we do not have. It is an engineering-basis benchmark, not validation from an operating plasma — that machine has not run either — and I say so. But it is the difference between a twin that only ever talks to itself and one forced, repeatedly, to answer to the outside world.</p>
+<figure class="fig"><img src="../figures/DIAG_SCOREBOARD.svg" alt="DIAG_SCOREBOARD" loading="lazy">
+<figcaption><strong>Figure.</strong> The fidelity register — the twin forced to answer to authorities it does not control. On the physics side, the twin's equilibrium is checked against a separate open-source solver written by a different community: the fields agree to 2.66 percent, with one axis-flux discrepancy kept on the record as a characterized failure mode rather than sanded away, and the internal circularity measure roughly halves. On the engineering side, nineteen magnet, materials, and strain assumptions are benchmarked against the largest international tokamak project's published design basis and tagged one by one — inside that envelope, deliberately outside it, or with no basis either way. It is an engineering-basis benchmark, not validation from an operating plasma, and it is labeled as such.</figcaption></figure>
+<h2 id="quantum-honestly-17">Quantum, honestly</h2>
+<p>The three-tier quantum honesty — sensing near, computing far, tensor methods in the middle — is laid out in full earlier in this chapter; the twin consumes the near-term sensing tier and nothing more, letting a sharper magnetic measurement tighten the boundary condition the equilibrium reconstruction depends on and so lower the state-estimation error every downstream surrogate inherits.</p>
+<h2 id="where-nvidia-comes-in-17">Where NVIDIA comes in</h2>
+<p>Every revolution needs an engine room, and ours hums with silicon. The accelerated half of this program runs, in part, through NVIDIA's Inception program — the one cleared outside partner named anywhere in this book. Concretely, that means access to the GPU compute the nonlinear campaign consumes and to NVIDIA's open physics-machine-learning framework, which is the natural home for the transport surrogate: it is built precisely for training networks that respect physical laws, and the R² = 0.999 transport model is the exhibit that shows the pipeline works end to end. The partnership matters less for any single result than for what it makes routine — turning the once-exotic act of running first-principles turbulence and distilling it into a deployable model into something a small team can do on a rolling basis. The compute is a tool. The discipline around it is ours.</p>
+<h2 id="what-the-twin-is-and-what-it-is-not-17">What the twin is, and what it is not</h2>
+<p>Let me end with the disclosure that governs this chapter as it governs the whole book, because it is the honest frame for everything above. Kronos operates no fusion plant. Every number here — the R² values, the net-gain ratio of 13.8, the confinement estimates, the noisy first map and the abandoned prototype alike — comes from simulation, from a physics-based twin, or from public data. Nothing in this chapter came off a burning plasma, because there is no burning plasma. There is a design, published and reproducible, and there is a twin built to stress-test it.</p>
+<p>That is not a weakness of the program. It is the correct order of operations — the order that the whole history of engineering, written in wreckage and hard-won caution, insists upon. You do not build a machine the size of a building, meant to cage a fragment of a star, and only afterward discover whether your physics was right. You build the twin first. You validate it against experiments other people have already run and cannot be flattered into confirming. You send it hunting through your own design for flaws while those flaws are still cheap, still made of nothing but electrons. And you keep an honest ledger of everything it cannot yet tell you. When breeder construction begins in 2027, it will rise against a design that a faithful twin has already tried, again and again, to break — and failed. That is what it truly means to de-risk a machine before it exists: not a promise that nothing will surprise us, but a discipline that has spent every cheap surprise in silicon so that the expensive ones, in steel and superconductor, are as few as human care can make them.</p>
+<p>The twin is how a design earns the right to become a machine. It is how a drawing earns the right to become a star on Earth. And it is how, when this book tells you the physics is solved, you are entitled to sit down, open the code, and check for yourself.</p>
+<p><strong>This chapter's forty.</strong> Q40 — the gain the twin exists to protect, by keeping the fire controllable long enough to climb toward it.</p>
+</section><nav class="chapnav" aria-label="Chapter navigation"><a href="quantum-honestly.html">&larr; Quantum, Honestly</a><div class="mid"><a href="./">All chapters</a><a href="../">Full book</a><a href="../audiobook/">Audiobook</a></div><a href="igniting-the-markets-the-unbound-commercial-promise-of-fusion-energy.html">Igniting the Markets: The Unbound Commercial Promise of Fusion Energy &rarr;</a></nav></main>
+<div class="kfe-embed">
+<!-- ══ PAGE CONTENT GOES HERE ══════════════════════════════════════════ -->
+
+<!-- ── FOOTER ──────────────────────────────────────────────────────────── -->
+<footer class="kfe-footer">
+  <div class="kfe-footer-inner">
+    <div class="kfe-footer-brand">
+      <a class="kfe-brand" href="/">
+        <svg viewBox="0 0 120 120" role="img" aria-hidden="true">
+          <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+            <circle cx="60" cy="60" r="50" />
+            <line x1="60" y1="16" x2="60" y2="104" />
+            <path d="M26,60 C44,42 76,42 94,60" />
+            <path d="M26,60 C44,78 76,78 94,60" />
+          </g>
+          <circle cx="60" cy="60" r="7.5" fill="#e8c476" />
+        </svg>
+        <span class="kfe-brand-text"><b>Kronos</b><span>Fusion Energy</span></span>
+      </a>
+      <p class="kfe-footer-tag">MetroVolt &amp; AEGIS · compact fusion generators on the Kronos breeder-to-burner architecture.</p>
+    </div>
+
+    <div class="kfe-cols">
+      <div class="kfe-col">
+        <h3>Technology</h3>
+        <a href="/how-it-works">How it works</a>
+        <a href="/hyperion">Breeder — Hyperion</a>
+        <a href="/aegis">Burner — Aegis</a>
+        <a href="/metrovolt">Burner — MetroVolt</a>
+        <a href="/ai">AI-Native Architecture</a>
+        <a href="/magnets">Magnets</a>
+        <a href="/fuel-cycle">Fuel cycle</a>
+        <a href="/safety">Safety</a>
+        <a href="/roadmap">Roadmap</a>
+      </div>
+      <div class="kfe-col">
+        <h3>Solutions</h3>
+        <a href="/metrovolt">AI &amp; Data Centers</a>
+        <a href="/defense">Defense &amp; Government</a>
+        <a href="/metrovolt">Grid &amp; Baseload</a>
+        <a href="/defense">Neutron Detection</a>
+        <a href="/ai">Quantum</a>
+      </div>
+      <div class="kfe-col">
+        <h3>Proof</h3>
+        <a href="/publications">Publications</a>
+        <a href="/whitepapers">Whitepapers</a>
+        <a href="/technical/">Technical Library</a>
+        <a href="/mission">Open Science &amp; Reproducibility</a>
+        <a href="/aegis/gate-honest-index.html">The Honest Gates</a>
+        <a href="/rss.xml">News RSS</a>
+      </div>
+      <div class="kfe-col">
+        <h3>Company</h3>
+        <a href="/mission">About / Mission</a>
+        <a href="/leadership">Leadership</a>
+        <a href="/ehs">Environment Health &amp; Safety</a>
+        <a href="/investors">Investors</a>
+        <a href="/careers">Careers</a>
+        <a href="/press">Press</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="kfe-bottom">
+      <div class="kfe-bottom-links">
+        <span>© 2026 Kronos Fusion Energy, Inc.</span>
+        <a href="/legal/privacy">Privacy</a>
+        <a href="/legal/terms">Terms</a>
+        <a href="/legal/legal-notices">Corrections log</a>
+        <a href="/legal/cookie-policy">Cookies</a>
+        <a href="/legal/accessibility">Accessibility</a>
+        <a href="/rss.xml">RSS</a>
+      </div>
+      <div class="kfe-social">
+        <a href="https://www.linkedin.com/company/kronosfusionenergy/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/kronosfusionenergy/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@KronosFusionEnergy" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="https://x.com/Kronos__Fusion" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <p class="kfe-disclosure">
+      Kronos Fusion Energy, Inc. is a pre-commercial technology company. Engineering figures on this
+      site reflect the frozen design point and simulation results; they are not operating measurements
+      and are not an offer to sell securities.
+    </p>
+  </div>
+</footer>
+</div>
+
+<script>
+(function () {
+  var root = document.currentScript ? document.currentScript.previousElementSibling : null;
+  var menus = document.querySelectorAll('.kfe-embed [data-kfe-menu]');
+
+  function closeAll(except) {
+    menus.forEach(function (li) {
+      if (li === except) return;
+      li.classList.remove('kfe-open');
+      var b = li.querySelector('.kfe-nav-trigger');
+      if (b) b.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  menus.forEach(function (li) {
+    var btn = li.querySelector('.kfe-nav-trigger');
+    var open = function () { closeAll(li); li.classList.add('kfe-open'); btn.setAttribute('aria-expanded', 'true'); };
+    var close = function () { li.classList.remove('kfe-open'); btn.setAttribute('aria-expanded', 'false'); };
+
+    li.addEventListener('mouseenter', open);
+    li.addEventListener('mouseleave', close);
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.contains('kfe-open') ? close() : open();
+    });
+    li.addEventListener('focusout', function (e) {
+      if (!li.contains(e.relatedTarget)) close();
+    });
+  });
+
+  document.addEventListener('click', function () { closeAll(null); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      closeAll(null);
+      var m = document.getElementById('kfe-mobile');
+      var b = document.getElementById('kfe-burger');
+      if (m) m.classList.remove('kfe-open');
+      if (b) b.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  var burger = document.getElementById('kfe-burger');
+  var mobile = document.getElementById('kfe-mobile');
+  if (burger && mobile) {
+    burger.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = mobile.classList.toggle('kfe-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+  }
+})();
+
+(function(){var h=document.querySelector('.kfe-embed .kfe-header');if(!h)return;
+var f=function(){h.classList.toggle('kfe-scrolled',(window.scrollY||document.documentElement.scrollTop)>8);};
+f();window.addEventListener('scroll',f,{passive:true});})();
+
+</script>
+<!-- ══ END KRONOS HEADER + FOOTER EMBED ═══════════════════════════════ -->
+<script>
+(function(){
+ function slug(s){return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,60)||'s';}
+ function ready(fn){if(document.readyState!='loading')fn();else document.addEventListener('DOMContentLoaded',fn);}
+ ready(function(){
+  try{
+   var body=document.body;
+   // skip link
+   var sk=document.createElement('a');sk.href='#contents';sk.className='tfe-skip';sk.textContent='Skip to contents';
+   body.insertBefore(sk,body.firstChild);
+   // progress bar
+   var pb=document.createElement('div');pb.id='tfe-prog';body.appendChild(pb);
+   function prog(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;pb.style.width=(m>0?(h.scrollTop/m*100):0)+'%';}
+   window.addEventListener('scroll',prog,{passive:true});prog();
+   // toolbar: dark toggle + top
+   var tb=document.createElement('div');tb.className='tfe-toolbar';
+   var dk=document.createElement('button');dk.type='button';dk.textContent='◐ Dark';
+   try{if(localStorage.getItem('tfe-dark')=='1'){document.documentElement.classList.add('tfe-dark');dk.textContent='◑ Light';}}catch(e){}
+   dk.onclick=function(){var on=document.documentElement.classList.toggle('tfe-dark');dk.textContent=on?'◑ Light':'◐ Dark';try{localStorage.setItem('tfe-dark',on?'1':'0');}catch(e){}};
+   var up=document.createElement('button');up.type='button';up.textContent='↑ Top';up.onclick=function(){window.scrollTo({top:0,behavior:'smooth'});};
+   tb.appendChild(dk);tb.appendChild(up);body.appendChild(tb);
+   // main + toc landmarks
+   var main=document.querySelector('main');if(main){main.id=main.id||'tfe-main';main.setAttribute('role','main');}
+   var tocnav=document.querySelector('nav.toc');if(tocnav){tocnav.setAttribute('aria-label','Table of contents');var tp=tocnav.querySelector('h2');if(tp)tp.id=tp.id||'contents';}
+   // sections: order + titles
+   var secs=[].slice.call(document.querySelectorAll('section[id^="sec-"]'));
+   secs.forEach(function(sec,i){
+     sec.setAttribute('role','doc-chapter');
+     var h=sec.querySelector('h1,h2');var ttl=h?h.textContent.trim():('Chapter '+(i+1));
+     if(h){ h.id=h.id||sec.id; if(!h.querySelector('.hlink')){var a=document.createElement('a');a.className='hlink';a.href='#'+sec.id;a.textContent='#';a.setAttribute('aria-label','Link to this section');h.appendChild(a);}
+       // read time
+       var words=(sec.textContent||'').trim().split(/\s+/).length;var mins=Math.max(1,Math.round(words/200));
+       var rt=document.createElement('span');rt.className='tfe-rt';rt.textContent=mins+' min read · '+words.toLocaleString()+' words';h.insertAdjacentElement('afterend',rt);
+     }
+     // ids for inner headings (deep-linkable)
+     [].slice.call(sec.querySelectorAll('h2,h3,h4')).forEach(function(hh){if(!hh.id){hh.id=sec.id+'-'+slug(hh.textContent);} if(!hh.querySelector('.hlink')&&hh!==h){var a2=document.createElement('a');a2.className='hlink';a2.href='#'+hh.id;a2.textContent='#';a2.setAttribute('aria-label','Link to this subsection');hh.appendChild(a2);}});
+     // prev/next + back to contents
+     var nl=document.createElement('div');nl.className='tfe-navlinks';
+     var prev=i>0?'<a href="#'+secs[i-1].id+'">&larr; Previous</a>':'<span></span>';
+     var next=i<secs.length-1?'<a href="#'+secs[i+1].id+'">Next &rarr;</a>':'<span></span>';
+     nl.innerHTML=prev+'<a class="tfe-top" href="#contents">&uarr; Contents</a>'+next;
+     sec.appendChild(nl);
+   });
+   // 2-level TOC: under each chapter link, nest its sub-headings
+   if(tocnav){
+     [].slice.call(tocnav.querySelectorAll('a[href^="#sec-"]')).forEach(function(a){
+       var sid=a.getAttribute('href').slice(1);var sec=document.getElementById(sid);if(!sec)return;
+       var subs=[].slice.call(sec.querySelectorAll('h2')).filter(function(hh){return hh.id&&hh.id!==sid;});
+       if(subs.length<2)return;
+       var li=a.closest('li');if(!li)return;
+       var det=document.createElement('details');var sm=document.createElement('summary');sm.appendChild(a.cloneNode(true));
+       var ul=document.createElement('ul');
+       subs.slice(0,24).forEach(function(hh){var l=document.createElement('li');l.innerHTML='<a href="#'+hh.id+'">'+hh.textContent.replace(/#$/,'').trim()+'</a>';ul.appendChild(l);});
+       det.appendChild(sm);det.appendChild(ul);a.replaceWith(det);
+     });
+   }
+   // scrollspy: highlight current chapter in toc
+   var links={};[].slice.call((tocnav||document).querySelectorAll('a[href^="#sec-"]')).forEach(function(a){links[a.getAttribute('href').slice(1)]=a;});
+   if('IntersectionObserver' in window){
+     var io=new IntersectionObserver(function(es){es.forEach(function(e){var a=links[e.target.id];if(!a)return;if(e.isIntersecting){for(var k in links)links[k].classList.remove('tfe-cur');a.classList.add('tfe-cur');}});},{rootMargin:'-40% 0px -55% 0px'});
+     secs.forEach(function(s){io.observe(s);});
+   }
+   // figure lightbox
+   var lb=document.createElement('div');lb.id='tfe-lb';var lbi=document.createElement('img');lb.appendChild(lbi);body.appendChild(lb);
+   lb.onclick=function(){lb.classList.remove('on');};document.addEventListener('keydown',function(e){if(e.key=='Escape')lb.classList.remove('on');});
+   body.addEventListener('click',function(e){var im=e.target;if(im.tagName=='IMG'&&/figures\//.test(im.getAttribute('src')||'')){lbi.src=im.currentSrc||im.src;lbi.alt=im.alt||'';lb.classList.add('on');}});
+  }catch(err){console&&console.warn&&console.warn('tfe enhance',err);}
+ });
+})();
+</script><script>(function(){var rl=document.querySelector(".readlisten");if(!rl)return;var pl=document.querySelector(".rl-player");rl.querySelector(".rl-listen").addEventListener("click",function(){pl.hidden=!pl.hidden;this.setAttribute("aria-expanded",pl.hidden?"false":"true");this.textContent=pl.hidden?"🎧 Listen instead":"✕ Hide player";});var au=pl.querySelector("audio"),src=pl.querySelector("source");pl.querySelectorAll(".rl-voice button").forEach(function(b){b.addEventListener("click",function(){pl.querySelectorAll(".rl-voice button").forEach(function(x){x.classList.remove("on")});b.classList.add("on");var v=b.getAttribute("data-v");src.src=src.getAttribute("data-"+v)||src.src;au.load();});});})();</script></body></html>
