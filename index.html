@@ -92,7 +92,7 @@ html.tfe-dark .tfe-cite pre,html.tfe-dark table,html.tfe-dark td,html.tfe-dark t
 html.tfe-dark nav.toc a{color:#c7d0dc !important}html.tfe-dark nav.toc{background:#12161c !important;border-color:#242b34 !important}html.tfe-dark nav.toc h2,html.tfe-dark nav.toc summary,html.tfe-dark nav.toc strong{color:#e6ebf2 !important}html.tfe-dark .tfe-navlinks{border-color:#242b34 !important}html.tfe-dark .tfe-rt{color:#9aa88f !important}
 @media print{.tfe-toolbar,#tfe-prog,.kfe-header{display:none !important}}
 </style>
-<style>.cpage{margin-left:.45em;text-decoration:none;color:#b08a3a;font-size:.85em}.cpage:hover{color:#7a1420}.tfe-chapbanner{margin:6px 0 14px;font:14px "Space Grotesk",system-ui,sans-serif}.tfe-chapbanner a{color:#7a1420;text-decoration:none;font-weight:600}</style></head><body>
+<style>.cpage{margin-left:.45em;text-decoration:none;color:#b08a3a;font-size:.85em}.cpage:hover{color:#7a1420}.tfe-chapbanner{margin:6px 0 14px;font:14px "Space Grotesk",system-ui,sans-serif}.tfe-chapbanner a{color:#7a1420;text-decoration:none;font-weight:600}</style><style id="rl-inline-css">.rl-inline{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:2px 0 16px;font:13.5px "Space Grotesk",system-ui,sans-serif}.rl-listen-i{background:#7a1420;color:#fff;border:0;border-radius:7px;padding:6px 12px;cursor:pointer;font:inherit;font-weight:600}.rl-listen-i:hover{background:#611019}.rl-vi{display:none;gap:4px}.rl-inline.on .rl-vi{display:inline-flex}.rl-vi button{background:transparent;border:1px solid #c9c1b0;border-radius:20px;width:28px;height:26px;cursor:pointer;color:#5b6675;font:12px "Space Grotesk"}.rl-vi button.on{background:#0a0e17;color:#fff;border-color:#0a0e17}.rl-player-i{flex-basis:100%}.rl-player-i audio{width:100%;max-width:520px;margin-top:6px}.rl-note-i{color:#8a7a52;font:11px "Space Mono",monospace;margin-left:8px}html.tfe-dark .rl-vi button{color:#c7d0dc;border-color:#2a333d}html.tfe-dark .rl-note-i{color:#9aa88f}</style><script id="tfe-slugs">window.TFE_SLUGS={"sec-0": "a-century-s-work-still-underway", "sec-1": "preface", "sec-2": "the-three-forties", "sec-3": "the-fire", "sec-4": "the-long-night", "sec-5": "the-inheritors", "sec-6": "energy-is-freedom", "sec-7": "gain-solved-and-published", "sec-8": "a-short-history-of-a-long-dream", "sec-9": "the-staged-road-to-q40", "sec-10": "the-next-forty-years", "sec-11": "wealth-of-the-world-how-fusion-energy-could-reshape-economies", "sec-12": "energy-sovereignty-and-the-end-of-resource-war", "sec-13": "aegis-firm-power-where-it-cannot-fail", "sec-14": "building-the-machine-regulation-supply-chain-and-sovereignty", "sec-15": "the-machine-that-controls-the-machine", "sec-16": "quantum-honestly", "sec-17": "the-twin-simulating-a-machine-before-we-build-it", "sec-18": "igniting-the-markets-the-unbound-commercial-promise-of-fusion-energy", "sec-19": "the-long-road-to-two-machines", "sec-20": "hyperion-the-foundry-that-makes-the-fuel", "sec-21": "the-burner-firm-power-low-neutrons", "sec-22": "the-magnets-the-high-field-path", "sec-23": "catching-lightning-direct-energy-conversion", "sec-24": "energy-is-water", "sec-25": "to-the-moon-for-fuel", "sec-26": "the-road-to-40-a-megawatt-hour-worked", "sec-27": "safe-by-design-waste-risk-and-the-environmental-case", "sec-28": "the-field-honestly-where-this-approach-fits", "sec-29": "a-brighter-tomorrow", "sec-30": "how-this-was-built", "sec-31": "charting-the-course-to-fusion-s-bright-future", "sec-32": "the-machines-by-the-numbers", "sec-33": "the-simulation-register-proofs", "sec-34": "the-record-deposits-dois", "sec-35": "the-intellectual-property-record", "sec-36": "show-your-work", "sec-37": "where-every-number-lives", "sec-38": "a-skeptic-s-questions", "sec-39": "the-hardest-objections-answered", "sec-40": "nomenclature-glossary", "sec-41": "the-people-behind-the-work", "sec-42": "priyanca-iyengar-ford", "sec-43": "follow-the-work"};</script></head><body>
 <!-- ══════════════════════════════════════════════════════════════════════════
      KRONOS FUSION ENERGY — GLOBAL HEADER + FOOTER (self-contained embed)
      Paste this entire block into the <body> of any static page.
@@ -3691,4 +3691,22 @@ f();window.addEventListener('scroll',f,{passive:true});})();
  });
 })();
 </script>
-</body></html>
+<script id="rl-inline-js">(function(){var S=window.TFE_SLUGS||{};
+function ready(fn){if(document.readyState!='loading')fn();else document.addEventListener('DOMContentLoaded',fn);}
+function ap(v,slug){return 'audiobook/'+v+'/'+slug+'.m4a';}
+ready(function(){try{
+ document.querySelectorAll('section[id^="sec-"]').forEach(function(sec){
+  if(sec.querySelector(':scope > .rl-inline'))return;
+  var slug=S[sec.id];if(!slug)return;
+  var h=sec.querySelector('h1,h2');if(!h)return;
+  var wrap=document.createElement('div');wrap.className='rl-inline';
+  wrap.innerHTML='<button class="rl-listen-i" type="button" aria-expanded="false">🎧 Listen to this chapter</button>'
+   +'<span class="rl-vi" role="group" aria-label="Voice"><button type="button" data-v="male" class="on" title="Male voice">M</button><button type="button" data-v="female" title="Female voice">F</button></span>'
+   +'<div class="rl-player-i" hidden><audio controls preload="none" aria-label="Listen to this chapter"><source data-male="'+ap('male',slug)+'" data-female="'+ap('female',slug)+'" src="'+ap('male',slug)+'" type="audio/mp4"></audio><span class="rl-note-i">Narration in production</span></div>';
+  var rt=h.nextElementSibling;var after=(rt&&rt.classList&&rt.classList.contains('tfe-rt'))?rt:h;
+  after.insertAdjacentElement('afterend',wrap);
+  var btn=wrap.querySelector('.rl-listen-i'),pl=wrap.querySelector('.rl-player-i'),src=pl.querySelector('source'),au=pl.querySelector('audio');
+  btn.addEventListener('click',function(){var show=pl.hidden;pl.hidden=!show;wrap.classList.toggle('on',show);btn.setAttribute('aria-expanded',show?'true':'false');btn.textContent=show?'✕ Hide player':'🎧 Listen to this chapter';});
+  wrap.querySelectorAll('.rl-vi button').forEach(function(b){b.addEventListener('click',function(){wrap.querySelectorAll('.rl-vi button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');var v=b.getAttribute('data-v');src.src=src.getAttribute('data-'+v)||src.src;au.load();});});
+ });
+}catch(e){console&&console.warn&&console.warn('rl-inline',e);}});})();</script></body></html>
